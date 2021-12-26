@@ -1,0 +1,65 @@
+﻿  autofit.c
+  bdf.c
+  cff.c
+  ftbase.c
+c:\tomek\praca\mvsprojects\meshgenerator\freetype-2.5.2\src\autofit\aflatin.c(554): warning C4701: potentially uninitialized local variable 'p_first' used
+c:\tomek\praca\mvsprojects\meshgenerator\freetype-2.5.2\src\autofit\aflatin.c(600): warning C4701: potentially uninitialized local variable 'p_last' used
+  ftbitmap.c
+  ftcache.c
+  ftfstype.c
+  ftgasp.c
+  ftglyph.c
+  ftgzip.c
+  ftinit.c
+  ftlzw.c
+  ftstroke.c
+  ftsystem.c
+  smooth.c
+  ftbbox.c
+  ftmm.c
+  ftpfr.c
+  ftsynth.c
+  fttype1.c
+  ftwinfnt.c
+  ftxf86.c
+  ftlcdfil.c
+  ftgxval.c
+  ftotval.c
+  ftpatent.c
+  pcf.c
+  pfr.c
+  psaux.c
+  pshinter.c
+  psmodule.c
+  raster.c
+  sfnt.c
+  truetype.c
+  type1.c
+  type1cid.c
+c:\tomek\praca\mvsprojects\meshgenerator\freetype-2.5.2\src\truetype\ttgload.c(102): warning C4244: '=': conversion from 'FT_Pos' to 'FT_Short', possible loss of data (compiling source file ..\..\..\src\truetype\truetype.c)
+c:\tomek\praca\mvsprojects\meshgenerator\freetype-2.5.2\src\truetype\ttgload.c(108): warning C4244: '=': conversion from 'FT_Pos' to 'FT_Short', possible loss of data (compiling source file ..\..\..\src\truetype\truetype.c)
+c:\tomek\praca\mvsprojects\meshgenerator\freetype-2.5.2\src\sfnt\sfobjs.c(504): warning C4244: '=': conversion from 'FT_ULong' to 'FT_Byte', possible loss of data (compiling source file ..\..\..\src\sfnt\sfnt.c)
+c:\tomek\praca\mvsprojects\meshgenerator\freetype-2.5.2\src\sfnt\sfobjs.c(505): warning C4244: '=': conversion from 'int' to 'FT_Byte', possible loss of data (compiling source file ..\..\..\src\sfnt\sfnt.c)
+c:\tomek\praca\mvsprojects\meshgenerator\freetype-2.5.2\src\sfnt\sfobjs.c(506): warning C4244: '=': conversion from 'FT_UInt' to 'FT_Byte', possible loss of data (compiling source file ..\..\..\src\sfnt\sfnt.c)
+c:\tomek\praca\mvsprojects\meshgenerator\freetype-2.5.2\src\sfnt\sfobjs.c(507): warning C4244: '=': conversion from 'FT_UInt' to 'FT_Byte', possible loss of data (compiling source file ..\..\..\src\sfnt\sfnt.c)
+c:\tomek\praca\mvsprojects\meshgenerator\freetype-2.5.2\src\sfnt\sfobjs.c(508): warning C4244: '=': conversion from 'FT_UInt' to 'FT_Byte', possible loss of data (compiling source file ..\..\..\src\sfnt\sfnt.c)
+c:\tomek\praca\mvsprojects\meshgenerator\freetype-2.5.2\src\sfnt\sfobjs.c(645): warning C4244: '=': conversion from 'FT_ULong' to 'FT_Byte', possible loss of data (compiling source file ..\..\..\src\sfnt\sfnt.c)
+c:\tomek\praca\mvsprojects\meshgenerator\freetype-2.5.2\src\sfnt\sfobjs.c(646): warning C4244: '=': conversion from 'FT_ULong' to 'FT_Byte', possible loss of data (compiling source file ..\..\..\src\sfnt\sfnt.c)
+c:\tomek\praca\mvsprojects\meshgenerator\freetype-2.5.2\src\sfnt\sfobjs.c(647): warning C4244: '=': conversion from 'FT_ULong' to 'FT_Byte', possible loss of data (compiling source file ..\..\..\src\sfnt\sfnt.c)
+c:\tomek\praca\mvsprojects\meshgenerator\freetype-2.5.2\src\sfnt\sfobjs.c(648): warning C4244: '=': conversion from 'FT_ULong' to 'FT_Byte', possible loss of data (compiling source file ..\..\..\src\sfnt\sfnt.c)
+c:\tomek\praca\mvsprojects\meshgenerator\freetype-2.5.2\src\sfnt\ttsbit.c(291): warning C4244: '=': conversion from 'FT_UInt' to 'FT_UShort', possible loss of data (compiling source file ..\..\..\src\sfnt\sfnt.c)
+c:\tomek\praca\mvsprojects\meshgenerator\freetype-2.5.2\src\sfnt\ttsbit.c(292): warning C4244: '=': conversion from 'FT_UInt' to 'FT_UShort', possible loss of data (compiling source file ..\..\..\src\sfnt\sfnt.c)
+c:\tomek\praca\mvsprojects\meshgenerator\freetype-2.5.2\src\sfnt\ttsbit.c(803): warning C4244: 'initializing': conversion from 'FT_Short' to 'FT_Char', possible loss of data (compiling source file ..\..\..\src\sfnt\sfnt.c)
+c:\tomek\praca\mvsprojects\meshgenerator\freetype-2.5.2\src\sfnt\ttsbit.c(804): warning C4244: 'initializing': conversion from 'FT_Short' to 'FT_Char', possible loss of data (compiling source file ..\..\..\src\sfnt\sfnt.c)
+c:\tomek\praca\mvsprojects\meshgenerator\freetype-2.5.2\src\sfnt\ttsbit.c(805): warning C4244: 'initializing': conversion from 'FT_UShort' to 'FT_Byte', possible loss of data (compiling source file ..\..\..\src\sfnt\sfnt.c)
+c:\tomek\praca\mvsprojects\meshgenerator\freetype-2.5.2\src\sfnt\ttsbit.c(806): warning C4244: 'initializing': conversion from 'FT_Short' to 'FT_Char', possible loss of data (compiling source file ..\..\..\src\sfnt\sfnt.c)
+c:\tomek\praca\mvsprojects\meshgenerator\freetype-2.5.2\src\sfnt\ttsbit.c(807): warning C4244: 'initializing': conversion from 'FT_Short' to 'FT_Char', possible loss of data (compiling source file ..\..\..\src\sfnt\sfnt.c)
+c:\tomek\praca\mvsprojects\meshgenerator\freetype-2.5.2\src\sfnt\ttsbit.c(808): warning C4244: 'initializing': conversion from 'FT_UShort' to 'FT_Byte', possible loss of data (compiling source file ..\..\..\src\sfnt\sfnt.c)
+c:\tomek\praca\mvsprojects\meshgenerator\freetype-2.5.2\src\sfnt\ttsbit.c(1352): warning C4244: '=': conversion from 'FT_Int' to 'FT_Short', possible loss of data (compiling source file ..\..\..\src\sfnt\sfnt.c)
+c:\tomek\praca\mvsprojects\meshgenerator\freetype-2.5.2\src\sfnt\ttsbit.c(1353): warning C4244: '=': conversion from 'int' to 'FT_Short', possible loss of data (compiling source file ..\..\..\src\sfnt\sfnt.c)
+c:\tomek\praca\mvsprojects\meshgenerator\freetype-2.5.2\src\sfnt\ttsbit.c(1033): warning C4701: potentially uninitialized local variable 'loader' used
+c:\tomek\praca\mvsprojects\meshgenerator\freetype-2.5.2\src\sfnt\ttsbit.c(1033): warning C4703: potentially uninitialized local pointer variable 'loader' used
+  type42.c
+  winfnt.c
+  ftdebug.c
+  freetype.vcxproj -> C:\Tomek\Praca\MVSProjects\MeshGenerator\x64\Release\freetype252.lib
