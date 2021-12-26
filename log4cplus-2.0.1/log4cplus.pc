@@ -1,0 +1,13 @@
+prefix=/mnt/c/Tomek/Praca/MVSProjects/MeshGenerator/log4cplus-linux
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+modules=
+
+Name: log4cplus
+Version: 2.0.1
+Description: Simple to use, thread-safe C++ logging API
+Requires:
+Libs: -L${libdir} -llog4cplus
+Libs.private:  
+Cflags: -I${includedir}
