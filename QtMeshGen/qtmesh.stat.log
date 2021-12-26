@@ -1,0 +1,14 @@
+ stat| STEP	0.0	1	1.5	2	2.5	3	3.5	4	6	10	1e+20
+ stat| 0	0	49649	478	59	40	18	20	34	5	49	0
+ stat| 1	0	50125	131	14	15	9	15	23	20	0	0
+ stat| 2	0	50258	49	14	13	3	5	4	6	0	0
+ stat| 3	0	50315	23	2	1	0	3	5	3	0	0
+ stat| 4	0	50336	8	3	2	0	1	2	0	0	0
+ stat| 5	0	50350	2	0	0	0	0	0	0	0	0
+ stat| 6	0	50352	0	0	0	0	0	0	0	0	0
+ time| DIFF-S (sec.) =>	0.527
+ time| DIFF-R (sec.) =>	0.29
+ time| 3D ControlSpace2d - calculate metric from boundary (sec.) =>	0.015
+ time| MG3d - create initial ACS (sec.) =>	0
+ time| MG3dDB::minStarTetrahedraVolume (sec.) =>	0.012
+ time| MG3dDB::createSimpleConvexBoundaryConstrainedMesh (sec.) =>	0.926

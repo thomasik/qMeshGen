@@ -1,0 +1,47 @@
+  14250 DEBUG [console] kdtree-test-ss KDTREE_L SPLIT_HALF_LONGEST 0.1 f-sphere-r0.8 0.5 GRADATION_VIC_NB_MULTIPASS 1.25 4.0x0.25 	/ mainwindow.cpp:1564
+  15248 INFO  [   mesh] Tree created OK, starting test...        	/ controlspace3dkdtree.cpp:2747
+  16692 INFO  [console]  ... all sources inserted ...            	/ controlspace3dkdtree.cpp:2140
+  17311 INFO  [   stat] STEP	0.0	1	1.5	2	2.5	3	3.5	4	6	10	1e+20  	/ controlspace3dkdtree.cpp:599
+  20796 INFO  [   stat] 0	0	49649	478	59	40	18	20	34	5	49	0      	/ controlspace3dkdtree.cpp:635
+  21600 INFO  [   stat] 1	0	50125	131	14	15	9	15	23	20	0	0       	/ controlspace3dkdtree.cpp:635
+  22310 INFO  [   stat] 2	0	50258	49	14	13	3	5	4	6	0	0           	/ controlspace3dkdtree.cpp:635
+  22986 INFO  [   stat] 3	0	50315	23	2	1	0	3	5	3	0	0             	/ controlspace3dkdtree.cpp:635
+  23670 INFO  [   stat] 4	0	50336	8	3	2	0	1	2	0	0	0              	/ controlspace3dkdtree.cpp:635
+  24342 INFO  [   stat] 5	0	50350	2	0	0	0	0	0	0	0	0              	/ controlspace3dkdtree.cpp:635
+  25018 INFO  [   stat] 6	0	50352	0	0	0	0	0	0	0	0	0              	/ controlspace3dkdtree.cpp:635
+  25170 INFO  [console] nbs-min: 3                               	/ controlspace3dkdtree.cpp:557
+  25170 INFO  [console] nbs-max: 6                               	/ controlspace3dkdtree.cpp:558
+  25170 INFO  [console] nbs-ave: 5.99396                         	/ controlspace3dkdtree.cpp:559
+  25171 INFO  [console]  ... gradation smoothed ...              	/ controlspace3dkdtree.cpp:2149
+  25219 INFO  [   mesh]  tree adapted (+smoothen), tree size:100703 	/ controlspace3dkdtree.cpp:2150
+  25219 INFO  [console] <x>0</x> <y>0</y> <z>0</z> -> 0.0423344 - 0.133047 	/ controlspace3dkdtree.cpp:2155
+  25220 INFO  [console] <x>1</x> <y>1</y> <z>1</z> -> 0.0458649 - 0.117042 	/ controlspace3dkdtree.cpp:2159
+  25220 INFO  [console] <x>0</x> <y>1</y> <z>1</z> -> 0.0382657 - 0.148497 	/ controlspace3dkdtree.cpp:2163
+  25220 INFO  [console] <x>0</x> <y>0</y> <z>1</z> -> 0.0325511 - 0.139144 	/ controlspace3dkdtree.cpp:2167
+  25220 INFO  [console] <x>0</x> <y>0</y> <z>0.8</z> -> 0.015 - 0.06 	/ controlspace3dkdtree.cpp:2171
+  25748 INFO  [   time] DIFF-S (sec.) =>	0.527                   	/ meshdata.cpp:562
+  26090 INFO  [   time] DIFF-R (sec.) =>	0.29                    	/ meshdata.cpp:562
+  26090 INFO  [console] CS tests (with tree depth 20/7) finished. 	/ controlspace3dkdtree.cpp:2312
+  26093 INFO  [console] Data OK: 8 pts 6 faces 1 blocks          	/ meshbrep.cpp:243
+  26093 INFO  [   mesh] Starting 3d triangulation                	/ controlspace3dkdtree.cpp:1823
+  26097 DEBUG [   mesh] MG1d::disretizeEdgeMin (12) done.        	/ meshgenerator1d.cpp:431
+  26100 DEBUG [   mesh] MG1d::disretizeEdgeMin (12) done.        	/ meshgenerator1d.cpp:431
+  26104 DEBUG [   mesh] MG1d::disretizeEdgeMin (19) done.        	/ meshgenerator1d.cpp:431
+  26107 DEBUG [   mesh] MG1d::disretizeEdgeMin (17) done.        	/ meshgenerator1d.cpp:431
+  26112 DEBUG [   mesh] MG1d::disretizeEdgeMin (25) done.        	/ meshgenerator1d.cpp:431
+  26115 DEBUG [   mesh] MG1d::disretizeEdgeMin (17) done.        	/ meshgenerator1d.cpp:431
+  26119 DEBUG [   mesh] MG1d::disretizeEdgeMin (18) done.        	/ meshgenerator1d.cpp:431
+  26123 DEBUG [   mesh] MG1d::disretizeEdgeMin (14) done.        	/ meshgenerator1d.cpp:431
+  26126 DEBUG [   mesh] MG1d::disretizeEdgeMin (19) done.        	/ meshgenerator1d.cpp:431
+  26129 DEBUG [   mesh] MG1d::disretizeEdgeMin (18) done.        	/ meshgenerator1d.cpp:431
+  26134 DEBUG [   mesh] MG1d::disretizeEdgeMin (28) done.        	/ meshgenerator1d.cpp:431
+  26139 DEBUG [   mesh] MG1d::disretizeEdgeMin (29) done.        	/ meshgenerator1d.cpp:431
+  26759 INFO  [   time] 3D ControlSpace2d - calculate metric from boundary (sec.) =>	0.015 	/ meshdata.cpp:562
+  26759 INFO  [   time] MG3d - create initial ACS (sec.) =>	0    	/ meshdata.cpp:562
+  26760 INFO  [   mesh] Boundary faces: 6334                     	/ meshdomainvolume.cpp:496
+  26760 INFO  [   mesh] Boundary vertices: 3169                  	/ meshdomainvolume.cpp:497
+  26772 INFO  [   time] MG3dDB::minStarTetrahedraVolume (sec.) =>	0.012 	/ meshdata.cpp:562
+  26773 INFO  [   mesh] Initial guess (minStarTetrahedraVolume): 80507.5 	/ meshgenerator3ddirectboundary.cpp:96
+  26773 DEBUG [   mesh] star min vol: 0.19646                    	/ meshdomainvolume.cpp:508
+  27699 INFO  [   time] MG3dDB::createSimpleConvexBoundaryConstrainedMesh (sec.) =>	0.926 	/ meshdata.cpp:562
+  27699 INFO  [   mesh] discUsingBoundary: cs-8                  	/ meshdomainvolume.cpp:543

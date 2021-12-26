@@ -1,0 +1,413 @@
+CXX       = g++
+DIR       = linux
+CXXFLAGS  = -DUNIX_MODE -ansi -pedantic -Wall -W -Wconversion -Wshadow -Wcast-qual -Wwrite-strings
+LDFLAGS   = -O2
+
+MESHLIB   = meshlib.a
+SRCS      = ControlSpace.cpp ControlSpace3d.cpp\
+	 ControlSpace3dAdaptive.cpp ControlSpace3dAnalytic.cpp\
+	 ControlSpace3dMatrixUniform.cpp ControlSpace3dOctree.cpp\
+	 ControlSpaceAdaptive.cpp ControlSpaceAnalytic.cpp\
+	 ControlSpaceMatrixUniform.cpp ControlSpaceMesh.cpp\
+	 ControlSpaceQuadTree.cpp Curve3dParametric.cpp\
+	 Curve3dSegment.cpp CurveAnalytic.cpp\
+	 CurveBSpline.cpp CurveCircle.cpp\
+	 CurveParametric.cpp CurveSegment.cpp\
+	 DEquation.cpp DHesjan.cpp\
+	 DLeastSquaresFitting.cpp DLine.cpp\
+	 DMatrix.cpp DMetric.cpp\
+	 DMetric3d.cpp DPoint.cpp\
+	 DQuad.cpp DQuadric.cpp\
+	 DRect.cpp DSegment.cpp\
+	 DTetrahedron.cpp DTriangle.cpp\
+	 DVector.cpp DataStatistics.cpp\
+	 EPSFile.cpp FrontEdge.cpp\
+	 FrontFace.cpp FrontLines.cpp\
+	 GeometricPredicates.cpp IteratorEdge2d.cpp\
+	 IteratorEdge3d.cpp IteratorFace.cpp\
+	 IteratorMesh2d.cpp IteratorMesh3d.cpp\
+	 MeshArea.cpp MeshBRep.cpp\
+	 MeshBRepRSurf.cpp\
+	 MeshBRepXML.cpp MeshBlock.cpp\
+	 MeshContainer2d.cpp MeshContainer3d.cpp\
+	 MeshData.cpp MeshDecompositionUTC.cpp\
+	 MeshDomainEdge3d.cpp MeshDomainSurface.cpp\
+	 MeshDomainVolume.cpp MeshEdge.cpp\
+	 MeshEdge3d.cpp MeshEdgeCurve.cpp\
+	 MeshElement.cpp MeshFace.cpp\
+	 MeshGenerator1d.cpp MeshGenerator2d.cpp\
+	 MeshGenerator2dQMorph.cpp MeshGenerator2dQuad.cpp\
+	 MeshGenerator3d.cpp MeshGenerator3dDelaunayBoundary.cpp\
+	 MeshGenerator3dDirectBoundary.cpp MeshGenerator3dQuality.cpp\
+	 MeshGrain.cpp MeshLog.cpp\
+	 MeshModel.cpp MeshPoint.cpp\
+	 MeshPoint3d.cpp MeshQuad.cpp\
+	 MeshQuad3d.cpp MeshSpecialRoutinesDAT.cpp\
+	 MeshTetrahedron.cpp\
+	 MeshTriangle.cpp MeshTriangle3d.cpp\
+	 MeshViewSet.cpp\
+	 Metric3dContext.cpp MetricContext.cpp\
+	 OctTree.cpp Quad12.cpp\
+	 QuadTree.cpp StatisticCounter.cpp\
+	 SurfaceAnalytic.cpp SurfaceBSpline.cpp\
+	 SurfaceCorrected.cpp\
+	 SurfaceMulti.cpp SurfaceParametric.cpp\
+	 SurfacePlane.cpp nrutil.cpp\
+	 tinystr.cpp tinyxml.cpp\
+	 tinyxmlerror.cpp tinyxmlparser.cpp\
+	
+
+OBJS      =  $(DIR)/ControlSpace.o $(DIR)/ControlSpace3d.o\
+	 $(DIR)/ControlSpace3dAdaptive.o $(DIR)/ControlSpace3dAnalytic.o\
+	 $(DIR)/ControlSpace3dMatrixUniform.o $(DIR)/ControlSpace3dOctree.o\
+	 $(DIR)/ControlSpaceAdaptive.o $(DIR)/ControlSpaceAnalytic.o\
+	 $(DIR)/ControlSpaceMatrixUniform.o $(DIR)/ControlSpaceMesh.o\
+	 $(DIR)/ControlSpaceQuadTree.o $(DIR)/Curve3dParametric.o\
+	 $(DIR)/Curve3dSegment.o $(DIR)/CurveAnalytic.o\
+	 $(DIR)/CurveBSpline.o $(DIR)/CurveCircle.o\
+	 $(DIR)/CurveParametric.o $(DIR)/CurveSegment.o\
+	 $(DIR)/DEquation.o $(DIR)/DHesjan.o\
+	 $(DIR)/DLeastSquaresFitting.o $(DIR)/DLine.o\
+	 $(DIR)/DMatrix.o $(DIR)/DMetric.o\
+	 $(DIR)/DMetric3d.o $(DIR)/DPoint.o\
+	 $(DIR)/DQuad.o $(DIR)/DQuadric.o\
+	 $(DIR)/DRect.o $(DIR)/DSegment.o\
+	 $(DIR)/DTetrahedron.o $(DIR)/DTriangle.o\
+	 $(DIR)/DVector.o $(DIR)/DataStatistics.o\
+	 $(DIR)/EPSFile.o $(DIR)/FrontEdge.o\
+	 $(DIR)/FrontFace.o $(DIR)/FrontLines.o\
+	 $(DIR)/GeometricPredicates.o $(DIR)/IteratorEdge2d.o\
+	 $(DIR)/IteratorEdge3d.o $(DIR)/IteratorFace.o\
+	 $(DIR)/IteratorMesh2d.o $(DIR)/IteratorMesh3d.o\
+	 $(DIR)/MeshArea.o $(DIR)/MeshBRep.o\
+	 $(DIR)/MeshBRepRSurf.o\
+	 $(DIR)/MeshBRepXML.o $(DIR)/MeshBlock.o\
+	 $(DIR)/MeshContainer2d.o $(DIR)/MeshContainer3d.o\
+	 $(DIR)/MeshData.o $(DIR)/MeshDecompositionUTC.o\
+	 $(DIR)/MeshDomainEdge3d.o $(DIR)/MeshDomainSurface.o\
+	 $(DIR)/MeshDomainVolume.o $(DIR)/MeshEdge.o\
+	 $(DIR)/MeshEdge3d.o $(DIR)/MeshEdgeCurve.o\
+	 $(DIR)/MeshElement.o $(DIR)/MeshFace.o\
+	 $(DIR)/MeshGenerator1d.o $(DIR)/MeshGenerator2d.o\
+	 $(DIR)/MeshGenerator2dQMorph.o $(DIR)/MeshGenerator2dQuad.o\
+	 $(DIR)/MeshGenerator3d.o $(DIR)/MeshGenerator3dDelaunayBoundary.o\
+	 $(DIR)/MeshGenerator3dDirectBoundary.o $(DIR)/MeshGenerator3dQuality.o\
+	 $(DIR)/MeshGrain.o $(DIR)/MeshLog.o\
+	 $(DIR)/MeshModel.o $(DIR)/MeshPoint.o\
+	 $(DIR)/MeshPoint3d.o $(DIR)/MeshQuad.o\
+	 $(DIR)/MeshQuad3d.o $(DIR)/MeshSpecialRoutinesDAT.o\
+	 $(DIR)/MeshTetrahedron.o\
+	 $(DIR)/MeshTriangle.o $(DIR)/MeshTriangle3d.o\
+	 $(DIR)/MeshViewSet.o\
+	 $(DIR)/Metric3dContext.o $(DIR)/MetricContext.o\
+	 $(DIR)/OctTree.o $(DIR)/Quad12.o\
+	 $(DIR)/QuadTree.o $(DIR)/StatisticCounter.o\
+	 $(DIR)/SurfaceAnalytic.o $(DIR)/SurfaceBSpline.o\
+	 $(DIR)/SurfaceCorrected.o\
+	 $(DIR)/SurfaceMulti.o $(DIR)/SurfaceParametric.o\
+	 $(DIR)/SurfacePlane.o $(DIR)/nrutil.o\
+	 $(DIR)/tinystr.o $(DIR)/tinyxml.o\
+	 $(DIR)/tinyxmlerror.o $(DIR)/tinyxmlparser.o\
+	
+default: $(DIR)/$(MESHLIB)
+
+$(DIR)/$(MESHLIB): $(OBJS)
+	ar rcs $(DIR)/$(MESHLIB) $(OBJS) 
+
+clean:
+	rm -f $(OBJS) $(DIR)/$(MESHLIB)
+
+$(DIR)/ControlSpace.o: ControlSpace.cpp
+	${CXX} $(CXXFLAGS) -c ControlSpace.cpp -o $(DIR)/ControlSpace.o
+
+$(DIR)/ControlSpace3d.o: ControlSpace3d.cpp
+	${CXX} $(CXXFLAGS) -c ControlSpace3d.cpp -o $(DIR)/ControlSpace3d.o
+
+$(DIR)/ControlSpace3dAdaptive.o: ControlSpace3dAdaptive.cpp
+	${CXX} $(CXXFLAGS) -c ControlSpace3dAdaptive.cpp -o $(DIR)/ControlSpace3dAdaptive.o
+
+$(DIR)/ControlSpace3dAnalytic.o: ControlSpace3dAnalytic.cpp
+	${CXX} $(CXXFLAGS) -c ControlSpace3dAnalytic.cpp -o $(DIR)/ControlSpace3dAnalytic.o
+
+$(DIR)/ControlSpace3dMatrixUniform.o: ControlSpace3dMatrixUniform.cpp
+	${CXX} $(CXXFLAGS) -c ControlSpace3dMatrixUniform.cpp -o $(DIR)/ControlSpace3dMatrixUniform.o
+
+$(DIR)/ControlSpace3dOctree.o: ControlSpace3dOctree.cpp  ControlSpace3dOctree.h MeshPoint3d.h MeshEdge3d.h MeshFace.h MeshContainer3d.h ControlSpaceAdaptive.h common.h DTriangle.h DSegment.h DTetrahedron.h MeshViewSet.h
+	${CXX} $(CXXFLAGS) -c ControlSpace3dOctree.cpp -o $(DIR)/ControlSpace3dOctree.o
+
+$(DIR)/ControlSpaceAdaptive.o: ControlSpaceAdaptive.cpp
+	${CXX} $(CXXFLAGS) -c ControlSpaceAdaptive.cpp -o $(DIR)/ControlSpaceAdaptive.o
+
+$(DIR)/ControlSpaceAnalytic.o: ControlSpaceAnalytic.cpp
+	${CXX} $(CXXFLAGS) -c ControlSpaceAnalytic.cpp -o $(DIR)/ControlSpaceAnalytic.o
+
+$(DIR)/ControlSpaceMatrixUniform.o: ControlSpaceMatrixUniform.cpp
+	${CXX} $(CXXFLAGS) -c ControlSpaceMatrixUniform.cpp -o $(DIR)/ControlSpaceMatrixUniform.o
+
+$(DIR)/ControlSpaceMesh.o: ControlSpaceMesh.cpp
+	${CXX} $(CXXFLAGS) -c ControlSpaceMesh.cpp -o $(DIR)/ControlSpaceMesh.o
+
+$(DIR)/ControlSpaceQuadTree.o: ControlSpaceQuadTree.cpp
+	${CXX} $(CXXFLAGS) -c ControlSpaceQuadTree.cpp -o $(DIR)/ControlSpaceQuadTree.o
+
+$(DIR)/Curve3dParametric.o: Curve3dParametric.cpp
+	${CXX} $(CXXFLAGS) -c Curve3dParametric.cpp -o $(DIR)/Curve3dParametric.o
+
+$(DIR)/Curve3dSegment.o: Curve3dSegment.cpp
+	${CXX} $(CXXFLAGS) -c Curve3dSegment.cpp -o $(DIR)/Curve3dSegment.o
+
+$(DIR)/CurveAnalytic.o: CurveAnalytic.cpp  CurveAnalytic.h DEquation.h MeshLog.h MeshData.h
+	${CXX} $(CXXFLAGS) -c CurveAnalytic.cpp -o $(DIR)/CurveAnalytic.o
+
+$(DIR)/CurveBSpline.o: CurveBSpline.cpp
+	${CXX} $(CXXFLAGS) -c CurveBSpline.cpp -o $(DIR)/CurveBSpline.o
+
+$(DIR)/CurveCircle.o: CurveCircle.cpp
+	${CXX} $(CXXFLAGS) -c CurveCircle.cpp -o $(DIR)/CurveCircle.o
+
+$(DIR)/CurveParametric.o: CurveParametric.cpp
+	${CXX} $(CXXFLAGS) -c CurveParametric.cpp -o $(DIR)/CurveParametric.o
+
+$(DIR)/CurveSegment.o: CurveSegment.cpp
+	${CXX} $(CXXFLAGS) -c CurveSegment.cpp -o $(DIR)/CurveSegment.o
+
+$(DIR)/DEquation.o: DEquation.cpp
+	${CXX} $(CXXFLAGS) -c DEquation.cpp -o $(DIR)/DEquation.o
+
+$(DIR)/DHesjan.o: DHesjan.cpp
+	${CXX} $(CXXFLAGS) -c DHesjan.cpp -o $(DIR)/DHesjan.o
+
+$(DIR)/DLeastSquaresFitting.o: DLeastSquaresFitting.cpp  common.h DLeastSquaresFitting.h DRect.h DMatrix.h DataMatrix.h DVectorN.h DMatrixN.h DQuadric.h SurfacePlane.h
+	${CXX} $(CXXFLAGS) -c DLeastSquaresFitting.cpp -o $(DIR)/DLeastSquaresFitting.o
+
+$(DIR)/DLine.o: DLine.cpp
+	${CXX} $(CXXFLAGS) -c DLine.cpp -o $(DIR)/DLine.o
+
+$(DIR)/DMatrix.o: DMatrix.cpp
+	${CXX} $(CXXFLAGS) -c DMatrix.cpp -o $(DIR)/DMatrix.o
+
+$(DIR)/DMetric.o: DMetric.cpp
+	${CXX} $(CXXFLAGS) -c DMetric.cpp -o $(DIR)/DMetric.o
+
+$(DIR)/DMetric3d.o: DMetric3d.cpp
+	${CXX} $(CXXFLAGS) -c DMetric3d.cpp -o $(DIR)/DMetric3d.o
+
+$(DIR)/DPoint.o: DPoint.cpp
+	${CXX} $(CXXFLAGS) -c DPoint.cpp -o $(DIR)/DPoint.o
+
+$(DIR)/DQuad.o: DQuad.cpp
+	${CXX} $(CXXFLAGS) -c DQuad.cpp -o $(DIR)/DQuad.o
+
+$(DIR)/DQuadric.o: DQuadric.cpp
+	${CXX} $(CXXFLAGS) -c DQuadric.cpp -o $(DIR)/DQuadric.o
+
+$(DIR)/DRect.o: DRect.cpp
+	${CXX} $(CXXFLAGS) -c DRect.cpp -o $(DIR)/DRect.o
+
+$(DIR)/DSegment.o: DSegment.cpp
+	${CXX} $(CXXFLAGS) -c DSegment.cpp -o $(DIR)/DSegment.o
+
+$(DIR)/DTetrahedron.o: DTetrahedron.cpp
+	${CXX} $(CXXFLAGS) -c DTetrahedron.cpp -o $(DIR)/DTetrahedron.o
+
+$(DIR)/DTriangle.o: DTriangle.cpp
+	${CXX} $(CXXFLAGS) -c DTriangle.cpp -o $(DIR)/DTriangle.o
+
+$(DIR)/DVector.o: DVector.cpp
+	${CXX} $(CXXFLAGS) -c DVector.cpp -o $(DIR)/DVector.o
+
+$(DIR)/DataStatistics.o: DataStatistics.cpp
+	${CXX} $(CXXFLAGS) -c DataStatistics.cpp -o $(DIR)/DataStatistics.o
+
+$(DIR)/EPSFile.o: EPSFile.cpp
+	${CXX} $(CXXFLAGS) -c EPSFile.cpp -o $(DIR)/EPSFile.o
+
+$(DIR)/FrontEdge.o: FrontEdge.cpp
+	${CXX} $(CXXFLAGS) -c FrontEdge.cpp -o $(DIR)/FrontEdge.o
+
+$(DIR)/FrontFace.o: FrontFace.cpp
+	${CXX} $(CXXFLAGS) -c FrontFace.cpp -o $(DIR)/FrontFace.o
+
+$(DIR)/FrontLines.o: FrontLines.cpp
+	${CXX} $(CXXFLAGS) -c FrontLines.cpp -o $(DIR)/FrontLines.o
+
+$(DIR)/GeometricPredicates.o: GeometricPredicates.cpp
+	${CXX} $(CXXFLAGS) -c GeometricPredicates.cpp -o $(DIR)/GeometricPredicates.o
+
+$(DIR)/IteratorEdge2d.o: IteratorEdge2d.cpp
+	${CXX} $(CXXFLAGS) -c IteratorEdge2d.cpp -o $(DIR)/IteratorEdge2d.o
+
+$(DIR)/IteratorEdge3d.o: IteratorEdge3d.cpp
+	${CXX} $(CXXFLAGS) -c IteratorEdge3d.cpp -o $(DIR)/IteratorEdge3d.o
+
+$(DIR)/IteratorFace.o: IteratorFace.cpp
+	${CXX} $(CXXFLAGS) -c IteratorFace.cpp -o $(DIR)/IteratorFace.o
+
+$(DIR)/IteratorMesh2d.o: IteratorMesh2d.cpp
+	${CXX} $(CXXFLAGS) -c IteratorMesh2d.cpp -o $(DIR)/IteratorMesh2d.o
+
+$(DIR)/IteratorMesh3d.o: IteratorMesh3d.cpp
+	${CXX} $(CXXFLAGS) -c IteratorMesh3d.cpp -o $(DIR)/IteratorMesh3d.o
+
+$(DIR)/MeshArea.o: MeshArea.cpp
+	${CXX} $(CXXFLAGS) -c MeshArea.cpp -o $(DIR)/MeshArea.o
+
+$(DIR)/MeshBRep.o: MeshBRep.cpp  MeshBRep.h MeshData.h MeshContainer2d.h MeshContainer3d.h MeshPoint.h MeshEdge.h MeshEdgeCurve.h MeshPoint3d.h MeshTriangle.h MeshQuad.h MeshDomainSurface.h MeshDomainVolume.h MeshArea.h CurveAnalytic.h CurveCircle.h CurveBSpline.h SurfaceParametric.h SurfaceTranslated.h SurfacePlane.h SurfaceAnalytic.h SurfaceBSpline.h SurfaceMulti.h MeshEdge3d.h MeshDomainEdge3d.h ControlSpaceMatrixUniform.h ControlSpaceMesh.h ControlSpaceQuadTree.h ControlSpaceAnalytic.h ControlSpaceIdentity.h ControlSpace3dAnalytic.h ControlSpace3dMatrixUniform.h ControlSpace3dOctree.h DataPtrVector.h DataHashTable.h MeshBoundaryCondition.h MeshViewSet.h DLeastSquaresFitting.h
+	${CXX} $(CXXFLAGS) -c MeshBRep.cpp -o $(DIR)/MeshBRep.o
+
+$(DIR)/MeshBRepRSurf.o: MeshBRepRSurf.cpp  MeshBRepRSurf.h MeshData.h DPoint.h DataPtrVector.h DataHashTable.h MeshBoundaryCondition.h MeshViewSet.h
+	${CXX} $(CXXFLAGS) -c MeshBRepRSurf.cpp -o $(DIR)/MeshBRepRSurf.o
+
+$(DIR)/MeshBRepXML.o: MeshBRepXML.cpp  MeshBRepXML.h MeshData.h DPoint.h tinyxml.h
+	${CXX} $(CXXFLAGS) -c MeshBRepXML.cpp -o $(DIR)/MeshBRepXML.o
+
+$(DIR)/MeshBlock.o: MeshBlock.cpp
+	${CXX} $(CXXFLAGS) -c MeshBlock.cpp -o $(DIR)/MeshBlock.o
+
+$(DIR)/MeshContainer2d.o: MeshContainer2d.cpp
+	${CXX} $(CXXFLAGS) -c MeshContainer2d.cpp -o $(DIR)/MeshContainer2d.o
+
+$(DIR)/MeshContainer3d.o: MeshContainer3d.cpp
+	${CXX} $(CXXFLAGS) -c MeshContainer3d.cpp -o $(DIR)/MeshContainer3d.o
+
+$(DIR)/MeshData.o: MeshData.cpp
+	${CXX} $(CXXFLAGS) -c MeshData.cpp -o $(DIR)/MeshData.o
+
+$(DIR)/MeshDecompositionUTC.o: MeshDecompositionUTC.cpp
+	${CXX} $(CXXFLAGS) -c MeshDecompositionUTC.cpp -o $(DIR)/MeshDecompositionUTC.o
+
+$(DIR)/MeshDomainEdge3d.o: MeshDomainEdge3d.cpp
+	${CXX} $(CXXFLAGS) -c MeshDomainEdge3d.cpp -o $(DIR)/MeshDomainEdge3d.o
+
+$(DIR)/MeshDomainSurface.o: MeshDomainSurface.cpp
+	${CXX} $(CXXFLAGS) -c MeshDomainSurface.cpp -o $(DIR)/MeshDomainSurface.o
+
+$(DIR)/MeshDomainVolume.o: MeshDomainVolume.cpp
+	${CXX} $(CXXFLAGS) -c MeshDomainVolume.cpp -o $(DIR)/MeshDomainVolume.o
+
+$(DIR)/MeshEdge.o: MeshEdge.cpp
+	${CXX} $(CXXFLAGS) -c MeshEdge.cpp -o $(DIR)/MeshEdge.o
+
+$(DIR)/MeshEdge3d.o: MeshEdge3d.cpp
+	${CXX} $(CXXFLAGS) -c MeshEdge3d.cpp -o $(DIR)/MeshEdge3d.o
+
+$(DIR)/MeshEdgeCurve.o: MeshEdgeCurve.cpp
+	${CXX} $(CXXFLAGS) -c MeshEdgeCurve.cpp -o $(DIR)/MeshEdgeCurve.o
+
+$(DIR)/MeshElement.o: MeshElement.cpp
+	${CXX} $(CXXFLAGS) -c MeshElement.cpp -o $(DIR)/MeshElement.o
+
+$(DIR)/MeshFace.o: MeshFace.cpp
+	${CXX} $(CXXFLAGS) -c MeshFace.cpp -o $(DIR)/MeshFace.o
+
+$(DIR)/MeshGenerator1d.o: MeshGenerator1d.cpp  MeshGenerator1d.h MeshContainer2d.h MeshContainer3d.h MeshPoint.h MeshPoint3d.h MeshEdge.h MeshDomainEdge3d.h SurfaceParametric.h MeshDomainSurface.h MeshDomainVolume.h MeshArea.h ControlSpace.h ControlSpaceAdaptive.h
+	${CXX} $(CXXFLAGS) -c MeshGenerator1d.cpp -o $(DIR)/MeshGenerator1d.o
+
+$(DIR)/MeshGenerator2d.o: MeshGenerator2d.cpp
+	${CXX} $(CXXFLAGS) -c MeshGenerator2d.cpp -o $(DIR)/MeshGenerator2d.o
+
+$(DIR)/MeshGenerator2dQMorph.o: MeshGenerator2dQMorph.cpp
+	${CXX} $(CXXFLAGS) -c MeshGenerator2dQMorph.cpp -o $(DIR)/MeshGenerator2dQMorph.o
+
+$(DIR)/MeshGenerator2dQuad.o: MeshGenerator2dQuad.cpp
+	${CXX} $(CXXFLAGS) -c MeshGenerator2dQuad.cpp -o $(DIR)/MeshGenerator2dQuad.o
+
+$(DIR)/MeshGenerator3d.o: MeshGenerator3d.cpp  MeshGenerator3d.h MeshContainer3d.h MeshDomainVolume.h OctTree.h MeshTetrahedron.h MeshPoint.h MeshPoint3d.h MeshEdge3d.h MeshFace.h MeshTriangle3d.h MeshBlock.h DataVector.h DataList.h DataHeapVector.h MeshData.h MeshLog.h MeshBoundaryCondition.h ControlSpace3d.h ControlSpace3dOctree.h MeshGenerator2d.h MeshGenerator3dQuality.h MeshGenerator3dDelaunayBoundary.h MeshViewSet.h SurfacePlane.h IteratorEdge3d.h IteratorFace.h ControlSpaceAdaptive.h GeometricPredicates.h DTetrahedron.h DTriangle.h
+	${CXX} $(CXXFLAGS) -c MeshGenerator3d.cpp -o $(DIR)/MeshGenerator3d.o
+
+$(DIR)/MeshGenerator3dDelaunayBoundary.o: MeshGenerator3dDelaunayBoundary.cpp  MeshGenerator3dDelaunayBoundary.h MeshGenerator3d.h MeshContainer3d.h MeshDomainVolume.h OctTree.h MeshTetrahedron.h MeshPoint.h MeshPoint3d.h MeshEdge3d.h MeshFace.h MeshTriangle3d.h MeshBlock.h DataVector.h DataList.h DataHeapVector.h MeshData.h MeshLog.h MeshBoundaryCondition.h ControlSpace3d.h ControlSpace3dOctree.h MeshGenerator2d.h MeshGenerator3dQuality.h MeshViewSet.h SurfacePlane.h IteratorEdge3d.h IteratorFace.h ControlSpaceAdaptive.h GeometricPredicates.h DTetrahedron.h DTriangle.h DSegment.h
+	${CXX} $(CXXFLAGS) -c MeshGenerator3dDelaunayBoundary.cpp -o $(DIR)/MeshGenerator3dDelaunayBoundary.o
+
+$(DIR)/MeshGenerator3dDirectBoundary.o: MeshGenerator3dDirectBoundary.cpp  MeshGenerator3dDirectBoundary.h DPoint.h DTetrahedron.h MeshContainer3d.h MeshEdge3d.h MeshFace.h MeshTriangle3d.h MeshTetrahedron.h Metric3dContext.h ControlSpace3dAdaptive.h MeshDomainVolume.h MeshGenerator3d.h MeshViewSet.h DataHashTable.h FrontFace.h DataContainer.h
+	${CXX} $(CXXFLAGS) -c MeshGenerator3dDirectBoundary.cpp -o $(DIR)/MeshGenerator3dDirectBoundary.o
+
+$(DIR)/MeshGenerator3dQuality.o: MeshGenerator3dQuality.cpp
+	${CXX} $(CXXFLAGS) -c MeshGenerator3dQuality.cpp -o $(DIR)/MeshGenerator3dQuality.o
+
+$(DIR)/MeshGrain.o: MeshGrain.cpp  MeshGrain.h MeshViewSet.h DMetric3d.h DataMatrix.h SurfacePlane.h SurfaceBSpline.h SurfaceMulti.h SurfaceCorrected.h DataHashTable.h DLeastSquaresFitting.h DLine.h CurveSegment.h CurveBSpline.h DSegment.h
+	${CXX} $(CXXFLAGS) -c MeshGrain.cpp -o $(DIR)/MeshGrain.o
+
+$(DIR)/MeshLog.o: MeshLog.cpp
+	${CXX} $(CXXFLAGS) -c MeshLog.cpp -o $(DIR)/MeshLog.o
+
+$(DIR)/MeshModel.o: MeshModel.cpp
+	${CXX} $(CXXFLAGS) -c MeshModel.cpp -o $(DIR)/MeshModel.o
+
+$(DIR)/MeshPoint.o: MeshPoint.cpp
+	${CXX} $(CXXFLAGS) -c MeshPoint.cpp -o $(DIR)/MeshPoint.o
+
+$(DIR)/MeshPoint3d.o: MeshPoint3d.cpp
+	${CXX} $(CXXFLAGS) -c MeshPoint3d.cpp -o $(DIR)/MeshPoint3d.o
+
+$(DIR)/MeshQuad.o: MeshQuad.cpp
+	${CXX} $(CXXFLAGS) -c MeshQuad.cpp -o $(DIR)/MeshQuad.o
+
+$(DIR)/MeshQuad3d.o: MeshQuad3d.cpp  MeshQuad3d.h MeshEdge3d.h
+	${CXX} $(CXXFLAGS) -c MeshQuad3d.cpp -o $(DIR)/MeshQuad3d.o
+
+$(DIR)/MeshSpecialRoutinesDAT.o: MeshSpecialRoutinesDAT.cpp
+	${CXX} $(CXXFLAGS) -c MeshSpecialRoutinesDAT.cpp -o $(DIR)/MeshSpecialRoutinesDAT.o
+
+$(DIR)/MeshTetrahedron.o: MeshTetrahedron.cpp
+	${CXX} $(CXXFLAGS) -c MeshTetrahedron.cpp -o $(DIR)/MeshTetrahedron.o
+
+$(DIR)/MeshTriangle.o: MeshTriangle.cpp
+	${CXX} $(CXXFLAGS) -c MeshTriangle.cpp -o $(DIR)/MeshTriangle.o
+
+$(DIR)/MeshTriangle3d.o: MeshTriangle3d.cpp  MeshTriangle3d.h MeshEdge3d.h
+	${CXX} $(CXXFLAGS) -c MeshTriangle3d.cpp -o $(DIR)/MeshTriangle3d.o
+
+$(DIR)/MeshViewSet.o: MeshViewSet.cpp
+	${CXX} $(CXXFLAGS) -c MeshViewSet.cpp -o $(DIR)/MeshViewSet.o
+
+$(DIR)/Metric3dContext.o: Metric3dContext.cpp
+	${CXX} $(CXXFLAGS) -c Metric3dContext.cpp -o $(DIR)/Metric3dContext.o
+
+$(DIR)/MetricContext.o: MetricContext.cpp
+	${CXX} $(CXXFLAGS) -c MetricContext.cpp -o $(DIR)/MetricContext.o
+
+$(DIR)/OctTree.o: OctTree.cpp
+	${CXX} $(CXXFLAGS) -c OctTree.cpp -o $(DIR)/OctTree.o
+
+$(DIR)/Quad12.o: Quad12.cpp  Quad12.h MeshQuad.h MeshEdge.h MeshPoint.h nrutil.h
+	${CXX} $(CXXFLAGS) -c Quad12.cpp -o $(DIR)/Quad12.o
+
+$(DIR)/QuadTree.o: QuadTree.cpp  QuadTree.h MeshData.h DRect.h
+	${CXX} $(CXXFLAGS) -c QuadTree.cpp -o $(DIR)/QuadTree.o
+
+$(DIR)/StatisticCounter.o: StatisticCounter.cpp  StatisticCounter.h common.h
+	${CXX} $(CXXFLAGS) -c StatisticCounter.cpp -o $(DIR)/StatisticCounter.o
+
+$(DIR)/SurfaceAnalytic.o: SurfaceAnalytic.cpp  SurfaceAnalytic.h MeshLog.h
+	${CXX} $(CXXFLAGS) -c SurfaceAnalytic.cpp -o $(DIR)/SurfaceAnalytic.o
+
+$(DIR)/SurfaceBSpline.o: SurfaceBSpline.cpp  SurfaceBSpline.h DataVector.h DataMatrix.h DLeastSquaresFitting.h DPoint.h DVector.h MeshViewSet.h DMatrix.h DQuadric.h CurveBSpline.h DEquation.h SurfaceMulti.h MeshGrain.h
+	${CXX} $(CXXFLAGS) -c SurfaceBSpline.cpp -o $(DIR)/SurfaceBSpline.o
+
+$(DIR)/SurfaceCorrected.o: SurfaceCorrected.cpp  SurfaceCorrected.h DEquation.h
+	${CXX} $(CXXFLAGS) -c SurfaceCorrected.cpp -o $(DIR)/SurfaceCorrected.o
+
+$(DIR)/SurfaceMulti.o: SurfaceMulti.cpp  SurfaceMulti.h SurfacePlane.h
+	${CXX} $(CXXFLAGS) -c SurfaceMulti.cpp -o $(DIR)/SurfaceMulti.o
+
+$(DIR)/SurfaceParametric.o: SurfaceParametric.cpp
+	${CXX} $(CXXFLAGS) -c SurfaceParametric.cpp -o $(DIR)/SurfaceParametric.o
+
+$(DIR)/SurfacePlane.o: SurfacePlane.cpp
+	${CXX} $(CXXFLAGS) -c SurfacePlane.cpp -o $(DIR)/SurfacePlane.o
+
+$(DIR)/nrutil.o: nrutil.cpp  nrutil.h common.h
+	${CXX} $(CXXFLAGS) -c nrutil.cpp -o $(DIR)/nrutil.o
+
+$(DIR)/tinystr.o: tinystr.cpp
+	${CXX} $(CXXFLAGS) -c tinystr.cpp -o $(DIR)/tinystr.o
+
+$(DIR)/tinyxml.o: tinyxml.cpp
+	${CXX} $(CXXFLAGS) -c tinyxml.cpp -o $(DIR)/tinyxml.o
+
+$(DIR)/tinyxmlerror.o: tinyxmlerror.cpp
+	${CXX} $(CXXFLAGS) -c tinyxmlerror.cpp -o $(DIR)/tinyxmlerror.o
+
+$(DIR)/tinyxmlparser.o: tinyxmlparser.cpp
+	${CXX} $(CXXFLAGS) -c tinyxmlparser.cpp -o $(DIR)/tinyxmlparser.o
+

@@ -1,0 +1,774 @@
+// MeshDomainVolume.cpp: implementation of the MeshDomainVolume class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "MeshDomainVolume.h"
+#include "MeshDomainSurface.h"
+
+#include "MeshEdge.h"
+#include "MeshFace.h"
+#include "MeshPoint.h"
+#include "MeshPoint3d.h"
+#include "MeshEdge3d.h"
+#include "MeshContainer2d.h"
+#include "MeshContainer3d.h"
+#include "ParametricSurface.h"
+#include "MeshTriangle3d.h"
+#include "MeshQuad3d.h"
+#include "MeshGenerator2d.h"
+#include "MeshGenerator3d.h"
+#include "MeshGenerator3dQuality.h"
+#include "MeshBoundaryCondition.h"
+#include "ControlSpace3d.h"
+#include "ControlSpace.h"
+#include "ControlSpaceAdaptive.h"
+#include "ControlSpace3dMatrixUniform.h"
+#include "ControlSpace3dOctree.h"
+#include "OctTree.h"
+#include "DataHashTable.h"
+
+#include "MeshViewSet.h"
+
+MeshDomainVolume::MeshDomainVolume(DataVector<MeshFace*> &new_faces, 
+						DataVector<MeshPoint3d*> &new_points, 
+						DataVector<bool> &orientation)
+	: MeshBlock(new_faces.count(), new_points.count()), m_mesh(NULL), 
+		m_user_space(NULL), m_control_space(NULL)
+{
+	if(face_count > 0){
+		faces = new MeshFace*[face_count];
+		for(int i = 0; i < face_count; i++){
+			faces[i] = new_faces[i]; 
+			faces[i]->setBlockLink(this, 
+				orientation[i] ? MeshFace::BLOCK_UP : MeshFace::BLOCK_DOWN); 
+		}
+	}
+	if(point_count > 0){
+		points = new MeshPoint3d*[point_count];
+		for(int i = 0; i < point_count; i++)
+			points[i] = new_points[i];
+	}
+}
+
+MeshDomainVolume::MeshDomainVolume(MeshContainer3d* boundary_mesh, MeshContainer3d* mesh)
+	: MeshBlock(0, 0), m_mesh(mesh), m_user_space(NULL), m_control_space(NULL)
+{
+}
+
+MeshDomainVolume::~MeshDomainVolume()
+{
+	if(m_mesh) delete m_mesh;
+	if(m_user_space && (m_user_space->decRef() == 0)) delete m_user_space;
+	if(m_control_space && (m_control_space->decRef() == 0)) delete m_control_space;
+}
+
+/// clear some data for faster all-delete process
+void MeshDomainVolume::preDeleteAll()
+{
+	// nothing here ...
+}
+
+DBox MeshDomainVolume::getBoundingBox() const
+{
+	if(m_mesh) 
+		return m_mesh->getBoundingBox();
+	else{
+		DBox box;
+		for(int i = 0; i < face_count; i++){
+			box.addBox(faces[i]->getBoundingBox());
+		}
+		return box;
+	}
+}
+
+void MeshDomainVolume::clearDiscretization()
+{
+	if(m_mesh){
+		delete m_mesh;
+		m_mesh = NULL;
+	}
+}
+
+ControlSpace3d* MeshDomainVolume::createInitialControlSpace()
+{
+	if(m_control_space && m_control_space->decRef()){
+		delete m_control_space;
+	}
+
+	if(m_user_space && !m_user_space->isAdaptive()){
+		return m_control_space = m_user_space->incRef();
+	}
+
+	const DBox box = getBoundingBox();
+	ControlSpace3dAdaptive* space = NULL;
+
+	switch(ControlSpace3d::param_control_type){
+	case MeshData::CONTROL_UNIFORM:
+		space = new ControlSpace3dMatrixUniform(box, 
+			ControlSpace3dMatrixUniform::param_uniform_nx, 
+			ControlSpace3dMatrixUniform::param_uniform_nx, 
+			ControlSpace3dMatrixUniform::param_uniform_nx);
+		break;
+	case MeshData::CONTROL_OCTREE_3D:
+		space = new ControlSpace3dOctree(box);
+		break;
+	default:
+		TERROR("Unknown CONTROL_TYPE!");
+		break;
+	}
+	assert(space);
+
+	space->setMaxMetric();
+
+	if(m_user_space){
+		space->applyAsMinimum(m_user_space);
+		space->smoothen();
+	}
+
+	return m_control_space = space;
+}
+
+int MeshDomainVolume::prepareBoundaryMesh()
+{
+	int total_faces = 0;
+	int max_total_points = 0;
+	// Assure that all surface-meshes exists ...
+	for(int i = 0; i < face_count; i++){
+		MeshDomainSurface* face = (MeshDomainSurface*)faces[i];
+		assert(face->getType() == FACE_DOMAIN);
+		if(!face->prepareMesh3D()){
+			TERROR_S("Cannot prepare boundary mesh3d for domain face", i);
+			return 0;
+		}
+		total_faces += face->getMesh3dFaces()->count();
+		max_total_points += face->getMesh3dPoints()->count();
+	}
+
+	m_boundary_mesh = new MeshContainer3d(total_faces);
+
+	DataVector<ControlNode3d> control3d_nodes(max_total_points);
+
+	START_CLOCK("3D ControlSpace - calculate metric from boundary");
+
+	double stretch_max_ratio = tmin(
+		ControlSpaceAdaptive::param_contour_stretch_max_ratio,
+		ControlSpaceAdaptive::param_stretch_max_ratio);
+
+	// retrieve control metric from faces
+	for(int i = 0; i < face_count; i++){
+		MeshContainer2d* face_mesh = ((MeshDomainSurface*)faces[i])->getMesh();
+		ControlSpace* control = face_mesh->getControlSpace();
+		CParametricSurface* surface = face_mesh->getSurface();
+		assert(control);
+		int pct = face_mesh->getPointsCount();
+		for(int j = 0; j < pct; j++){
+			const DPoint2d dpt = face_mesh->getPointAt(j)->getCoordinates();
+			ControlDataMatrix cdm = control->getMetricAtPoint(dpt);
+			DMatrix2d e;
+			double d[3];
+			bool success = cdm.eigensystem(e, d);
+			assert(success); if(!success) continue;
+			// ---> no, instead should be e.column(0) x 
+			const DVector3d pu = surface->getDerivativeParam(DEquation::deriv_du, dpt);
+			const DVector3d pv = surface->getDerivativeParam(DEquation::deriv_dv, dpt);
+			const DVector2d pt_u = e.column(0);
+			const DVector2d pt_v = e.column(1);
+			const DVector3d e0 = DVector3d(pt_u.x * pu.x + pt_u.y * pv.x,
+				pt_u.x * pu.y + pt_u.y * pv.y, pt_u.x * pu.z + pt_u.y * pv.z).normalized();
+			const DVector3d e1 = DVector3d(pt_v.x * pu.x + pt_v.y * pv.x,
+				pt_v.x * pu.y + pt_v.y * pv.y, pt_v.x * pu.z + pt_v.y * pv.z);
+			// after surface transformation -> e0 and e1 are not necessarily orthogonal
+			const DVector3d e2 = e0.crossProduct(e1).normalized();
+			const DVector3d e1x = e2.crossProduct(e0).normalized(); 
+			// rescale d[1] ??????
+			d[2] = stretch_max_ratio * tmin(d[0],d[1]);
+			ControlNode3d node(surface->getPointParam(dpt), ControlDataMatrix3d(e0, e1x, e2, d));
+			control3d_nodes.add(node);
+		}
+	}
+
+	STOP_CLOCK("3D ControlSpace - calculate metric from boundary");
+
+	DataSimpleList<MeshPoint3d*> marked_points;
+
+	int i_face = 0;
+	int i_point = 0;
+
+	for(int i = 0; i < face_count; i++){
+		MeshDomainSurface* dface = (MeshDomainSurface*)faces[i];
+		MeshContainer2d* face_mesh = dface->getMesh();
+		CParametricSurface* face_surface = dface->getBaseSurface();
+		MeshBoundaryCondition* boundary_condition = (MeshBoundaryCondition*)dface->getPtrTag(TagExtended::TAG_BOUNDARY_COND);
+
+		int mfct = face_mesh->getElementsCount();
+		DataVector<MeshPoint3d*> point2d_links(face_mesh->getPointsCount(), NULL); // 3D points created for this surface mesh
+		for(int j = 0; j < mfct; j++){
+			MeshElement* element = face_mesh->getElementAt(j);
+			assert(element);
+			int ect = element->getEdgeCount();
+			MeshPoint3d* temp_points[4];
+			MeshPoint3d* temp_bound_points[4];
+			for(int k = 0; k < ect; k++){
+				MeshPoint* point = element->getPoint(k);
+				MeshPoint3d* point3d = (MeshPoint3d*)point->getPtrTag(TagExtended::TAG_MP_2D_3D);
+				if(point3d){
+					temp_bound_points[k] = point3d;
+					temp_points[k] = (MeshPoint3d*)point3d->getPtrTag(TagExtended::TAG_MDV);
+					if(!temp_points[k]){
+						temp_points[k] = new MeshPoint3d(*point3d);;
+						point3d->setPtrTag(TagExtended::TAG_MDV, temp_points[k]);
+						marked_points.insert(point3d);
+						temp_points[k]->setBorder();
+						m_boundary_mesh->addMeshPoint(temp_points[k]);
+//						mesh_points[i_point] = temp_points[k];
+						++i_point;
+					}
+				}else{
+					temp_bound_points[k] = NULL;
+					temp_points[k] = point2d_links[point->getIndex()];
+					if(!temp_points[k]){
+						point2d_links[point->getIndex()] = temp_points[k] = 
+							new MeshPoint3d(face_surface->getPointParam(point->getCoordinates()));
+						temp_points[k]->setBorder();
+						m_boundary_mesh->addMeshPoint(temp_points[k]);
+//						mesh_points[i_point] = temp_points[k];
+						++i_point;
+					}
+				}
+			}
+			MeshVolume* volume = (MeshVolume*)dface->getBlock(0);
+			if(!volume) volume = (MeshVolume*)dface->getBlock(1);
+			assert(volume != NULL);
+			MeshFace* mface = NULL;
+			switch(ect){
+			case 3:
+				if(volume->validFaceOrientation(dface))
+					mface = new MeshTriangle3d(temp_points[0], temp_points[1], temp_points[2]); 
+				else mface = new MeshTriangle3d(temp_points[2], temp_points[1], temp_points[0]); 
+				break;
+			case 4:
+				if(volume->validFaceOrientation(dface))
+					mface = new MeshQuad3d(temp_points[0], temp_points[1], temp_points[2], temp_points[3]); 
+				else mface = new MeshQuad3d(temp_points[3], temp_points[2], temp_points[1], temp_points[0]); 
+				break;
+			default:
+				TWARNING("MeshDomainVolume::createBoundaryMesh - Strange element");
+			}
+			//mesh_faces[i_face] = face;
+			//mesh_faces[i_face]->setIntTag(TagExtended::TAG_MDV, element->getAreaID());
+			if(boundary_condition){
+				boundary_condition->incRefCount();
+				mface->setPtrTag(TagExtended::TAG_BOUNDARY_COND, boundary_condition);
+			}
+			for(int k = 0; k < ect; k++){
+				int k_next = (k+1)%ect;
+				if(temp_bound_points[k] && temp_bound_points[k_next]){	// boundary condition only for boundary edges
+					MeshEdge3d* bound_edge = temp_bound_points[k]->getEdgeToPoint(temp_bound_points[k_next]);
+					if(!bound_edge) continue;
+					MeshBoundaryCondition* condition = 
+						(MeshBoundaryCondition*)bound_edge->getPtrTag(TagExtended::TAG_BOUNDARY_COND);
+					if(!condition) continue;
+					MeshEdge3d *temp_edge = temp_points[k]->getEdgeToPoint(temp_points[k_next]);
+					assert(temp_edge);
+					if(temp_edge->availableTag(TagExtended::TAG_BOUNDARY_COND)) continue;	// already set
+					temp_edge->setPtrTag(TagExtended::TAG_BOUNDARY_COND, condition);
+				}
+			}
+			MeshVolume* dvol0 = (MeshVolume*)dface->getBlock(0);
+			MeshVolume* dvol1 = (MeshVolume*)dface->getBlock(1);
+			MeshVolume* local_vol0 = dvol0 ? volumePairs.getValue(dvol0, NULL) : NULL;
+			MeshVolume* local_vol1 = dvol1 ? volumePairs.getValue(dvol1, NULL) : NULL;
+			bool valid_orient = volume->validFaceOrientation(dface);
+			if(local_vol0){
+				int ind = volumeIndex.getValue(local_vol0, -1);
+				assert(ind >= 0);
+				new_mesh_faces[ind].add(mface);
+				new_mesh_faces_orientation[ind].add(valid_orient);
+			}
+			if(local_vol1){
+				int ind = volumeIndex.getValue(local_vol1, -1);
+				assert(ind >= 0);
+				new_mesh_faces[ind].add(mface);
+				new_mesh_faces_orientation[ind].add(!valid_orient);
+			}
+			mface->setBorder();
+			++i_face;
+		}
+	}
+
+	for(int i = 0; i < m_volumes.count(); i++){
+		MeshVolume* local_volume = volumePairs.getValue(m_volumes[i], NULL);
+		assert(local_volume);
+		int ind = volumeIndex.getValue(local_volume, -1);
+		assert(ind >= 0);
+		local_volume->setFaces(new_mesh_faces[ind], new_mesh_faces_orientation[ind]);
+	}
+
+	//SHOW_MESH("boundary faces", m_boundary_mesh->getViewSet());
+
+	TLOG_S("Domain-volume faces", i_face);
+
+	while(marked_points.notEmpty())
+		marked_points.removeFirst()->removeTag(TagExtended::TAG_MDV);
+
+	START_CLOCK("MG3d - create initial ACS");
+
+	if(!m_control_space) createInitialControlSpace();
+
+	if(m_control_space->isAdaptive()){
+		for(int i = 0; i < control3d_nodes.count(); i++){
+			const ControlNode3d& node = control3d_nodes.get(i);
+			((ControlSpace3dAdaptive*)m_control_space)->setMinControl(node.coord, node.control_data);
+		}
+		//else space->addSimpleBoundaryControlDataIsotropic(m_boundary_mesh);
+		((ControlSpace3dAdaptive*)m_control_space)->smoothen();
+	}
+
+	m_boundary_mesh->setControlSpace(m_control_space);
+
+	STOP_CLOCK("MG3d - create initial ACS");
+
+	if(m_control_space->isAdaptive()){
+		((ControlSpace3dAdaptive*)m_control_space)->markInsideNodes(m_boundary_mesh);
+	}
+
+	return i_face;
+}
+
+
+int MeshDomainVolume::createTetrahedralMesh()
+{
+	if(m_boundary_mesh == NULL) return 0;
+	Metric3dContext mc(m_boundary_mesh->getControlSpace());
+	// create mesh of boundary faces only
+	int boundary_count = discretizeUsingBoundary(mc);
+	if(boundary_count < 1){
+		TERROR("ERROR TETRAHEDRALIZING BOUNDARY");
+		return 0;
+	}
+//	m_last_quality_mode = MeshData::QVIEW_NONE;
+
+	// create inner mesh
+	TLOG("Gen3d. Inserting inner nodes...");
+	int inner_count = MeshGenerator3d::addInnerNodes(mc, m_mesh);
+
+	ostringstream text;
+	text << "Total node count " << (boundary_count+inner_count);
+	text << " (" << boundary_count << "b+" << inner_count << "i)";
+	TLOG(text.str());
+
+	return boundary_count+inner_count;
+}
+
+
+int MeshDomainVolume::discretizeUsingBoundary(Metric3dContext& mc)
+{
+	if(m_boundary_mesh == NULL) return 0;
+
+//	m_last_quality_mode = MeshData::QVIEW_NONE;
+
+//	ControlSpace* control = MeshGenerator2d::createUniformControlSpace(m_surface, boundary_mesh);
+//	ControlSpace* control = m_boundary_mesh->getControlSpace()->clone();
+
+	TLOG("Gen3d. Triangulating boundary...");
+	START_CLOCK("MG3d::triangulateBoundary");
+
+	if(m_mesh) delete m_mesh;	
+	m_mesh = MeshGenerator3d::createInitialMesh(m_boundary_mesh);
+	if(m_mesh == NULL) return 0;
+//	SHOW_STEP_BREAKABLE(0, "* Triangulacja Delaunay'a - pocz¹tkowa siatka.",true);
+
+//	m_mesh->setControlSpace(control);
+	int points_count = m_boundary_mesh->getPointsCount();
+	srand(0);
+
+	bool refine_mesh = (MeshGenerator3d::param_refined_ICD_ratio > 0.0);
+	int refined_count = 0;
+
+	OctTreeMeshPoints octree_points(m_boundary_mesh->getBoundingBox());
+	if(refine_mesh){
+		for(int i = 0; i < points_count; i++)
+			octree_points.insertMeshPointLink(m_boundary_mesh->getPointAt(i));
+	}
+
+//	DataVector<MeshPoint3d*> hard_points(100);
+	// * Dodawanie nowych punktów do triangulacji
+	for(int i = 0; i < points_count; i++){
+		// Select one of points in random
+		int j = i + rand() % (points_count - i);
+		if(j != i) m_boundary_mesh->switchMeshPoints(i, j);
+
+		// Utwórz nowy punkt na wzór podanego
+		MeshPoint3d *boundary_point = m_boundary_mesh->getPointAt(i);
+		MeshPoint3d *point = new MeshPoint3d(*boundary_point);
+		//point->setID(i);
+
+/*
+		if(i == 4){
+			for(int k = 0; k < m_mesh->getBlocksCount(); k++){
+				MeshViewSet *set = new MeshViewSet;
+				set->addPoint(point, 4);
+				for(int m = 0; m < m_mesh->getBlocksCount(); m++){
+					MeshBlock* block = m_mesh->getBlockAt(m);
+					set->addEmptyBlockWithEdges(block, 0);
+					if(m == k){
+						for(int j = 0; j < block->getFaceCount(); j++){
+							MeshFace* face = block->getFace(j);
+							set->addFace(face, face->isBorder() ? 3 : 2, 0.9);
+						}
+						TLOG_S("Contains point", ((MeshTetrahedron*)block)->isPointInside(point->getCoordinates()));
+					}
+				}
+				SHOW_MESH("mesh check", set);
+			}
+		}
+*/
+
+		// Retriangulacja
+		mc.countMetricAtPoint(point->getCoordinates());
+		if(MeshGenerator3d::addPointToTriangulation(mc, m_mesh, point)){
+			// mark point as boundary
+			point->setPtrTag(TagExtended::TAG_BOUNDARY_POINT, boundary_point); 
+			// tag == index of reference mesh point for boundary point
+			boundary_point->setPtrTag(TagExtended::TAG_BOUNDARY_POINT, point);
+			if(refine_mesh){
+				octree_points.removeMeshPointLink(boundary_point);
+				// check tetrahedra around inserted point and insert additional "refinement" nodes if necessary
+				// judge with "geometric quality in metric" + not-too-close
+//				refined_count += MeshGenerator3d::refineMeshForBoundaryTriangulation(mc, 
+//					m_mesh, point, m_boundary_mesh, i+1);
+//				refined_count += MeshGenerator3d::refineMeshForBoundaryTriangulationByEdges(mc, 
+//					m_mesh, point, octree_points);
+				refined_count += MeshGenerator3d::refineMeshForBoundaryTriangulation(mc, 
+					m_mesh, point, octree_points);
+			}
+		}else{
+//			hard_points.add(point);
+			delete point;
+			delete m_mesh; m_mesh = NULL;
+			return false;
+		}
+	}
+/*
+	if(hard_points.count() > 0)
+		TLOG_S("Gen3d. Hard points count", hard_points.count());
+	for(int i = 0; i < hard_points.count(); i++){
+		mc.countMetricAtPoint(hard_points[i]->getCoordinates());
+		if(!MeshGenerator3d::addPointToTriangulation(mc, m_mesh, hard_points[i])){
+			delete m_mesh; m_mesh = NULL;
+			return false;
+		}
+	}
+*/
+	STOP_CLOCK("MG3d::triangulateBoundary");
+
+	assert(m_mesh->isValid());
+
+	if(refine_mesh){
+		TLOG_S("boundary points", points_count);
+		MESHLOGSTAT << "NP-boundary\t" << points_count << endl;
+		TLOG_S("refined points", refined_count);
+		MESHLOGSTAT << "NP-refined\t" << refined_count << endl;
+	}
+
+	TLOG("Gen3d. Constraining...");
+	START_CLOCK("MG3d::constrainToBoundary");
+	bool success = MeshGenerator3d::constrainToBorder(mc, m_boundary_mesh, m_mesh);
+	if(success) MeshGenerator3dQuality::smoothenSwapComplete(mc, m_mesh);
+	STOP_CLOCK("MG3d::constrainToBoundary");
+
+	if(!success){
+//		SHOW_STEP(0, "* B³¹d odzyskiwania brzegu.");
+		delete m_mesh; 
+		m_mesh = NULL;
+		return 0;
+	}
+
+	points_count = m_mesh->getPointsCount();
+//	LOG("\t** total points = %d\n\n", points_count);
+
+//	SHOW_STEP(0, "* Triangulacja zakoñczona pomyœlnie.");
+	// Koniec triangulacji
+
+	return points_count;
+}
+
+void MeshDomainVolume::storeSurfaceMeshTxt(const string &fname, int idx) const
+{
+	if(m_control_space && m_control_space->getType() == MeshData::CONTROL_OCTREE_3D){
+		ostringstream fname_cs;
+		fname_cs << fname << '-' << idx << "-cs.txt";
+		((ControlSpace3dOctree*)m_control_space)->storeTXT(fname_cs.str().c_str());
+	}
+
+	ostringstream fname1,fname2,fname3;
+	fname1 << fname << '-' << idx << "-p.txt";
+	fname2 << fname << '-' << idx << "-i.txt";
+	fname3 << fname << '-' << idx << "-e.txt";
+	ofstream file1(fname1.str().c_str());
+	ofstream file2(fname2.str().c_str());
+	ofstream file3(fname3.str().c_str());
+
+	if(!m_boundary_mesh){
+		file1 << "empty mesh" << endl;
+		file2 << "empty mesh" << endl;
+		file3 << "empty mesh" << endl;
+	}else{
+		// POINTS
+		int pct = m_boundary_mesh->getPointsCount();
+		file1 << pct << endl;
+		for(int i = 0; i < pct; i++){
+			DPoint3d pt = m_boundary_mesh->getPointAt(i)->getCoordinates();
+			file1 << i << "\t" << pt.x << "\t" << pt.y << "\t" << pt.z << endl;
+		}
+		// ELEMENTS
+		int k = 0;
+		file2 << face_count << endl;
+		for(int j = 0; j < face_count; j++){
+			int ect = faces[j]->getEdgeCount();
+			file2 << k++ << '\t' << ect;
+			for(int l = 0; l < ect; l++)
+				file2 << '\t' << faces[j]->getPoint(l)->getIndex();
+			file2 << endl;
+		}
+		// EDGES
+		DataVector<MeshEdge3d*> all_edges(12*pct);
+		for(IteratorEdge3d it = m_boundary_mesh->getFirstEdge3d(); it.isValid(); it.nextEdge()){
+			all_edges.add(it.getEdge());
+		}
+		file3 << all_edges.count() << endl;
+		for(int i = 0; i < all_edges.count(); i++){
+			file3 << i;
+			file3 << '\t' << all_edges[i]->getMeshPoint(0)->getIndex();
+			file3 << '\t' << all_edges[i]->getMeshPoint(1)->getIndex();
+			file3 << endl;
+		}
+	}
+}
+
+void MeshDomainVolume::setMesh(MeshContainer3d *mesh)
+{
+	if(m_mesh) delete m_mesh;
+	m_mesh = mesh;
+}
+
+void MeshDomainVolume::setBoundaryMesh(MeshContainer3d *boundary_mesh)
+{
+	if(m_boundary_mesh) delete m_boundary_mesh;
+	m_boundary_mesh = boundary_mesh;
+}
+
+void MeshDomainVolume::clearControlSpace()
+{
+	if(m_control_space && m_control_space->decRef()) delete m_control_space;
+	m_control_space = NULL;
+}
+
+bool MeshDomainVolume::smoothen(int steps, int method) THROWS_EXCEPTION
+{
+	if(!m_mesh) return false;
+
+	Metric3dContext mc(m_mesh->getControlSpace());
+
+	bool result = MeshGenerator3dQuality::smoothen(mc, m_mesh, steps, method);
+
+	EXCEPTION_ASSERT_RET(m_mesh->isValid(), MeshingException("MDV:smoothen"), false);
+
+	return result;
+}
+
+void MeshDomainVolume::storeAmiraMesh(const string & /* fname */, int /* idx */) const
+{
+/* 
+	// TODO need update for multi-block volumes
+
+	if(m_boundary_mesh){
+		ostringstream fstr_name;
+		fstr_name << fname << "-surface-" << idx << ".amiramesh";
+		ofstream file(fstr_name.str().c_str());
+
+		file << "# AmiraMesh ASCII 1.0\n\n";
+		int pct = m_boundary_mesh->getPointsCount();
+		file << "define Nodes " << pct << endl;
+		int bct = m_boundary_mesh->getBlocksCount();
+		int tri_count = 0;
+		int quad_count = 0;
+		for(int i = 0; i < bct; i++){
+			MeshBlock* block = m_boundary_mesh->getBlockAt(i);
+			tri_count += block->getFaceCount(3);
+			quad_count += block->getFaceCount(4);
+		}
+		if(tri_count > 0)
+			file << "define Triangles " << tri_count << endl;
+		if(quad_count > 0)
+			file << "define Quads " << quad_count << endl;
+
+		file << endl << "Nodes { float[3] Coordinates } = @1" << endl;
+		if(tri_count > 0)
+			file << "Triangles { int[3] Nodes } = @2" << endl;
+		if(quad_count > 0)
+			file << "Quads { int[4] Nodes } = @3" << endl;
+
+		file << endl << "@1" << endl;
+		for(int i = 0; i < pct; i++){
+			const DPoint3d pt = m_boundary_mesh->getPointAt(i)->getCoordinates();
+			file << pt.x << "\t" << pt.y << "\t" << pt.z << endl;
+		}
+		if(tri_count > 0){
+			file << endl << "@2" << endl;
+			for(int i = 0; i < bct; i++){
+				MeshBlock* block = m_boundary_mesh->getBlockAt(i);
+				int fct = block->getFaceCount();
+				for(int j = 0; j < fct; j++){
+					MeshFace* face = block->getFace(j);
+					if(face->getBlock(0) == block ||
+						(face->getBlock(0) == NULL && face->getBlock(1) == block)){
+						int ect = face->getEdgeCount();
+						if(ect == 3)
+							file << (1+face->getPoint(0)->getIndex()) <<
+								'\t' << (1+face->getPoint(1)->getIndex()) <<
+								'\t' << (1+face->getPoint(2)->getIndex()) << endl;
+					}
+				}
+			}
+		}
+		if(quad_count > 0){
+			file << endl << "@3" << endl;
+			for(int i = 0; i < bct; i++){
+				MeshBlock* block = m_boundary_mesh->getBlockAt(i);
+				int fct = block->getFaceCount();
+				for(int j = 0; j < fct; j++){
+					MeshFace* face = block->getFace(j);
+					if(face->getBlock(0) == block ||
+						(face->getBlock(0) == NULL && face->getBlock(1) == block)){
+						int ect = face->getEdgeCount();
+						if(ect == 4)
+							file << (1+face->getPoint(0)->getIndex()) <<
+								'\t' << (1+face->getPoint(1)->getIndex()) <<
+								'\t' << (1+face->getPoint(2)->getIndex()) <<
+								'\t' << (1+face->getPoint(3)->getIndex()) << endl;
+					}
+				}
+			}
+		}
+	}
+	if(m_boundary_mesh){
+		ostringstream fstr_name;
+		fstr_name << fname << "-surface-" << idx << ".stl";
+		ofstream file(fstr_name.str().c_str());
+
+		file << "solid\n";
+		int bct = m_boundary_mesh->getBlocksCount();
+		for(int i = 0; i < bct; i++){
+			MeshBlock* block = m_boundary_mesh->getBlockAt(i);
+			int fct = block->getFaceCount();
+			for(int j = 0; j < fct; j++){
+				MeshFace* face = block->getFace(j);
+				if(face->getBlock(0) == block ||
+					(face->getBlock(0) == NULL && face->getBlock(1) == block)){
+					int ect = face->getEdgeCount();
+					const DVector3d nv = face->getNormalVector();
+					file << "  facet normal " << nv.x << " " << nv.y << " " << nv.z << endl;
+					file << "    outer loop\n";
+					for(int k = 0; k < ect; k++){
+						const DPoint3d pt = face->getPoint(k)->getCoordinates();
+						file << "      vertex " << pt.x << " " << pt.y << " " << pt.z << endl;
+					}
+					file << "    endloop\n";
+					file << "  endfacet\n";
+				}
+			}
+		}
+	}
+	if(m_mesh){
+		ostringstream fstr_name;
+		fstr_name << fname << "-volume-" << idx << ".amiramesh";
+		ofstream file(fstr_name.str().c_str());
+
+		file << "# AmiraMesh ASCII 1.0\n\n";
+		int pct = m_mesh->getPointsCount();
+		file << "define Nodes " << pct << endl;
+		int bct = m_mesh->getBlocksCount();
+		file << "define Tetrahedra " << bct << endl;
+
+		file << endl << "Nodes { float[3] Coordinates } = @1" << endl;
+		file << "Tetrahedra { int[4] Nodes } = @2" << endl;
+
+		file << endl << "@1" << endl;
+		for(int i = 0; i < pct; i++){
+			const DPoint3d pt = m_mesh->getPointAt(i)->getCoordinates();
+			file << pt.x << "\t" << pt.y << "\t" << pt.z << endl;
+		}
+		file << endl << "@2" << endl;
+		for(int i = 0; i < bct; i++){
+			MeshBlock* block = m_mesh->getBlockAt(i);
+			int bpct = block->getPointCount();
+			assert(bpct == 4);
+			for(int j = 0; j < bpct; j++)
+				file << (1+block->getPoint(j)->getIndex()) << '\t';
+			file << endl;
+		}
+	}
+*/
+}
+
+bool MeshDomainVolume::checkControlForCloseBoundaryFaces(Metric3dContext& ) const
+{
+	return true;
+}
+
+bool MeshDomainVolume::checkControlAtBoundary(Metric3dContext& mc) const
+{
+	bool proper = true;
+	
+	// retrieve control metric from faces
+	for(int i = 0; i < face_count; i++){
+		MeshContainer2d* face_mesh = ((MeshDomainSurface*)faces[i])->getMesh();
+		if(!face_mesh){
+			TERROR("MDV:checkControlAtBoundary: missing face mesh");
+			continue;
+		}
+		ControlSpace* control = face_mesh->getControlSpace();
+		if(!control){
+			TERROR("MDV:checkControlAtBoundary: missing face control space");
+			continue;
+		}
+		if(!control->isAdaptive()){
+			TWARNING("MDV:checkControlAtBoundary: non-adaptive face control space");
+			continue;
+		}
+		CParametricSurface* surface = face_mesh->getSurface();
+
+		bool face_proper = true;
+		for(IteratorEdge2d it = face_mesh->getFirstEdge2d(); it.isValid(); it.nextEdge()){
+			const MeshPoint* mpt0 = it.getEdge()->getMeshPoint(0);
+			const MeshPoint* mpt1 = it.getEdge()->getMeshPoint(1);
+			MeshPoint3d* mpt3d = (MeshPoint3d*)mpt0->getPtrTag(TagExtended::TAG_MP_2D_3D);
+			const DPoint3d dpt0 = mpt3d ? mpt3d->getCoordinates() : surface->getPointParam(mpt0->getCoordinates());
+			mpt3d = (MeshPoint3d*)mpt1->getPtrTag(TagExtended::TAG_MP_2D_3D);
+			const DPoint3d dpt1 = mpt3d ? mpt3d->getCoordinates() : surface->getPointParam(mpt1->getCoordinates());
+			mc.countMetricAtPoint(DPoint3d::average(dpt0, dpt1));
+			double mlen = mc.transformRStoMS(dpt1-dpt0).length();
+			if(mlen < 0.5){
+				TWARNING_S("MDV:checkControlAtBoundary: metric length 3d", mlen);
+			}else if(mlen > 2.5){
+				// 
+				double len = dpt0.distance(dpt1) / mlen;
+				const DPoint2d& pt0 = mpt0->getCoordinates();
+				const DPoint2d& pt1 = mpt1->getCoordinates();
+
+				const DVector2d v01 = pt1-pt0;
+				const DVector2d du = v01.normalized();
+				const DVector2d dv(du.y, -du.x); // orthogonal
+				double d[2] = {len, len * ControlSpaceAdaptive::param_stretch_max_ratio};
+				ControlDataMatrix cdm(du, dv, d);	// from eigensystem
+				if(((ControlSpaceAdaptive*)control)->setMinControl(ControlDataExtMatrixSegment(pt0, v01, d[0], cdm, surface)))
+					face_proper = proper = false;
+			}
+		}
+
+		if(!face_proper) ((MeshDomainSurface*)faces[i])->clearDiscretization(); // needs remeshing
+	}
+
+	return proper;
+}

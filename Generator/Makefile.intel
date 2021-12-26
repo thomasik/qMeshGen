@@ -1,0 +1,23 @@
+CXX       = icl
+DIR       = intel
+MESHLIBDIR = ../meshlib
+CXXFLAGS  = -Wall -fast -I ${MESHLIBDIR}
+LDFLAGS   = -fast
+
+MESHLIB    = meshlib.lib
+PROGRAM	   = generator.exe
+	
+default: $(DIR)/$(PROGRAM)
+
+$(DIR)/$(PROGRAM): $(DIR)/main.obj $(MESHLIBDIR)/$(DIR)/$(MESHLIB)
+	xilink $(DIR)/main.obj $(MESHLIBDIR)/$(DIR)/$(MESHLIB) -out:$(DIR)/$(PROGRAM)
+
+clean:
+	rm -f $(DIR)/main.obj $(DIR)/$(PROGRAM)
+
+$(DIR)/main.obj: main.cpp
+	${CXX} $(CXXFLAGS) -c main.cpp -Fo$(DIR)/main.obj
+
+$(MESHLIBDIR)/$(DIR)/$(MESHLIB):
+	cd $(MESHLIBDIR)
+	make -f Makefile.intel

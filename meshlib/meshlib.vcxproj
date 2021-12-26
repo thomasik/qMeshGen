@@ -1,0 +1,550 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Rel-ICC|Win32">
+      <Configuration>Rel-ICC</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Rel-ICC|x64">
+      <Configuration>Rel-ICC</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6F578FDE-F3FF-4B7D-AD5E-F6116118B52E}</ProjectGuid>
+    <RootNamespace>meshlib</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Rel-ICC|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <InterproceduralOptimization>true</InterproceduralOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Rel-ICC|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <InterproceduralOptimization>true</InterproceduralOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <InterproceduralOptimization>false</InterproceduralOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <InterproceduralOptimization>false</InterproceduralOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Rel-ICC|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Rel-ICC|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Rel-ICC|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Rel-ICC|Win32'">$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>$(ProjectName)</TargetName>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>$(ProjectName)</TargetName>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <OpenMPSupport>false</OpenMPSupport>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <ProgramDataBaseFileName>$(OutDir)vc90.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <UseMSVC>false</UseMSVC>
+      <AdditionalIncludeDirectories>../libboard</AdditionalIncludeDirectories>
+      <EnablePREfast>false</EnablePREfast>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <OpenMPSupport>false</OpenMPSupport>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <ProgramDataBaseFileName>$(OutDir)vc90.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <UseMSVC>false</UseMSVC>
+      <AdditionalIncludeDirectories>..\libboard;..\log4cplus\include;</AdditionalIncludeDirectories>
+      <EnablePREfast>false</EnablePREfast>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <OpenMPSupport>false</OpenMPSupport>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <UseMSVC>false</UseMSVC>
+      <Parallelization>false</Parallelization>
+      <AdditionalIncludeDirectories>../libboard</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <OpenMPSupport>true</OpenMPSupport>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <UseMSVC>false</UseMSVC>
+      <Parallelization>false</Parallelization>
+      <AdditionalIncludeDirectories>..\libboard;..\log4cplus\include;</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Rel-ICC|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <FloatingPointModel>Fast2</FloatingPointModel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <GlobalOptimizations>true</GlobalOptimizations>
+      <Parallelization>true</Parallelization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Rel-ICC|x64'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <FloatingPointModel>Fast2</FloatingPointModel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <GlobalOptimizations>true</GlobalOptimizations>
+      <Parallelization>true</Parallelization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ControlSpace2d.cpp" />
+    <ClCompile Include="ControlSpace3d.cpp" />
+    <ClCompile Include="ControlSpace3dAdaptive.cpp" />
+    <ClCompile Include="ControlSpace3dAnalytic.cpp" />
+    <ClCompile Include="ControlSpace3dInternal.cpp" />
+    <ClCompile Include="ControlSpace3dKdTree.cpp" />
+    <ClCompile Include="ControlSpace3dKdTreeL.cpp" />
+    <ClCompile Include="ControlSpace3dKdTreeLi.cpp" />
+    <ClCompile Include="ControlSpace3dKdTreeV.cpp" />
+    <ClCompile Include="ControlSpace3dMatrixUniform.cpp" />
+    <ClCompile Include="ControlSpace3dOctree.cpp" />
+    <ClCompile Include="ControlSpace3dOctreeL.cpp" />
+    <ClCompile Include="ControlSpace3dOctreeLB.cpp" />
+    <ClCompile Include="ControlSpace3dOctreeV.cpp" />
+    <ClCompile Include="ControlSpace2dAdaptive.cpp" />
+    <ClCompile Include="ControlSpace2dAnalytic.cpp" />
+    <ClCompile Include="ControlSpace2dKdTreeL.cpp" />
+    <ClCompile Include="ControlSpace2dKdTreeV.cpp" />
+    <ClCompile Include="ControlSpace2dMatrixUniform.cpp" />
+    <ClCompile Include="ControlSpace2dMesh.cpp" />
+    <ClCompile Include="ControlSpace2dQuadTree.cpp" />
+    <ClCompile Include="Curve3dBSpline.cpp" />
+    <ClCompile Include="Curve3dLinearQuadric.cpp" />
+    <ClCompile Include="Curve3dParametric.cpp" />
+    <ClCompile Include="Curve3dSegment.cpp" />
+    <ClCompile Include="Curve3dSurfaceParametric.cpp" />
+    <ClCompile Include="Curve2dAnalytic.cpp" />
+    <ClCompile Include="Curve2dBSpline.cpp" />
+    <ClCompile Include="Curve2dCircle.cpp" />
+    <ClCompile Include="Curve2dLinearQuadric.cpp" />
+    <ClCompile Include="Curve2dParametric.cpp" />
+    <ClCompile Include="Curve2dSegment.cpp" />
+    <ClCompile Include="DataKdSplit2d.cpp" />
+    <ClCompile Include="DataKdSplit2dContField.cpp" />
+    <ClCompile Include="DataKdSplit2dSingleSource.cpp" />
+    <ClCompile Include="DataKdSplit3d.cpp" />
+    <ClCompile Include="DataKdSplit3dContField.cpp" />
+    <ClCompile Include="DataKdSplit3dSingleSource.cpp" />
+    <ClCompile Include="DataStatistics.cpp" />
+    <ClCompile Include="DEquation.cpp" />
+    <ClCompile Include="DHesjan.cpp" />
+    <ClCompile Include="DLeastSquaresFitting.cpp" />
+    <ClCompile Include="DLine.cpp" />
+    <ClCompile Include="DLinearQuadric.cpp" />
+    <ClCompile Include="DMatrix.cpp" />
+    <ClCompile Include="DMetric2d.cpp" />
+    <ClCompile Include="DMetric3d.cpp" />
+    <ClCompile Include="DOrientedBox.cpp" />
+    <ClCompile Include="DPlanarQuadric.cpp" />
+    <ClCompile Include="DPlane.cpp" />
+    <ClCompile Include="DPoint.cpp" />
+    <ClCompile Include="DQuad.cpp" />
+    <ClCompile Include="DQuadric.cpp" />
+    <ClCompile Include="DRect.cpp" />
+    <ClCompile Include="DSegment.cpp" />
+    <ClCompile Include="DSphere.cpp" />
+    <ClCompile Include="DTetrahedron.cpp" />
+    <ClCompile Include="DTriangle.cpp" />
+    <ClCompile Include="DVector.cpp" />
+    <ClCompile Include="EPSFile.cpp" />
+    <ClCompile Include="FrontEdge.cpp" />
+    <ClCompile Include="FrontFace.cpp" />
+    <ClCompile Include="FrontLines.cpp" />
+    <ClCompile Include="GeometricPredicates.cpp" />
+    <ClCompile Include="IteratorEdge2d.cpp" />
+    <ClCompile Include="IteratorEdge3d.cpp" />
+    <ClCompile Include="IteratorFace.cpp" />
+    <ClCompile Include="IteratorMesh2d.cpp" />
+    <ClCompile Include="IteratorMesh3d.cpp" />
+    <ClCompile Include="MarchingCubes.cpp" />
+    <ClCompile Include="MeshArea.cpp" />
+    <ClCompile Include="MeshBlock.cpp" />
+    <ClCompile Include="MeshBRep.cpp" />
+    <ClCompile Include="MeshBRepRSurf.cpp" />
+    <ClCompile Include="MeshBRepXML.cpp" />
+    <ClCompile Include="MeshContainer2d.cpp" />
+    <ClCompile Include="MeshContainer3d.cpp" />
+    <ClCompile Include="MeshContainer3dSurface.cpp" />
+    <ClCompile Include="MeshData.cpp" />
+    <ClCompile Include="MeshDecompositionUTC.cpp" />
+    <ClCompile Include="MeshDomainEdge3d.cpp" />
+    <ClCompile Include="MeshDomainSurface.cpp" />
+    <ClCompile Include="MeshDomainVolume.cpp" />
+    <ClCompile Include="MeshEdge2d.cpp" />
+    <ClCompile Include="MeshEdge3d.cpp" />
+    <ClCompile Include="MeshEdge2dCurve.cpp" />
+    <ClCompile Include="MeshElement.cpp" />
+    <ClCompile Include="MeshFace.cpp" />
+    <ClCompile Include="MeshGenerator1d.cpp" />
+    <ClCompile Include="MeshGenerator2d.cpp" />
+    <ClCompile Include="MeshGenerator2dQMorph.cpp" />
+    <ClCompile Include="MeshGenerator2dQuad.cpp" />
+    <ClCompile Include="MeshGenerator3d.cpp" />
+    <ClCompile Include="MeshGenerator3dAdapt.cpp" />
+    <ClCompile Include="MeshGenerator3dDelaunayBoundary.cpp" />
+    <ClCompile Include="MeshGenerator3dDirectBoundary.cpp" />
+    <ClCompile Include="MeshGenerator3dQuality.cpp" />
+    <ClCompile Include="MeshGenerator3dSurface.cpp" />
+    <ClCompile Include="MeshGrain.cpp" />
+    <ClCompile Include="MeshLog.cpp" />
+    <ClCompile Include="MeshModel.cpp" />
+    <ClCompile Include="MeshPoint2d.cpp" />
+    <ClCompile Include="MeshPoint3d.cpp" />
+    <ClCompile Include="MeshPoly3d.cpp" />
+    <ClCompile Include="MeshQuad2d.cpp" />
+    <ClCompile Include="MeshQuad3d.cpp" />
+    <ClCompile Include="MeshSpecialRoutinesDAT.cpp" />
+    <ClCompile Include="MeshSpecialRoutinesPaszynski.cpp" />
+    <ClCompile Include="MeshSpecialRoutinesUTC.cpp" />
+    <ClCompile Include="MeshSplit3d.cpp" />
+    <ClCompile Include="MeshTetrahedron.cpp" />
+    <ClCompile Include="MeshTriangle2d.cpp" />
+    <ClCompile Include="MeshTriangle3d.cpp" />
+    <ClCompile Include="MeshViewSet.cpp" />
+    <ClCompile Include="Metric3dContext.cpp" />
+    <ClCompile Include="Metric2dContext.cpp" />
+    <ClCompile Include="ModelMultiSphere.cpp" />
+    <ClCompile Include="nrutil.cpp" />
+    <ClCompile Include="OctTree.cpp" />
+    <ClCompile Include="Quad12.cpp" />
+    <ClCompile Include="QuadTree.cpp" />
+    <ClCompile Include="StatisticCounter.cpp" />
+    <ClCompile Include="SurfaceAnalytic.cpp" />
+    <ClCompile Include="SurfaceBSplineCylindrical.cpp" />
+    <ClCompile Include="SurfaceBSplinePlanar.cpp" />
+    <ClCompile Include="SurfaceCorrected.cpp" />
+    <ClCompile Include="SurfaceCylinder.cpp" />
+    <ClCompile Include="SurfaceDomain.cpp" />
+    <ClCompile Include="SurfaceDomainFaces.cpp" />
+    <ClCompile Include="SurfaceDomainFacesPlanar.cpp" />
+    <ClCompile Include="SurfaceDomainHull.cpp" />
+    <ClCompile Include="SurfaceMonoAnalytic.cpp" />
+    <ClCompile Include="SurfaceMulti.cpp" />
+    <ClCompile Include="SurfaceParametric.cpp" />
+    <ClCompile Include="SurfacePlanarQuadric.cpp" />
+    <ClCompile Include="SurfacePlane.cpp" />
+    <ClCompile Include="SurfaceQuadricQTree.cpp" />
+    <ClCompile Include="SurfaceSphere.cpp" />
+    <ClCompile Include="tinystr.cpp" />
+    <ClCompile Include="tinyxml.cpp" />
+    <ClCompile Include="tinyxmlerror.cpp" />
+    <ClCompile Include="tinyxmlparser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common.h" />
+    <ClInclude Include="ControlSpace2d.h" />
+    <ClInclude Include="ControlSpace3d.h" />
+    <ClInclude Include="ControlSpace3dAdaptive.h" />
+    <ClInclude Include="ControlSpace3dAnalytic.h" />
+    <ClInclude Include="ControlSpace3dInternal.h" />
+    <ClInclude Include="ControlSpace3dKdTree.h" />
+    <ClInclude Include="ControlSpace3dKdTreeL.h" />
+    <ClInclude Include="ControlSpace3dKdTreeLi.h" />
+    <ClInclude Include="ControlSpace3dKdTreeV.h" />
+    <ClInclude Include="ControlSpace3dMatrixUniform.h" />
+    <ClInclude Include="ControlSpace3dOctree.h" />
+    <ClInclude Include="ControlSpace3dOctreeL.h" />
+    <ClInclude Include="ControlSpace3dOctreeLB.h" />
+    <ClInclude Include="ControlSpace3dOctreeV.h" />
+    <ClInclude Include="ControlSpace2dAdaptive.h" />
+    <ClInclude Include="ControlSpace2dAnalytic.h" />
+    <ClInclude Include="ControlSpace2dIdentity.h" />
+    <ClInclude Include="ControlSpace2dKdTreeL.h" />
+    <ClInclude Include="ControlSpace2dKdTreeV.h" />
+    <ClInclude Include="ControlSpace2dMatrixUniform.h" />
+    <ClInclude Include="ControlSpace2dMesh.h" />
+    <ClInclude Include="ControlSpace2dProjected.h" />
+    <ClInclude Include="ControlSpace2dQuadTree.h" />
+    <ClInclude Include="Curve3dBSpline.h" />
+    <ClInclude Include="Curve3dLinearQuadric.h" />
+    <ClInclude Include="Curve3dParametric.h" />
+    <ClInclude Include="Curve3dSegment.h" />
+    <ClInclude Include="Curve3dSurfaceParametric.h" />
+    <ClInclude Include="Curve2dAnalytic.h" />
+    <ClInclude Include="Curve2dBSpline.h" />
+    <ClInclude Include="Curve2dCircle.h" />
+    <ClInclude Include="Curve2dLinearQuadric.h" />
+    <ClInclude Include="Curve2dParametric.h" />
+    <ClInclude Include="Curve2dSegment.h" />
+    <ClInclude Include="DataContainer.h" />
+    <ClInclude Include="DataHashTable.h" />
+    <ClInclude Include="DataHeapVector.h" />
+    <ClInclude Include="DataKdSplit2d.h" />
+    <ClInclude Include="DataKdSplit2dContField.h" />
+    <ClInclude Include="DataKdSplit2dDiscField.h" />
+    <ClInclude Include="DataKdSplit2dSingleSource.h" />
+    <ClInclude Include="DataKdSplit3d.h" />
+    <ClInclude Include="DataKdSplit3dContField.h" />
+    <ClInclude Include="DataKdSplit3dDiscField.h" />
+    <ClInclude Include="DataKdSplit3dSingleSource.h" />
+    <ClInclude Include="DataKdTree.h" />
+    <ClInclude Include="DataList.h" />
+    <ClInclude Include="DataMatrix.h" />
+    <ClInclude Include="DataOctree.h" />
+    <ClInclude Include="DataPtrMatrix.h" />
+    <ClInclude Include="DataQuadTree.h" />
+    <ClInclude Include="DataStatistics.h" />
+    <ClInclude Include="DataVector.h" />
+    <ClInclude Include="DEquation.h" />
+    <ClInclude Include="DHesjan.h" />
+    <ClInclude Include="DLeastSquaresFitting.h" />
+    <ClInclude Include="DLine.h" />
+    <ClInclude Include="DLinearQuadric.h" />
+    <ClInclude Include="DMatrix.h" />
+    <ClInclude Include="DMatrixN.h" />
+    <ClInclude Include="DMetric2d.h" />
+    <ClInclude Include="DMetric3d.h" />
+    <ClInclude Include="DOrientedBox.h" />
+    <ClInclude Include="DPlanarQuadric.h" />
+    <ClInclude Include="DPlane.h" />
+    <ClInclude Include="DPoint.h" />
+    <ClInclude Include="DQuad.h" />
+    <ClInclude Include="DQuadric.h" />
+    <ClInclude Include="DRect.h" />
+    <ClInclude Include="DSegment.h" />
+    <ClInclude Include="DSphere.h" />
+    <ClInclude Include="DTetrahedron.h" />
+    <ClInclude Include="DTriangle.h" />
+    <ClInclude Include="DVector.h" />
+    <ClInclude Include="DVectorN.h" />
+    <ClInclude Include="EPSFile.h" />
+    <ClInclude Include="FrontEdge.h" />
+    <ClInclude Include="FrontFace.h" />
+    <ClInclude Include="FrontLines.h" />
+    <ClInclude Include="GeometricPredicates.h" />
+    <ClInclude Include="IteratorEdge2d.h" />
+    <ClInclude Include="IteratorEdge3d.h" />
+    <ClInclude Include="IteratorFace.h" />
+    <ClInclude Include="IteratorMesh2d.h" />
+    <ClInclude Include="IteratorMesh3d.h" />
+    <ClInclude Include="MarchingCubes.h" />
+    <ClInclude Include="MeshArea.h" />
+    <ClInclude Include="MeshBlock.h" />
+    <ClInclude Include="MeshBoundaryCondition.h" />
+    <ClInclude Include="MeshBRep.h" />
+    <ClInclude Include="MeshBRepRSurf.h" />
+    <ClInclude Include="MeshBRepXML.h" />
+    <ClInclude Include="MeshContainer2d.h" />
+    <ClInclude Include="MeshContainer3d.h" />
+    <ClInclude Include="MeshContainer3dSurface.h" />
+    <ClInclude Include="MeshData.h" />
+    <ClInclude Include="MeshDecompositionUTC.h" />
+    <ClInclude Include="MeshDomainEdge3d.h" />
+    <ClInclude Include="MeshDomainSurface.h" />
+    <ClInclude Include="MeshDomainVolume.h" />
+    <ClInclude Include="MeshEdge2d.h" />
+    <ClInclude Include="MeshEdge3d.h" />
+    <ClInclude Include="MeshEdge2dCurve.h" />
+    <ClInclude Include="MeshElement.h" />
+    <ClInclude Include="MeshFace.h" />
+    <ClInclude Include="MeshGenerator1d.h" />
+    <ClInclude Include="MeshGenerator2d.h" />
+    <ClInclude Include="MeshGenerator2dQMorph.h" />
+    <ClInclude Include="MeshGenerator2dQuad.h" />
+    <ClInclude Include="MeshGenerator3d.h" />
+    <ClInclude Include="MeshGenerator3dAdapt.h" />
+    <ClInclude Include="MeshGenerator3dDelaunayBoundary.h" />
+    <ClInclude Include="MeshGenerator3dDirectBoundary.h" />
+    <ClInclude Include="MeshGenerator3dQuality.h" />
+    <ClInclude Include="MeshGenerator3dSurface.h" />
+    <ClInclude Include="MeshGrain.h" />
+    <ClInclude Include="MeshLog.h" />
+    <ClInclude Include="MeshModel.h" />
+    <ClInclude Include="MeshPoint2d.h" />
+    <ClInclude Include="MeshPoint3d.h" />
+    <ClInclude Include="MeshPoly3d.h" />
+    <ClInclude Include="MeshQuad2d.h" />
+    <ClInclude Include="MeshQuad3d.h" />
+    <ClInclude Include="MeshSpecialRoutinesDAT.h" />
+    <ClInclude Include="MeshSpecialRoutinesPaszynski.h" />
+    <ClInclude Include="MeshSpecialRoutinesUTC.h" />
+    <ClInclude Include="MeshSplit3d.h" />
+    <ClInclude Include="MeshTetrahedron.h" />
+    <ClInclude Include="MeshTriangle2d.h" />
+    <ClInclude Include="MeshTriangle3d.h" />
+    <ClInclude Include="MeshViewSet.h" />
+    <ClInclude Include="Metric3dContext.h" />
+    <ClInclude Include="Metric2dContext.h" />
+    <ClInclude Include="ModelMultiSphere.h" />
+    <ClInclude Include="nrutil.h" />
+    <ClInclude Include="OctTree.h" />
+    <ClInclude Include="Quad12.h" />
+    <ClInclude Include="QuadTree.h" />
+    <ClInclude Include="ReparameterizationData.h" />
+    <ClInclude Include="StatisticCounter.h" />
+    <ClInclude Include="SurfaceAnalytic.h" />
+    <ClInclude Include="SurfaceBSplineCylindrical.h" />
+    <ClInclude Include="SurfaceBSplinePlanar.h" />
+    <ClInclude Include="SurfaceCorrected.h" />
+    <ClInclude Include="SurfaceCurvature.h" />
+    <ClInclude Include="SurfaceCylinder.h" />
+    <ClInclude Include="SurfaceDomain.h" />
+    <ClInclude Include="SurfaceDomainFaces.h" />
+    <ClInclude Include="SurfaceDomainFacesPlanar.h" />
+    <ClInclude Include="SurfaceDomainHull.h" />
+    <ClInclude Include="SurfaceMonoAnalytic.h" />
+    <ClInclude Include="SurfaceMulti.h" />
+    <ClInclude Include="SurfaceParametric.h" />
+    <ClInclude Include="SurfacePlanarQuadric.h" />
+    <ClInclude Include="SurfacePlane.h" />
+    <ClInclude Include="SurfaceQuadricQTree.h" />
+    <ClInclude Include="SurfaceSphere.h" />
+    <ClInclude Include="SurfaceTranslated.h" />
+    <ClInclude Include="TagBorder.h" />
+    <ClInclude Include="TagExtended.h" />
+    <ClInclude Include="tinystr.h" />
+    <ClInclude Include="tinyxml.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

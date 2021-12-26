@@ -1,0 +1,31 @@
+<RCC>
+    <qresource>
+	<file>images/save_txt.png</file>
+	<file>images/save_grd.png</file>
+	<file>images/blocks.png</file>
+	<file>images/tetrahedron.png</file>
+	<file>images/triangle.png</file>
+	<file>images/quad.png</file>
+	<file>images/open.png</file>
+	<file>images/delete.png</file>
+	<file>images/right_arrow.png</file>
+	<file>images/spider_web.png</file>
+	<file>images/green_web.png</file>
+	<file>images/led_blue.png</file>
+	<file>images/led_green.png</file>
+	<file>images/led_off.png</file>
+	<file>images/led_red.png</file>
+	<file>images/led_yellow.png</file>
+	<file>images/rect_blue.png</file>
+	<file>images/rect_green.png</file>
+	<file>images/rect_gray.png</file>
+	<file>images/rect_red.png</file>
+	<file>images/rect_yellow.png</file>
+	<file>images/circ_blue.png</file>
+	<file>images/circ_green.png</file>
+	<file>images/circ_gray.png</file>
+	<file>images/circ_red.png</file>
+	<file>images/circ_yellow.png</file>
+	<file>images/clock.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<VisualStudioProject
+	ProjectType="Intel C++ Project"
+	Version="11.1"
+	Name="meshlib"
+	ProjectGUID="{163F8D66-1F64-4EE7-88D0-2B347EF1E2CA}"
+	VCNestedProjectGUID="{6F578FDE-F3FF-4B7D-AD5E-F6116118B52E}"
+	VCNestedProjectFileName="meshlib.vcproj">
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32">
+			<Tool
+				Name="GeneralTool"
+				CompilerName="0"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32">
+			<Tool
+				Name="GeneralTool"
+				CompilerName="0"
+				InterproceduralOptimization="false"/>
+			<Tool
+				Name="CppCmplrTool"
+				Optimization="1000"
+				Parallelization="false"/>
+		</Configuration>
+		<Configuration
+			Name="Rel-ICC|Win32">
+			<Tool
+				Name="GeneralTool"
+				InterproceduralOptimization="true"/>
+			<Tool
+				Name="CppCmplrTool"
+				GlobalOptimizations="true"
+				FloatingPointModel="1000"
+				Parallelization="true"/>
+		</Configuration>
+	</Configurations>
+	<Files/>
+</VisualStudioProject>

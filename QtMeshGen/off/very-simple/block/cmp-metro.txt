@@ -1,0 +1,56 @@
+-------------------------------
+         Metro V.4.07 
+     http://vcg.isti.cnr.it
+   release date: May 11 2007
+-------------------------------
+
+read mesh `block/block.off'
+read mesh `block/block.off.remeshed.off'
+Mesh info:
+ M1: 'block/block.off'
+	vertices     2132
+	faces        4272
+	area         3676.6461
+	bbox (-8.2000 -10.0000 -19.0001)-(11.7999  9.9999 19.0001)
+	bbox diagonal 47.370972
+ M2: 'block/block.off.remeshed.off'
+	vertices     2298
+	faces        4604
+	area         3670.3983
+	bbox (-8.2002 -10.0001 -19.0003)-(11.7999  9.9999 19.0003)
+	bbox diagonal 47.371372
+
+Forward distance (M1 -> M2):
+target # samples      : 46040
+target # samples/area : 12.522282
+Vertex sampling
+distances:
+  max  : 0.088776 (0.001758  wrt bounding box diagonal)
+  mean : 0.007538
+  RMS  : 0.013538
+# vertex samples      2132
+# edge samples       32919
+# area samples        8856
+# total samples      43907
+# samples per area unit: 11.942134
+
+
+Backward distance (M2 -> M1):
+target # samples      : 46040
+target # samples/area : 12.543598
+Vertex sampling
+distances:
+  max  : 0.097056 (0.001922  wrt bounding box diagonal)
+  mean : 0.007842
+  RMS  : 0.013090
+# vertex samples      2298
+# edge samples       34021
+# area samples        7422
+# total samples      43741
+# samples per area unit: 11.917235
+
+
+Hausdorff distance: 0.097056 (0.001922  wrt bounding box diagonal)
+  Computation time  : 94 ms
+  # samples/second  : 932425.487627
+

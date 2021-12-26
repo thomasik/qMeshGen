@@ -1,0 +1,22 @@
+CXX       = g++
+DIR       = linux
+CXXFLAGS  = -DUNIX_MODE -DNDEBUG -std=c++11 -pedantic -I../libboard -Wall -W -Wconversion -Wshadow -Wcast-qual -Wwrite-strings -Wno-unknown-pragmas -Wno-char-subscripts
+LDFLAGS   = -O2
+BOARDLIB  = $(DIR)/libboard.a
+MESHLIB   = $(DIR)/meshlib.a
+LIBS	  = $(BOARDLIB) $(MESHLIB)
+SRCS      = main.cpp
+OBJS      = $(DIR)/main.o
+MESHGEN   = meshgen_kd
+
+default: $(DIR)/$(MESHGEN)
+
+$(DIR)/$(MESHGEN): $(OBJS) $(LIBS)
+	${CXX} $(LDFLAGS) $(OBJS) $(LIBS) -o $(DIR)/$(MESHGEN) 
+
+clean:
+	rm -f $(OBJS) $(DIR)/$(MESHGEN)
+
+$(DIR)/main.o: main.cpp
+	${CXX} $(CXXFLAGS) -I./meshlib -c main.cpp -o $(DIR)/main.o
+
