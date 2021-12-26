@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meshdoc xmlns="http://www.icsr.agh.edu.pl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<header>
+		<creator>Tomasz Jurczyk</creator>
+		<version>1.0</version>
+		<description>"nisa"-rectangle</description>
+	</header>
+	<model>
+		<vertices> <!-- for external boundary -->
+			<vertex vid="1"> <sid>1</sid> <u>0</u>    <v>0</v> </vertex>
+			<vertex vid="2"> <sid>1</sid> <u>90mm</u> <v>0</v> </vertex>
+			<vertex vid="3"> <sid>1</sid> <u>90mm</u> <v>150mm</v> </vertex>
+			<vertex vid="4"> <sid>1</sid> <u>0</u>    <v>150mm</v> </vertex>
+			<vertex vid="5"> <sid>1</sid> <u>0</u>    <v>94.75mm</v> </vertex>
+			<vertex vid="6"> <sid>1</sid> <u>0</u>    <v>60.75mm</v> </vertex>
+			<vertex vid="7"> <sid>1</sid> <u>7mm</u>  <v>63.76mm</v> </vertex>
+			<vertex vid="8"> <sid>1</sid> <u>13mm</u> <v>89.53mm</v> </vertex>
+		</vertices>
+
+		<vertices> <!-- circle -->
+			<vertex vid="10"> <sid>1</sid> <cid>1</cid> <t>0</t>   </vertex>
+			<vertex vid="11"> <sid>1</sid> <cid>1</cid> <t>1/3</t> </vertex>
+			<vertex vid="12"> <sid>1</sid> <cid>1</cid> <t>2/3</t> </vertex>
+		</vertices>	
+			
+		<vertices> <!-- circle -->
+			<vertex vid="20"> <sid>1</sid> <cid>2</cid> <t>0</t>   </vertex>
+			<vertex vid="21"> <sid>1</sid> <cid>2</cid> <t>1/3</t> </vertex>
+			<vertex vid="22"> <sid>1</sid> <cid>2</cid> <t>2/3</t> </vertex>
+		</vertices>	
+			
+		<vertices> <!-- circle -->
+			<vertex vid="20"> <sid>1</sid> <cid>2</cid> <t>0</t>   </vertex>
+			<vertex vid="21"> <sid>1</sid> <cid>2</cid> <t>1/3</t> </vertex>
+			<vertex vid="22"> <sid>1</sid> <cid>2</cid> <t>2/3</t> </vertex>
+		</vertices>	
+			
+		<vertices> <!-- circle -->
+			<vertex vid="20"> <sid>1</sid> <cid>2</cid> <t>0</t>   </vertex>
+			<vertex vid="21"> <sid>1</sid> <cid>2</cid> <t>1/3</t> </vertex>
+			<vertex vid="22"> <sid>1</sid> <cid>2</cid> <t>2/3</t> </vertex>
+		</vertices>	
+			
+		<vertices> <!-- circle -->
+			<vertex vid="30"> <sid>1</sid> <cid>3</cid> <t>0</t>   </vertex>
+			<vertex vid="31"> <sid>1</sid> <cid>3</cid> <t>1/3</t> </vertex>
+			<vertex vid="32"> <sid>1</sid> <cid>3</cid> <t>2/3</t> </vertex>
+		</vertices>	
+			
+		<vertices> <!-- circle -->
+			<vertex vid="40"> <sid>1</sid> <cid>4</cid> <t>0</t>   </vertex>
+			<vertex vid="41"> <sid>1</sid> <cid>4</cid> <t>1/3</t> </vertex>
+			<vertex vid="42"> <sid>1</sid> <cid>4</cid> <t>2/3</t> </vertex>
+		</vertices>	
+			
+		<vertices> <!-- circle -->
+			<vertex vid="50"> <sid>1</sid> <cid>5</cid> <t>0</t>   </vertex>
+			<vertex vid="51"> <sid>1</sid> <cid>5</cid> <t>1/3</t> </vertex>
+			<vertex vid="52"> <sid>1</sid> <cid>5</cid> <t>2/3</t> </vertex>
+		</vertices>	
+			
+		<vertices> <!-- circle -->
+			<vertex vid="60"> <sid>1</sid> <cid>6</cid> <t>0</t>   </vertex>
+			<vertex vid="61"> <sid>1</sid> <cid>6</cid> <t>1/3</t> </vertex>
+			<vertex vid="62"> <sid>1</sid> <cid>6</cid> <t>2/3</t> </vertex>
+		</vertices>	
+			
+		<vertices> <!-- circle -->
+			<vertex vid="70"> <sid>1</sid> <cid>7</cid> <t>0</t>   </vertex>
+			<vertex vid="71"> <sid>1</sid> <cid>7</cid> <t>1/3</t> </vertex>
+			<vertex vid="72"> <sid>1</sid> <cid>7</cid> <t>2/3</t> </vertex>
+		</vertices>	
+			
+		<vertices> <!-- circle -->
+			<vertex vid="80"> <sid>1</sid> <cid>8</cid> <t>0</t>   </vertex>
+			<vertex vid="81"> <sid>1</sid> <cid>8</cid> <t>1/3</t> </vertex>
+			<vertex vid="82"> <sid>1</sid> <cid>8</cid> <t>2/3</t> </vertex>
+		</vertices>	
+			
+		<vertices> <!-- circle -->
+			<vertex vid="90"> <sid>1</sid> <cid>9</cid> <t>0</t>   </vertex>
+			<vertex vid="91"> <sid>1</sid> <cid>9</cid> <t>1/3</t> </vertex>
+			<vertex vid="92"> <sid>1</sid> <cid>9</cid> <t>2/3</t> </vertex>
+		</vertices>	
+			
+		<surfaces>
+			<surface sid="1">
+				<plane>
+					<pt0> <x>0</x> <y>0</y> <z>0</z> </pt0>
+					<e0>  <x>1</x> <y>0</y> <z>0</z> </e0>
+					<e1>  <x>0</x> <y>1</y> <z>0</z> </e1>
+				</plane>
+			</surface>
+		</surfaces>
+
+		<curves>
+      <curve cid="1">
+        <circle>
+          <middle> <u>14.40mm</u> <v>39.75mm</v> </middle>
+          <radius>2.5mm</radius>
+        </circle>
+      </curve>
+      <curve cid="2">
+        <circle>
+          <middle> <u>14.98mm</u> <v>45.76mm</v> </middle>
+          <radius>2.5mm</radius>
+        </circle>
+      </curve>
+      <curve cid="3">
+        <circle>
+          <middle> <u>15.56mm</u> <v>51.75mm</v> </middle>
+          <radius>2.5mm</radius>
+        </circle>
+      </curve>
+      <curve cid="4">
+        <circle>
+          <middle> <u>16.14mm</u> <v>57.75mm</v> </middle>
+          <radius>2.5mm</radius>
+        </circle>
+      </curve>
+      <curve cid="5">
+        <circle>
+          <middle> <u>16.72mm</u> <v>63.76mm</v> </middle>
+          <radius>2.5mm</radius>
+        </circle>
+      </curve>
+      <curve cid="6">
+        <circle>
+          <middle> <u>17.30mm</u> <v>69.75mm</v> </middle>
+          <radius>2.5mm</radius>
+        </circle>
+      </curve>
+      <curve cid="7">
+        <circle>
+          <middle> <u>17.88mm</u> <v>75.75mm</v> </middle>
+          <radius>2.5mm</radius>
+        </circle>
+      </curve>
+      <curve cid="8">
+        <circle>
+          <middle> <u>18.45mm</u> <v>81.76mm</v> </middle>
+          <radius>2.5mm</radius>
+        </circle>
+      </curve>
+      <curve cid="9">
+        <circle>
+          <middle> <u>19.80mm</u> <v>94.75mm</v> </middle>
+          <radius>2.5mm</radius>
+        </circle>
+      </curve>
+      <curve cid="10">
+        <bspline-curve>
+          <points>
+            <point> <u>0</u> <v>60.75mm</v> </point>
+            <point> <u>3mm</u> <v>61mm</v> </point>
+            <point> <u>7mm</u> <v>63.76mm</v> </point>
+          </points>
+        </bspline-curve>
+      </curve>
+      <curve cid="11">
+        <bspline-curve>
+          <points>
+            <point> <u>7mm</u> <v>63.76mm</v> </point>
+            <point> <u>9mm</u> <v>80mm</v> </point>
+            <point> <u>13mm</u> <v>89.53mm</v> </point>
+          </points>
+        </bspline-curve>
+      </curve>
+      <curve cid="12">
+        <bspline-curve>
+          <points>
+            <point> <u>13mm</u> <v>89.53mm</v> </point>
+            <point> <u>6.5mm</u> <v>93mm</v> </point>
+            <point> <u>0</u> <v>94.75mm</v> </point>
+          </points>
+        </bspline-curve>
+      </curve>
+		</curves>
+		
+		<edges>
+			<edge sid="1" vid0="6" vid1="7">
+				<cid>10</cid>	<t0>0</t0>	<t1>1</t1>
+			</edge>
+			<edge sid="1" vid0="7" vid1="8">
+				<cid>11</cid>	<t0>0</t0>	<t1>1</t1>
+			</edge>
+			<edge sid="1" vid0="8" vid1="5">
+				<cid>12</cid>	<t0>0</t0>	<t1>1</t1>
+			</edge>
+			<edge sid="1" vid0="10" vid1="11">
+				<cid>1</cid>	<t0>0</t0>	<t1>1/3</t1>
+			</edge>
+			<edge sid="1" vid0="11" vid1="12">
+				<cid>1</cid>	<t0>1/3</t0>	<t1>2/3</t1>
+			</edge>
+			<edge sid="1" vid0="12" vid1="10">
+				<cid>1</cid>	<t0>2/3</t0>	<t1>1</t1>
+			</edge>
+			<edge sid="1" vid0="20" vid1="21">
+				<cid>2</cid>	<t0>0</t0>	<t1>1/3</t1>
+			</edge>
+			<edge sid="1" vid0="21" vid1="22">
+				<cid>2</cid>	<t0>1/3</t0>	<t1>2/3</t1>
+			</edge>
+			<edge sid="1" vid0="22" vid1="20">
+				<cid>2</cid>	<t0>2/3</t0>	<t1>1</t1>
+			</edge>
+			<edge sid="1" vid0="30" vid1="31">
+				<cid>3</cid>	<t0>0</t0>	<t1>1/3</t1>
+			</edge>
+			<edge sid="1" vid0="31" vid1="32">
+				<cid>3</cid>	<t0>1/3</t0>	<t1>2/3</t1>
+			</edge>
+			<edge sid="1" vid0="32" vid1="30">
+				<cid>3</cid>	<t0>2/3</t0>	<t1>1</t1>
+			</edge>
+			<edge sid="1" vid0="40" vid1="41">
+				<cid>4</cid>	<t0>0</t0>	<t1>1/3</t1>
+			</edge>
+			<edge sid="1" vid0="41" vid1="42">
+				<cid>4</cid>	<t0>1/3</t0>	<t1>2/3</t1>
+			</edge>
+			<edge sid="1" vid0="42" vid1="40">
+				<cid>4</cid>	<t0>2/3</t0>	<t1>1</t1>
+			</edge>
+			<edge sid="1" vid0="50" vid1="51">
+				<cid>5</cid>	<t0>0</t0>	<t1>1/3</t1>
+			</edge>
+			<edge sid="1" vid0="51" vid1="52">
+				<cid>5</cid>	<t0>1/3</t0>	<t1>2/3</t1>
+			</edge>
+			<edge sid="1" vid0="52" vid1="50">
+				<cid>5</cid>	<t0>2/3</t0>	<t1>1</t1>
+			</edge>
+			<edge sid="1" vid0="60" vid1="61">
+				<cid>6</cid>	<t0>0</t0>	<t1>1/3</t1>
+			</edge>
+			<edge sid="1" vid0="61" vid1="62">
+				<cid>6</cid>	<t0>1/3</t0>	<t1>2/3</t1>
+			</edge>
+			<edge sid="1" vid0="62" vid1="60">
+				<cid>6</cid>	<t0>2/3</t0>	<t1>1</t1>
+			</edge>
+			<edge sid="1" vid0="70" vid1="71">
+				<cid>7</cid>	<t0>0</t0>	<t1>1/3</t1>
+			</edge>
+			<edge sid="1" vid0="71" vid1="72">
+				<cid>7</cid>	<t0>1/3</t0>	<t1>2/3</t1>
+			</edge>
+			<edge sid="1" vid0="72" vid1="70">
+				<cid>7</cid>	<t0>2/3</t0>	<t1>1</t1>
+			</edge>
+			<edge sid="1" vid0="80" vid1="81">
+				<cid>8</cid>	<t0>0</t0>	<t1>1/3</t1>
+			</edge>
+			<edge sid="1" vid0="81" vid1="82">
+				<cid>8</cid>	<t0>1/3</t0>	<t1>2/3</t1>
+			</edge>
+			<edge sid="1" vid0="82" vid1="80">
+				<cid>8</cid>	<t0>2/3</t0>	<t1>1</t1>
+			</edge>
+			<edge sid="1" vid0="90" vid1="91">
+				<cid>9</cid>	<t0>0</t0>	<t1>1/3</t1>
+			</edge>
+			<edge sid="1" vid0="91" vid1="92">
+				<cid>9</cid>	<t0>1/3</t0>	<t1>2/3</t1>
+			</edge>
+			<edge sid="1" vid0="92" vid1="90">
+				<cid>9</cid>	<t0>2/3</t0>	<t1>1</t1>
+			</edge>
+		</edges>
+		
+		<faces>
+			<face fid="1" sid="1">
+				<vertex vid="5" />	<vertex vid="6" />
+				<vertex vid="7" />	<vertex vid="8" />
+				<contour sub_fid="2">
+					<vertex vid="1" />	<vertex vid="2" />
+					<vertex vid="3" />	<vertex vid="4" />
+					<vertex vid="5" />	<vertex vid="8" />
+					<vertex vid="7" />	<vertex vid="6" />
+				</contour>
+				<contour sub_fid="3">
+					<vertex vid="10" />	<vertex vid="11" />	<vertex vid="12" />
+				</contour>
+				<contour sub_fid="3">
+					<vertex vid="20" />	<vertex vid="21" />	<vertex vid="22" />
+				</contour>
+				<contour sub_fid="3">
+					<vertex vid="30" />	<vertex vid="31" />	<vertex vid="32" />
+				</contour>
+				<contour sub_fid="3">
+					<vertex vid="40" />	<vertex vid="41" />	<vertex vid="42" />
+				</contour>
+				<contour sub_fid="3">
+					<vertex vid="50" />	<vertex vid="51" />	<vertex vid="52" />
+				</contour>
+				<contour sub_fid="3">
+					<vertex vid="60" />	<vertex vid="61" />	<vertex vid="62" />
+				</contour>
+				<contour sub_fid="3">
+					<vertex vid="70" />	<vertex vid="71" />	<vertex vid="72" />
+				</contour>
+				<contour sub_fid="3">
+					<vertex vid="80" />	<vertex vid="81" />	<vertex vid="82" />
+				</contour>
+				<contour sub_fid="4">
+					<vertex vid="90" />	<vertex vid="91" />	<vertex vid="92" />
+				</contour>
+			</face>
+		</faces>		
+
+		<blocks>
+			<block bid="1">
+				<face fid="1"/>
+			</block>
+		</blocks>
+	</model>
+
+	<sizing>
+		<sources>
+			<!-- inner curve-sources -->
+			<source2d fid="1" type="curve">
+				<cid>10</cid> <t0>0</t0> <t1>1</t1>
+				<metric> 
+					<lx>0.05mm</lx> <ly>0.05mm</ly> <angle>0</angle> 
+				</metric>
+				<radius>0.2mm</radius>
+			</source2d>
+			<source2d fid="1" type="curve">
+				<cid>11</cid> <t0>0</t0> <t1>1</t1>
+				<metric> 
+					<lx>0.05mm</lx> <ly>0.05mm</ly> <angle>0</angle> 
+				</metric>
+				<radius>0.2mm</radius>
+			</source2d>
+			<source2d fid="1" type="curve">
+				<cid>12</cid> <t0>0</t0> <t1>1</t1>
+				<metric> 
+					<lx>0.05mm</lx> <ly>0.05mm</ly> <angle>0</angle> 
+				</metric>
+				<radius>0.2mm</radius>
+			</source2d>
+			<!-- inner curve-sources - along the same splines-->
+			<source2d fid="1" type="curve">
+				<cid>10</cid> <t0>0</t0> <t1>1</t1>
+				<metric> 
+					<lx>5mm</lx> <ly>5mm</ly> <angle>0</angle> 
+				</metric>
+				<radius>10mm</radius>
+			</source2d>
+			<source2d fid="1" type="curve">
+				<cid>11</cid> <t0>0</t0> <t1>1</t1>
+				<metric> 
+					<lx>5mm</lx> <ly>5mm</ly> <angle>0</angle> 
+				</metric>
+				<radius>10mm</radius>
+			</source2d>
+			<source2d fid="1" type="curve">
+				<cid>12</cid> <t0>0</t0> <t1>1</t1>
+				<metric> 
+					<lx>5mm</lx> <ly>5mm</ly> <angle>0</angle> 
+				</metric>
+				<radius>10mm</radius>
+			</source2d>
+		</sources>
+	</sizing>
+</meshdoc>
+

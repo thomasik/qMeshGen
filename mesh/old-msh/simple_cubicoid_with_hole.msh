@@ -1,0 +1,41 @@
+#Prostopadloscian + dziura
+
+[POINTS
+#ID       X       Y       Z
+1	-15cm	-9cm	-20cm
+2	 15cm	-9cm	-20cm
+3	 15cm	 9cm	-20cm
+4	-15cm	 9cm	-20cm
+5	-15cm	-9cm	 20cm
+6	 15cm	-9cm	 20cm
+7	 15cm	 9cm	 20cm
+8	-15cm	 9cm	 20cm
+11	-10cm	-5cm	-20cm
+12	 10cm	-5cm	-20cm
+13	 10cm	 5cm	-20cm
+14	-10cm	 5cm	-20cm
+15	-10cm	-5cm	 20cm
+16	 10cm	-5cm	 20cm
+17	 10cm	 5cm	 20cm
+18	-10cm	 5cm	 20cm
+]
+
+[FACES
+#ID   SURF_ID   PT_IDS
+1	0	1 4 3 2
+-1	0	11 12 13 14
+2	0	1 2 6 5
+3	0	2 3 7 6
+4	0	3 4 8 7
+5	0	4 1 5 8
+6	0	5 6 7 8
+-6	0	15 18 17 16
+7	0	11 12 16 15
+8	0	12 13 17 16
+9	0	13 14 18 17
+10	0	14 11 15 18
+]
+
+[BLOCKS
+1	1 2 3 4 5 6 -7 -8 -9 -10
+]

@@ -1,0 +1,23 @@
+[POINTS
+1	-10cm	-4cm	-1cm
+2	 10cm	-5cm	-1cm
+3	 10cm	-5cm	 2cm
+4	-10cm	-4cm	 2cm
+5	-10cm	 4cm	-1cm
+6	 10cm	 5cm	-1cm
+7	 10cm	 5cm	 2cm
+8	-10cm	 4cm	 2cm
+]
+
+[FACES
+1	0	1 2 3 4 
+2	0	2 3 7 6
+3	0	5 6 7 8 
+4	0	1 5 8 4 
+5	0	1 2 6 5 
+6	0	3 4 8 7 
+]
+
+[BLOCKS
+1	1 -2 -3 -4 -5 -6
+]

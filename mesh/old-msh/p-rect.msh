@@ -1,0 +1,26 @@
+#Prostokat
+
+[POINTS
+#ID       X       Y
+1	 0	 0
+2	 1	 0
+3	 1	 1
+4	 0	 1
+]
+
+[FACES
+#ID   SURF_ID   PT_IDS
+1	0	1 2 3 4
+]
+
+[CONTROL_2D
+1 4 LX=0.1-0.09*u LY=0.1-0.09*v A=0
+]
+
+[BOUNDARY_CONDITIONS
+#TYPE	WHERE	WHAT
+#0	PID1 PID2	string
+#1	FID1		string
+0	1 2	ala ma kota
+0	3 2	a=1 b=2
+]

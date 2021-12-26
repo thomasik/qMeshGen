@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meshdoc xmlns="http://www.icsr.agh.edu.pl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<header>
+		<creator>Tomasz Jurczyk</creator>
+		<version>1.0</version>
+		<description>rectangle on plane</description>
+	</header>
+	<constants>
+		<const> <name>DLUGOSC</name> <value>5cm</value> </const>
+		<const> <name>WYSOKOSC</name> <value>1cm</value> </const>
+	</constants>
+	<model>
+		<vertices>
+			<vertex vid="1"> <x>0</x> <y>0</y> </vertex>
+			<vertex vid="2"> <x>DLUGOSC</x> <y>0</y> </vertex>
+			<vertex vid="3"> <x>DLUGOSC</x> <y>WYSOKOSC</y> </vertex>
+			<vertex vid="4"> <x>0</x> <y>WYSOKOSC</y> </vertex>
+		</vertices>
+
+		<faces>
+			<face fid="1">
+				<vertex vid="1" />
+				<vertex vid="2" />
+				<vertex vid="3" />
+				<vertex vid="4" />
+			</face>
+		</faces>
+		
+	</model>
+
+</meshdoc>

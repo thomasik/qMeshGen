@@ -1,0 +1,30 @@
+[POINTS
+#
+# ID	X	Y	Z
+# ID	*surf	S	T
+# ID	*surf	*curve	T
+#
+1	*1	0	0
+2	*1	PI/2	0
+3	*1	PI/2	3*PI/8
+4	*1	0	3*PI/8
+]
+
+[SURFACES
+1	2	X=1cm*cos(u)*cos(v) Y=2cm*sin(v) Z=3cm*sin(u)*cos(v)
+]
+
+[FACES
+#       
+# ID	SURF-ID	PT-IDS[optional param-values] -CURVE_ID[s0,s1]
+# (-ID) if empty area
+#
+1	1	1[0,0] 4[0,3*PI/8] 3[PI/2,3*PI/8] 2[PI/2,0]
+]
+
+[BLOCKS
+#
+# ID	FACE_IDS
+#
+1	1
+]

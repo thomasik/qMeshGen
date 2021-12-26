@@ -1,0 +1,30 @@
+[POINTS
+1	  *1  0	     0
+2	  *1  90mm   0
+3	  *1  90mm   150mm
+4	  *1  0	     150mm
+]
+
+[SURFACES
+1	1	[0,0,0] [1,0,0] [0,1,0]
+]
+
+[CONTROL_2D
+#FACE_ID CONTROL_TYPE
+#	1 -> [x,y] lx ly angle
+#	2 -> [x1,y1] [x2,y2] lx ly angle
+#	3 -> curve_id[t1,t2] lx ly angle
+1	1	[20mm,20mm]	[1mm,1mm,0]
+1	1	[70mm,20mm]	[1mm,1mm,0]
+1	1	[20mm,100mm]	[10mm,10mm,0]
+1	1	[70mm,100mm]	[10mm,10mm,0]
+]
+
+# FACE_ID.SUB_ID     SURF_ID        [POINT_ID[PARAMS] [-CURVE_ID+PARAMS] POINT_ID ...]
+[FACES
+1.1	1	1 2 3 4
+]
+
+[BLOCKS
+1	1
+]

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meshdoc xmlns="http://www.icsr.agh.edu.pl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<header>
+		<creator>Tomasz Jurczyk</creator>
+		<version>1.0</version>
+		<description>cone with hole</description>
+	</header>
+	<model>
+		<surfaces>
+			<surface sid="1">
+				<plane>
+					<pt0> <x>0</x> <y>0</y> <z>0</z> </pt0>
+					<e0>  <x>1</x> <y>0</y> <z>0</z> </e0>
+					<e1>  <x>0</x> <y>1</y> <z>0</z> </e1>
+				</plane>
+			</surface>
+			<surface sid="2">
+				<plane>
+					<pt0> <x>0</x> <y>0</y> <z>10cm</z> </pt0>
+					<e0>  <x>1</x> <y>0</y> <z>0</z>    </e0>
+					<e1>  <x>0</x> <y>1</y> <z>0</z>    </e1>
+				</plane>
+			</surface>
+			<surface sid="3">
+				<analytic>
+					<fx>(4cm-v*2cm)*cos(2*PI*u)</fx>
+					<fy>(4cm-v*2cm)*sin(2*PI*u)</fy>
+					<fz>10cm*v</fz>
+				</analytic>
+			</surface>
+			<surface sid="4">
+				<analytic>
+					<fx>(2cm-v*1cm)*cos(2*PI*u)</fx>
+					<fy>(2cm-v*1cm)*sin(2*PI*u)</fy>
+					<fz>10cm*v</fz>
+				</analytic>
+			</surface>
+		</surfaces>
+		
+		<curves>
+      <curve cid="1">
+        <analytic>
+          <fu>4cm*cos(2*PI*t)</fu>
+          <fv>4cm*sin(2*PI*t)</fv>
+        </analytic>
+      </curve>
+      <curve cid="2">
+        <analytic>
+          <fu>2cm*cos(2*PI*t)</fu>
+          <fv>2cm*sin(2*PI*t)</fv>
+        </analytic>
+      </curve>
+      <curve cid="3">
+        <analytic>
+          <fu>1cm*cos(2*PI*t)</fu>
+          <fv>1cm*sin(2*PI*t)</fv>
+        </analytic>
+      </curve>
+		</curves>
+
+		<vertices>
+			<vertex vid="1"> <sid>1</sid> <cid>1</cid>	<t>0</t> </vertex>
+			<vertex vid="2"> <sid>1</sid> <cid>1</cid>	<t>1/3</t> </vertex>
+			<vertex vid="3"> <sid>1</sid> <cid>1</cid>	<t>2/3</t> </vertex>
+			<vertex vid="4"> <sid>2</sid> <cid>2</cid>	<t>0</t> </vertex>
+			<vertex vid="5"> <sid>2</sid> <cid>2</cid>	<t>1/3</t> </vertex>
+			<vertex vid="6"> <sid>2</sid> <cid>2</cid>	<t>2/3</t> </vertex>
+			<vertex vid="11"> <sid>1</sid> <cid>2</cid>	<t>0</t> </vertex>
+			<vertex vid="12"> <sid>1</sid> <cid>2</cid>	<t>1/3</t> </vertex>
+			<vertex vid="13"> <sid>1</sid> <cid>2</cid>	<t>2/3</t> </vertex>
+			<vertex vid="14"> <sid>2</sid> <cid>3</cid>	<t>0</t> </vertex>
+			<vertex vid="15"> <sid>2</sid> <cid>3</cid>	<t>1/3</t> </vertex>
+			<vertex vid="16"> <sid>2</sid> <cid>3</cid>	<t>2/3</t> </vertex>
+		</vertices>
+
+		<edges>
+			<edge sid="1" vid0="1" vid1="2">
+				<cid>1</cid> <t0>0</t0> <t1>1/3</t1>
+			</edge>
+			<edge sid="1" vid0="2" vid1="3">
+				<cid>1</cid> <t0>1/3</t0> <t1>2/3</t1>
+			</edge>
+			<edge sid="1" vid0="3" vid1="1">
+				<cid>1</cid> <t0>2/3</t0> <t1>1</t1>
+			</edge>
+			<edge sid="2" vid0="4" vid1="5">
+				<cid>2</cid> <t0>0</t0> <t1>1/3</t1>
+			</edge>
+			<edge sid="2" vid0="5" vid1="6">
+				<cid>2</cid> <t0>1/3</t0> <t1>2/3</t1>
+			</edge>
+			<edge sid="2" vid0="6" vid1="4">
+				<cid>2</cid> <t0>2/3</t0> <t1>1</t1>
+			</edge>
+			<edge sid="1" vid0="11" vid1="12">
+				<cid>2</cid> <t0>0</t0> <t1>1/3</t1>
+			</edge>
+			<edge sid="1" vid0="12" vid1="13">
+				<cid>2</cid> <t0>1/3</t0> <t1>2/3</t1>
+			</edge>
+			<edge sid="1" vid0="13" vid1="11">
+				<cid>2</cid> <t0>2/3</t0> <t1>1</t1>
+			</edge>
+			<edge sid="2" vid0="14" vid1="15">
+				<cid>3</cid> <t0>0</t0> <t1>1/3</t1>
+			</edge>
+			<edge sid="2" vid0="15" vid1="16">
+				<cid>3</cid> <t0>1/3</t0> <t1>2/3</t1>
+			</edge>
+			<edge sid="2" vid0="16" vid1="14">
+				<cid>3</cid> <t0>2/3</t0> <t1>1</t1>
+			</edge>
+			
+			<edge sid="all" vid0="1" vid1="4" fixed="false" />
+			<edge sid="all" vid0="2" vid1="5" fixed="false" />
+			<edge sid="all" vid0="3" vid1="6" fixed="false" />
+			<edge sid="all" vid0="11" vid1="14" fixed="false" />
+			<edge sid="all" vid0="12" vid1="15" fixed="false" />
+			<edge sid="all" vid0="13" vid1="16" fixed="false" />
+		</edges>
+		
+		<faces>
+			<face fid="1" sid="1">
+				<vertex vid="1"> <cid>1</cid> <t>0</t> </vertex>
+				<vertex vid="2"> <cid>1</cid> <t>1/3</t> </vertex>
+				<vertex vid="3"> <cid>1</cid> <t>2/3</t> </vertex>
+				<contour filled="false">
+					<vertex vid="11"> <cid>2</cid> <t>0</t> </vertex>
+					<vertex vid="12"> <cid>2</cid> <t>1/3</t> </vertex>
+					<vertex vid="13"> <cid>2</cid> <t>2/3</t> </vertex>
+				</contour>
+			</face>
+			<face fid="2" sid="2">
+				<vertex vid="4"> <cid>2</cid> <t>0</t> </vertex>
+				<vertex vid="5"> <cid>2</cid> <t>1/3</t> </vertex>
+				<vertex vid="6"> <cid>2</cid> <t>2/3</t> </vertex>
+				<contour filled="false">
+					<vertex vid="14"> <cid>3</cid> <t>0</t> </vertex>
+					<vertex vid="15"> <cid>3</cid> <t>1/3</t> </vertex>
+					<vertex vid="16"> <cid>3</cid> <t>2/3</t> </vertex>
+				</contour>
+			</face>
+			<face fid="3" sid="3">
+				<vertex vid="1"> <u>0</u>   <v>0</v> </vertex>
+				<vertex vid="2"> <u>1/3</u> <v>0</v> </vertex>
+				<vertex vid="5"> <u>1/3</u> <v>1</v> </vertex>
+				<vertex vid="4"> <u>0</u>   <v>1</v> </vertex>
+			</face>
+			<face fid="4" sid="3">
+				<vertex vid="2"> <u>1/3</u> <v>0</v> </vertex>
+				<vertex vid="3"> <u>2/3</u> <v>0</v> </vertex>
+				<vertex vid="6"> <u>2/3</u> <v>1</v> </vertex>
+				<vertex vid="5"> <u>1/3</u> <v>1</v> </vertex>
+			</face>
+			<face fid="5" sid="3">
+				<vertex vid="3"> <u>2/3</u> <v>0</v> </vertex>
+				<vertex vid="1"> <u>1</u>   <v>0</v> </vertex>
+				<vertex vid="4"> <u>1</u>   <v>1</v> </vertex>
+				<vertex vid="6"> <u>2/3</u> <v>1</v> </vertex>
+			</face>
+			<face fid="6" sid="4">
+				<vertex vid="11"> <u>0</u>   <v>0</v> </vertex>
+				<vertex vid="12"> <u>1/3</u> <v>0</v> </vertex>
+				<vertex vid="15"> <u>1/3</u> <v>1</v> </vertex>
+				<vertex vid="14"> <u>0</u>   <v>1</v> </vertex>
+			</face>
+			<face fid="7" sid="4">
+				<vertex vid="12"> <u>1/3</u> <v>0</v> </vertex>
+				<vertex vid="13"> <u>2/3</u> <v>0</v> </vertex>
+				<vertex vid="16"> <u>2/3</u> <v>1</v> </vertex>
+				<vertex vid="15"> <u>1/3</u> <v>1</v> </vertex>
+			</face>
+			<face fid="8" sid="4">
+				<vertex vid="13"> <u>2/3</u> <v>0</v> </vertex>
+				<vertex vid="11"> <u>1</u>   <v>0</v> </vertex>
+				<vertex vid="14"> <u>1</u>   <v>1</v> </vertex>
+				<vertex vid="16"> <u>2/3</u> <v>1</v> </vertex>
+			</face>
+		</faces>
+		
+		<blocks>
+			<block bid="1">
+				<face fid="1" inverted="true" />
+				<face fid="2" />
+				<face fid="3" />
+				<face fid="4" />
+				<face fid="5" />				
+				<face fid="6" inverted="true" />
+				<face fid="7" inverted="true" />
+				<face fid="8" inverted="true" />				
+			</block>
+		</blocks>
+	</model>
+</meshdoc>

@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meshdoc xmlns="http://www.icsr.agh.edu.pl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<header>
+		<creator>Tomasz Jurczyk</creator>
+		<version>1.1</version>
+		<description>auto-generated grain brep-model</description>
+	</header>
+
+	<model>
+		<vertices>
+
+			<vertex vid="1">	<x>100.5</x>	<y>100.5</y>	<z>100.5</z>	</vertex>
+			<vertex vid="2">	<x>34.0605</x>	<y>100.5</y>	<z>100.5</z>	</vertex>
+			<vertex vid="3">	<x>28.6557</x>	<y>100.5</y>	<z>100.5</z>	</vertex>
+			<vertex vid="4">	<x>0.5</x>	<y>100.5</y>	<z>100.5</z>	</vertex>
+			<vertex vid="5">	<x>100.5</x>	<y>64.529</y>	<z>100.5</z>	</vertex>
+			<vertex vid="6">	<x>90.9118</x>	<y>62.6226</y>	<z>100.5</z>	</vertex>
+			<vertex vid="7">	<x>100.5</x>	<y>0.5</y>	<z>100.5</z>	</vertex>
+			<vertex vid="8">	<x>47.4047</x>	<y>0.5</y>	<z>100.5</z>	</vertex>
+			<vertex vid="9">	<x>0.5</x>	<y>0.5</y>	<z>100.5</z>	</vertex>
+			<vertex vid="10">	<x>32.0201</x>	<y>100.5</y>	<z>94.8852</z>	</vertex>
+			<vertex vid="11">	<x>49.6441</x>	<y>0.5</y>	<z>84.6357</z>	</vertex>
+			<vertex vid="12">	<x>12.9637</x>	<y>0.5</y>	<z>84.1615</z>	</vertex>
+			<vertex vid="15">	<x>35.6391</x>	<y>100.5</y>	<z>67.7137</z>	</vertex>
+			<vertex vid="16">	<x>0.5</x>	<y>100.5</y>	<z>64.9364</z>	</vertex>
+			<vertex vid="17">	<x>45.7855</x>	<y>82.8531</y>	<z>63.2763</z>	</vertex>
+			<vertex vid="18">	<x>89.8563</x>	<y>52.7889</y>	<z>60.5327</z>	</vertex>
+			<vertex vid="19">	<x>100.5</x>	<y>54.5592</y>	<z>58.9571</z>	</vertex>
+			<vertex vid="20">	<x>42.7241</x>	<y>100.5</y>	<z>58.2292</z>	</vertex>
+			<vertex vid="21">	<x>76.7594</x>	<y>33.4624</y>	<z>58.0223</z>	</vertex>
+			<vertex vid="22">	<x>69.7857</x>	<y>63.2247</y>	<z>50.0365</z>	</vertex>
+			<vertex vid="23">	<x>56.3092</x>	<y>46.5394</y>	<z>46.932</z>	</vertex>
+			<vertex vid="24">	<x>100.5</x>	<y>0.5</y>	<z>44.4264</z>	</vertex>
+			<vertex vid="27">	<x>0.5</x>	<y>37.9742</y>	<z>35.9086</z>	</vertex>
+			<vertex vid="28">	<x>51.328</x>	<y>44.2474</y>	<z>34.29</z>	</vertex>
+			<vertex vid="29">	<x>0.5</x>	<y>52.3407</y>	<z>26.9126</z>	</vertex>
+			<vertex vid="31">	<x>28.6674</x>	<y>0.5</y>	<z>19.9041</z>	</vertex>
+			<vertex vid="32">	<x>100.5</x>	<y>100.5</y>	<z>13.9604</z>	</vertex>
+			<vertex vid="33">	<x>90.2385</x>	<y>100.5</y>	<z>13.7564</z>	</vertex>
+			<vertex vid="34">	<x>100.5</x>	<y>100.5</y>	<z>0.5</z>	</vertex>
+			<vertex vid="35">	<x>87.088</x>	<y>100.5</y>	<z>0.5</z>	</vertex>
+			<vertex vid="36">	<x>39.5521</x>	<y>100.5</y>	<z>0.5</z>	</vertex>
+			<vertex vid="37">	<x>6.74185</x>	<y>60.0057</y>	<z>0.5</z>	</vertex>
+			<vertex vid="38">	<x>51.2319</x>	<y>54.5711</y>	<z>0.5</z>	</vertex>
+			<vertex vid="39">	<x>61.3037</x>	<y>14.6211</y>	<z>0.5</z>	</vertex>
+			<vertex vid="40">	<x>100.5</x>	<y>0.5</y>	<z>0.5</z>	</vertex>
+			<vertex vid="41">	<x>75.9992</x>	<y>0.5</y>	<z>0.5</z>	</vertex>
+			<vertex vid="42">	<x>49.2843</x>	<y>0.5</y>	<z>0.5</z>	</vertex>
+			<vertex vid="43">	<x>21.8939</x>	<y>0.5</y>	<z>0.5</z>	</vertex>
+			<vertex vid="44">	<x>0.5</x>	<y>100.5</y>	<z>0.5</z>	</vertex>
+			<vertex vid="45">	<x>0.5</x>	<y>58.4434</y>	<z>0.5</z>	</vertex>
+			<vertex vid="46">	<x>0.5</x>	<y>24.326</y>	<z>0.5</z>	</vertex>
+			<vertex vid="48">	<x>0.5</x>	<y>0.5</y>	<z>88.0456</z>	</vertex>
+			<vertex vid="49">	<x>0.5</x>	<y>0.5</y>	<z>0.5</z>	</vertex>
+			<vertex vid="50">	<x>17.7635</x>	<y>24.4446</y>	<z>49.7458</z>	</vertex>
+			<vertex vid="52">	<x>38.9104</x>	<y>42.5352</y>	<z>44.5222</z>	</vertex>
+			<vertex vid="54">	<x>44.6193</x>	<y>44.0981</y>	<z>48.6557</z>	</vertex>
+			<vertex vid="56">	<x>38.8843</x>	<y>95.4185</y>	<z>63.9608</z>	</vertex>
+		</vertices>
+
+		<surfaces>
+		</surfaces>
+
+		<faces>
+			<face fid="1">
+				<vertex vid="32" />	<vertex vid="19" />	<vertex vid="5" />	<vertex vid="1" />	
+			</face>
+
+			<face fid="2">
+				<vertex vid="1" />	<vertex vid="2" />	<vertex vid="10" />	<vertex vid="15" />	<vertex vid="20" />	<vertex vid="33" />	<vertex vid="32" />	
+			</face>
+
+			<face fid="3">
+				<vertex vid="5" />	<vertex vid="6" />	<vertex vid="2" />	<vertex vid="1" />	
+			</face>
+
+			<face fid="4">
+				<vertex vid="10" />	<vertex vid="17" />	<vertex vid="22" />	<vertex vid="18" />	<vertex vid="6" />	<vertex vid="2" />	
+			</face>
+
+			<face fid="5">
+				<vertex vid="2" />	<vertex vid="3" />	<vertex vid="10" />	
+			</face>
+
+			<face fid="6">
+				<vertex vid="6" />	<vertex vid="8" />	<vertex vid="9" />	<vertex vid="3" />	<vertex vid="2" />	
+			</face>
+
+			<face fid="7">
+				<vertex vid="10" />	<vertex vid="17" />	<vertex vid="54" />	<vertex vid="12" />	<vertex vid="9" />	<vertex vid="3" />	
+			</face>
+
+			<face fid="8">
+				<vertex vid="3" />	<vertex vid="4" />	<vertex vid="16" />	<vertex vid="15" />	<vertex vid="10" />	
+			</face>
+
+			<face fid="9">
+				<vertex vid="9" />	<vertex vid="4" />	<vertex vid="3" />	
+			</face>
+
+			<face fid="10">
+				<vertex vid="16" />	<vertex vid="29" />	<vertex vid="27" />	<vertex vid="48" />	<vertex vid="9" />	<vertex vid="4" />	
+			</face>
+
+			<face fid="11">
+				<vertex vid="19" />	<vertex vid="24" />	<vertex vid="7" />	<vertex vid="5" />	
+			</face>
+
+			<face fid="12">
+				<vertex vid="5" />	<vertex vid="6" />	<vertex vid="18" />	<vertex vid="19" />	
+			</face>
+
+			<face fid="13">
+				<vertex vid="7" />	<vertex vid="8" />	<vertex vid="6" />	<vertex vid="5" />	
+			</face>
+
+			<face fid="14">
+				<vertex vid="18" />	<vertex vid="21" />	<vertex vid="11" />	<vertex vid="8" />	<vertex vid="6" />	
+			</face>
+
+			<face fid="15">
+				<vertex vid="7" />	<vertex vid="8" />	<vertex vid="11" />	<vertex vid="24" />	
+			</face>
+
+			<face fid="16">
+				<vertex vid="8" />	<vertex vid="9" />	<vertex vid="12" />	<vertex vid="11" />	
+			</face>
+
+			<face fid="17">
+				<vertex vid="9" />	<vertex vid="48" />	<vertex vid="12" />	
+			</face>
+
+			<face fid="18">
+				<vertex vid="15" />	<vertex vid="56" />	<vertex vid="17" />	<vertex vid="10" />	
+			</face>
+
+			<face fid="19">
+				<vertex vid="27" />	<vertex vid="50" />	<vertex vid="12" />	<vertex vid="48" />	
+			</face>
+
+			<face fid="20">
+				<vertex vid="27" />	<vertex vid="46" />	<vertex vid="49" />	<vertex vid="48" />	
+			</face>
+
+			<face fid="21">
+				<vertex vid="48" />	<vertex vid="49" />	<vertex vid="43" />	<vertex vid="31" />	<vertex vid="12" />	
+			</face>
+
+			<face fid="22">
+				<vertex vid="21" />	<vertex vid="24" />	<vertex vid="11" />	
+			</face>
+
+			<face fid="23">
+				<vertex vid="11" />	<vertex vid="12" />	<vertex vid="54" />	<vertex vid="23" />	<vertex vid="21" />	
+			</face>
+
+			<face fid="25">
+				<vertex vid="11" />	<vertex vid="12" />	<vertex vid="31" />	<vertex vid="42" />	<vertex vid="41" />	<vertex vid="24" />	
+			</face>
+
+			<face fid="26">
+				<vertex vid="12" />	<vertex vid="50" />	<vertex vid="52" />	<vertex vid="54" />	
+			</face>
+
+			<face fid="27">
+				<vertex vid="50" />	<vertex vid="31" />	<vertex vid="12" />	
+			</face>
+
+			<face fid="28">
+				<vertex vid="20" />	<vertex vid="56" />	<vertex vid="15" />	
+			</face>
+
+			<face fid="29">
+				<vertex vid="15" />	<vertex vid="16" />	<vertex vid="44" />	<vertex vid="36" />	<vertex vid="20" />	
+			</face>
+
+			<face fid="30">
+				<vertex vid="56" />	<vertex vid="29" />	<vertex vid="16" />	<vertex vid="15" />	
+			</face>
+
+			<face fid="31">
+				<vertex vid="44" />	<vertex vid="45" />	<vertex vid="29" />	<vertex vid="16" />	
+			</face>
+
+			<face fid="32">
+				<vertex vid="20" />	<vertex vid="33" />	<vertex vid="22" />	<vertex vid="17" />	<vertex vid="56" />	
+			</face>
+
+			<face fid="33">
+				<vertex vid="20" />	<vertex vid="36" />	<vertex vid="37" />	<vertex vid="29" />	<vertex vid="56" />	
+			</face>
+
+			<face fid="34">
+				<vertex vid="17" />	<vertex vid="54" />	<vertex vid="52" />	<vertex vid="29" />	<vertex vid="56" />	
+			</face>
+
+			<face fid="35">
+				<vertex vid="22" />	<vertex vid="23" />	<vertex vid="54" />	<vertex vid="17" />	
+			</face>
+
+			<face fid="36">
+				<vertex vid="19" />	<vertex vid="24" />	<vertex vid="21" />	<vertex vid="18" />	
+			</face>
+
+			<face fid="37">
+				<vertex vid="18" />	<vertex vid="22" />	<vertex vid="33" />	<vertex vid="32" />	<vertex vid="19" />	
+			</face>
+
+			<face fid="38">
+				<vertex vid="18" />	<vertex vid="21" />	<vertex vid="23" />	<vertex vid="22" />	
+			</face>
+
+			<face fid="39">
+				<vertex vid="32" />	<vertex vid="34" />	<vertex vid="40" />	<vertex vid="24" />	<vertex vid="19" />	
+			</face>
+
+			<face fid="40">
+				<vertex vid="20" />	<vertex vid="36" />	<vertex vid="35" />	<vertex vid="33" />	
+			</face>
+
+			<face fid="41">
+				<vertex vid="23" />	<vertex vid="28" />	<vertex vid="39" />	<vertex vid="41" />	<vertex vid="24" />	<vertex vid="21" />	
+			</face>
+
+			<face fid="42">
+				<vertex vid="33" />	<vertex vid="35" />	<vertex vid="38" />	<vertex vid="28" />	<vertex vid="23" />	<vertex vid="22" />	
+			</face>
+
+			<face fid="43">
+				<vertex vid="52" />	<vertex vid="28" />	<vertex vid="39" />	<vertex vid="42" />	<vertex vid="31" />	<vertex vid="50" />	
+			</face>
+
+			<face fid="44">
+				<vertex vid="50" />	<vertex vid="27" />	<vertex vid="29" />	<vertex vid="52" />	
+			</face>
+
+			<face fid="45">
+				<vertex vid="27" />	<vertex vid="46" />	<vertex vid="43" />	<vertex vid="31" />	<vertex vid="50" />	
+			</face>
+
+			<face fid="46">
+				<vertex vid="54" />	<vertex vid="52" />	<vertex vid="28" />	<vertex vid="23" />	
+			</face>
+
+			<face fid="48">
+				<vertex vid="29" />	<vertex vid="37" />	<vertex vid="38" />	<vertex vid="28" />	<vertex vid="52" />	
+			</face>
+
+			<face fid="49">
+				<vertex vid="24" />	<vertex vid="41" />	<vertex vid="40" />	
+			</face>
+
+			<face fid="50">
+				<vertex vid="29" />	<vertex vid="45" />	<vertex vid="46" />	<vertex vid="27" />	
+			</face>
+
+			<face fid="51">
+				<vertex vid="38" />	<vertex vid="39" />	<vertex vid="28" />	
+			</face>
+
+			<face fid="52">
+				<vertex vid="29" />	<vertex vid="45" />	<vertex vid="37" />	
+			</face>
+
+			<face fid="53">
+				<vertex vid="31" />	<vertex vid="43" />	<vertex vid="42" />	
+			</face>
+
+			<face fid="54">
+				<vertex vid="32" />	<vertex vid="33" />	<vertex vid="35" />	<vertex vid="34" />	
+			</face>
+
+			<face fid="55">
+				<vertex vid="40" />	<vertex vid="41" />	<vertex vid="39" />	<vertex vid="38" />	<vertex vid="35" />	<vertex vid="34" />	
+			</face>
+
+			<face fid="56">
+				<vertex vid="38" />	<vertex vid="37" />	<vertex vid="36" />	<vertex vid="35" />	
+			</face>
+
+			<face fid="57">
+				<vertex vid="37" />	<vertex vid="45" />	<vertex vid="44" />	<vertex vid="36" />	
+			</face>
+
+			<face fid="58">
+				<vertex vid="38" />	<vertex vid="39" />	<vertex vid="42" />	<vertex vid="43" />	<vertex vid="46" />	<vertex vid="45" />	<vertex vid="37" />	
+			</face>
+
+			<face fid="59">
+				<vertex vid="43" />	<vertex vid="49" />	<vertex vid="46" />	
+			</face>
+
+			<face fid="60">
+				<vertex vid="41" />	<vertex vid="42" />	<vertex vid="39" />	
+			</face>
+
+		</faces>
+
+		<blocks>
+			<block bid="1">
+				<face fid="20" />
+				<face fid="21" />
+				<face fid="59" />
+				<face fid="27" inverted="true" />
+				<face fid="45" inverted="true" />
+				<face fid="19" inverted="true" />
+			</block>
+
+			<block bid="2">
+				<face fid="25" />
+				<face fid="60" />
+				<face fid="27" />
+				<face fid="22" inverted="true" />
+				<face fid="43" />
+				<face fid="41" inverted="true" />
+				<face fid="23" inverted="true" />
+				<face fid="26" inverted="true" />
+				<face fid="46" inverted="true" />
+			</block>
+
+			<block bid="3">
+				<face fid="15" />
+				<face fid="13" inverted="true" />
+				<face fid="11" inverted="true" />
+				<face fid="22" />
+				<face fid="36" />
+				<face fid="14" />
+				<face fid="12" inverted="true" />
+			</block>
+
+			<block bid="4">
+				<face fid="50" />
+				<face fid="53" />
+				<face fid="58" />
+				<face fid="45" />
+				<face fid="43" inverted="true" />
+				<face fid="51" inverted="true" />
+				<face fid="44" inverted="true" />
+				<face fid="48" inverted="true" />
+				<face fid="52" inverted="true" />
+			</block>
+
+			<block bid="5">
+				<face fid="49" />
+				<face fid="55" />
+				<face fid="54" inverted="true" />
+				<face fid="39" inverted="true" />
+				<face fid="41" />
+				<face fid="36" inverted="true" />
+				<face fid="51" />
+				<face fid="38" inverted="true" />
+				<face fid="42" />
+				<face fid="37" inverted="true" />
+			</block>
+
+			<block bid="6">
+				<face fid="16" />
+				<face fid="6" inverted="true" />
+				<face fid="5" inverted="true" />
+				<face fid="23" />
+				<face fid="14" inverted="true" />
+				<face fid="38" />
+				<face fid="7" />
+				<face fid="35" />
+				<face fid="4" inverted="true" />
+			</block>
+
+			<block bid="7">
+				<face fid="10" />
+				<face fid="17" />
+				<face fid="9" inverted="true" />
+				<face fid="8" inverted="true" />
+				<face fid="19" />
+				<face fid="26" />
+				<face fid="44" />
+				<face fid="7" inverted="true" />
+				<face fid="34" />
+				<face fid="30" />
+				<face fid="18" inverted="true" />
+			</block>
+
+			<block bid="8">
+				<face fid="56" />
+				<face fid="40" inverted="true" />
+				<face fid="46" />
+				<face fid="48" />
+				<face fid="42" inverted="true" />
+				<face fid="35" inverted="true" />
+				<face fid="34" inverted="true" />
+				<face fid="33" />
+				<face fid="32" inverted="true" />
+			</block>
+
+			<block bid="9">
+				<face fid="31" />
+				<face fid="57" />
+				<face fid="29" inverted="true" />
+				<face fid="52" />
+				<face fid="30" inverted="true" />
+				<face fid="33" inverted="true" />
+				<face fid="28" inverted="true" />
+			</block>
+
+			<block bid="10">
+				<face fid="3" inverted="true" />
+				<face fid="2" inverted="true" />
+				<face fid="1" inverted="true" />
+				<face fid="12" />
+				<face fid="37" />
+				<face fid="4" />
+				<face fid="18" />
+				<face fid="32" />
+				<face fid="28" />
+			</block>
+
+		</blocks>
+	</model>
+	<sizing>
+		<params>
+			<param> <name>ACS_STRETCH_MAX_RATIO</name> <value>1.5</value> </param>
+			<param> <name>ACS3D_DIAMETER_MAX_RATIO</name> <value>0.1</value> </param>
+			<param> <name>ACS2D_DIAMETER_MAX_RATIO</name> <value>0.1</value> </param>
+			<param> <name>ACS2D_INNER_BOUNDARY_RATIO</name> <value>0.2</value> </param>
+		</params>
+	</sizing>
+</meshdoc>

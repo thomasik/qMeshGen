@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meshdoc xmlns="http://www.icsr.agh.edu.pl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<header>
+		<creator>Tomasz Jurczyk</creator>
+		<version>1.1</version>
+		<description>auto-generated grain brep-model</description>
+	</header>
+
+	<model>
+		<vertices>
+
+			<vertex vid="1">	<x>100.5</x>	<y>100.5</y>	<z>100.5</z>	</vertex>
+			<vertex vid="2">	<x>31.2731</x>	<y>100.5</y>	<z>100.5</z>	</vertex>
+			<vertex vid="3">	<x>0.5</x>	<y>100.5</y>	<z>100.5</z>	</vertex>
+			<vertex vid="4">	<x>66.8235</x>	<y>34.9123</y>	<z>100.5</z>	</vertex>
+			<vertex vid="5">	<x>100.5</x>	<y>24.1523</y>	<z>100.5</z>	</vertex>
+			<vertex vid="6">	<x>100.5</x>	<y>0.5</y>	<z>100.5</z>	</vertex>
+			<vertex vid="7">	<x>18.3946</x>	<y>0.5</y>	<z>100.5</z>	</vertex>
+			<vertex vid="8">	<x>11.9491</x>	<y>0.5</y>	<z>90.3963</z>	</vertex>
+			<vertex vid="9">	<x>35.6288</x>	<y>100.5</y>	<z>57.6132</z>	</vertex>
+			<vertex vid="10">	<x>0.5</x>	<y>100.5</y>	<z>54.8726</z>	</vertex>
+			<vertex vid="11">	<x>0.5</x>	<y>46.7391</y>	<z>14.8745</z>	</vertex>
+			<vertex vid="12">	<x>23.3482</x>	<y>42.7014</y>	<z>13.734</z>	</vertex>
+			<vertex vid="13">	<x>100.5</x>	<y>100.5</y>	<z>0.5</z>	</vertex>
+			<vertex vid="14">	<x>77.4052</x>	<y>100.5</y>	<z>0.5</z>	</vertex>
+			<vertex vid="15">	<x>81.2581</x>	<y>64.362</y>	<z>0.5</z>	</vertex>
+			<vertex vid="16">	<x>100.5</x>	<y>58.0813</y>	<z>0.5</z>	</vertex>
+			<vertex vid="17">	<x>26.7049</x>	<y>41.5227</y>	<z>0.5</z>	</vertex>
+			<vertex vid="18">	<x>100.5</x>	<y>0.5</y>	<z>0.5</z>	</vertex>
+			<vertex vid="19">	<x>33.3127</x>	<y>0.5</y>	<z>0.5</z>	</vertex>
+			<vertex vid="20">	<x>0.5</x>	<y>100.5</y>	<z>0.5</z>	</vertex>
+			<vertex vid="21">	<x>0.5</x>	<y>46.1911</y>	<z>0.5</z>	</vertex>
+			<vertex vid="22">	<x>0.5</x>	<y>0.5</y>	<z>100.5</z>	</vertex>
+			<vertex vid="23">	<x>0.5</x>	<y>0.5</y>	<z>94.4785</z>	</vertex>
+			<vertex vid="24">	<x>0.5</x>	<y>0.5</y>	<z>0.5</z>	</vertex>
+			<vertex vid="25">	<x>59.7776</x>	<y>61.1737</y>	<z>30.3035</z>	</vertex>
+		</vertices>
+
+		<faces>
+			<face fid="1">
+				<vertex vid="13" />	<vertex vid="16" />	<vertex vid="5" />	<vertex vid="1" />	
+			</face>
+
+			<face fid="2">
+				<vertex vid="1" />	<vertex vid="2" />	<vertex vid="9" />	<vertex vid="14" />	<vertex vid="13" />	
+			</face>
+
+			<face fid="3">
+				<vertex vid="5" />	<vertex vid="4" />	<vertex vid="2" />	<vertex vid="1" />	
+			</face>
+
+			<face fid="4">
+				<vertex vid="9" />	<vertex vid="25" />	<vertex vid="4" />	<vertex vid="2" />	
+			</face>
+
+			<face fid="5">
+				<vertex vid="2" />	<vertex vid="3" />	<vertex vid="10" />	<vertex vid="9" />	
+			</face>
+
+			<face fid="6">
+				<vertex vid="4" />	<vertex vid="7" />	<vertex vid="22" />	<vertex vid="3" />	<vertex vid="2" />	
+			</face>
+
+			<face fid="7">
+				<vertex vid="10" />	<vertex vid="11" />	<vertex vid="23" />	<vertex vid="22" />	<vertex vid="3" />	
+			</face>
+
+			<face fid="8">
+				<vertex vid="4" />	<vertex vid="25" />	<vertex vid="15" />	<vertex vid="16" />	<vertex vid="5" />	
+			</face>
+
+			<face fid="9">
+				<vertex vid="5" />	<vertex vid="6" />	<vertex vid="7" />	<vertex vid="4" />	
+			</face>
+
+			<face fid="10">
+				<vertex vid="4" />	<vertex vid="7" />	<vertex vid="8" />	<vertex vid="12" />	<vertex vid="25" />	
+			</face>
+
+			<face fid="11">
+				<vertex vid="16" />	<vertex vid="18" />	<vertex vid="6" />	<vertex vid="5" />	
+			</face>
+
+			<face fid="12">
+				<vertex vid="6" />	<vertex vid="7" />	<vertex vid="8" />	<vertex vid="19" />	<vertex vid="18" />	
+			</face>
+
+			<face fid="13">
+				<vertex vid="7" />	<vertex vid="22" />	<vertex vid="23" />	<vertex vid="8" />	
+			</face>
+
+			<face fid="14">
+				<vertex vid="11" />	<vertex vid="12" />	<vertex vid="8" />	<vertex vid="23" />	
+			</face>
+
+			<face fid="15">
+				<vertex vid="11" />	<vertex vid="21" />	<vertex vid="24" />	<vertex vid="23" />	
+			</face>
+
+			<face fid="16">
+				<vertex vid="23" />	<vertex vid="24" />	<vertex vid="19" />	<vertex vid="8" />	
+			</face>
+
+			<face fid="17">
+				<vertex vid="12" />	<vertex vid="17" />	<vertex vid="19" />	<vertex vid="8" />	
+			</face>
+
+			<face fid="18">
+				<vertex vid="14" />	<vertex vid="15" />	<vertex vid="25" />	<vertex vid="9" />	
+			</face>
+
+			<face fid="19">
+				<vertex vid="9" />	<vertex vid="10" />	<vertex vid="20" />	<vertex vid="14" />	
+			</face>
+
+			<face fid="20">
+				<vertex vid="25" />	<vertex vid="12" />	<vertex vid="11" />	<vertex vid="10" />	<vertex vid="9" />	
+			</face>
+
+			<face fid="21">
+				<vertex vid="20" />	<vertex vid="21" />	<vertex vid="11" />	<vertex vid="10" />	
+			</face>
+
+			<face fid="22">
+				<vertex vid="25" />	<vertex vid="12" />	<vertex vid="17" />	<vertex vid="15" />	
+			</face>
+
+			<face fid="23">
+				<vertex vid="11" />	<vertex vid="21" />	<vertex vid="17" />	<vertex vid="12" />	
+			</face>
+
+			<face fid="24">
+				<vertex vid="16" />	<vertex vid="15" />	<vertex vid="14" />	<vertex vid="13" />	
+			</face>
+
+			<face fid="25">
+				<vertex vid="15" />	<vertex vid="17" />	<vertex vid="21" />	<vertex vid="20" />	<vertex vid="14" />	
+			</face>
+
+			<face fid="26">
+				<vertex vid="16" />	<vertex vid="18" />	<vertex vid="19" />	<vertex vid="17" />	<vertex vid="15" />	
+			</face>
+
+			<face fid="27">
+				<vertex vid="17" />	<vertex vid="19" />	<vertex vid="24" />	<vertex vid="21" />	
+			</face>
+
+		</faces>
+
+		<blocks>
+			<block bid="1">
+				<face fid="15" />
+				<face fid="16" />
+				<face fid="27" />
+				<face fid="17" inverted="true" />
+				<face fid="14" inverted="true" />
+				<face fid="23" inverted="true" />
+			</block>
+
+			<block bid="2">
+				<face fid="12" />
+				<face fid="26" />
+				<face fid="9" inverted="true" />
+				<face fid="11" inverted="true" />
+				<face fid="17" />
+				<face fid="10" inverted="true" />
+				<face fid="22" inverted="true" />
+				<face fid="8" inverted="true" />
+			</block>
+
+			<block bid="3">
+				<face fid="7" />
+				<face fid="13" />
+				<face fid="6" inverted="true" />
+				<face fid="5" inverted="true" />
+				<face fid="14" />
+				<face fid="10" />
+				<face fid="20" />
+				<face fid="4" inverted="true" />
+			</block>
+
+			<block bid="4">
+				<face fid="21" />
+				<face fid="25" />
+				<face fid="19" inverted="true" />
+				<face fid="23" />
+				<face fid="22" />
+				<face fid="20" inverted="true" />
+				<face fid="18" inverted="true" />
+			</block>
+
+			<block bid="5">
+				<face fid="24" />
+				<face fid="3" inverted="true" />
+				<face fid="2" inverted="true" />
+				<face fid="1" inverted="true" />
+				<face fid="8" />
+				<face fid="4" />
+				<face fid="18" />
+			</block>
+
+		</blocks>
+	</model>
+</meshdoc>

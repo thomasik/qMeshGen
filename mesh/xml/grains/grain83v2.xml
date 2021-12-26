@@ -1,0 +1,3470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meshdoc xmlns="http://www.icsr.agh.edu.pl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<header>
+		<creator>Tomasz Jurczyk</creator>
+		<version>1.1</version>
+		<description>auto-generated grain brep-model</description>
+	</header>
+
+	<model>
+		<vertices>
+
+			<vertex vid="1">	<x>0.500000</x>	<y>0.500000</y>	<z>2.599184</z>	</vertex>
+			<vertex vid="2">	<x>0.500000</x>	<y>0.500000</y>	<z>35.628257</z>	</vertex>
+			<vertex vid="3">	<x>0.500000</x>	<y>0.500000</y>	<z>44.456579</z>	</vertex>
+			<vertex vid="4">	<x>0.500000</x>	<y>0.500000</y>	<z>71.696829</z>	</vertex>
+			<vertex vid="5">	<x>0.500000</x>	<y>0.500000</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="6">	<x>0.500000</x>	<y>0.500000</y>	<z>96.743250</z>	</vertex>
+			<vertex vid="7">	<x>0.500000</x>	<y>0.500000</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="8">	<x>0.500000</x>	<y>0.500000</y>	<z>74.152136</z>	</vertex>
+			<vertex vid="9">	<x>0.500000</x>	<y>40.292280</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="10">	<x>0.500000</x>	<y>65.497213</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="11">	<x>0.500000</x>	<y>100.500000</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="12">	<x>0.500000</x>	<y>40.219105</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="13">	<x>0.500000</x>	<y>65.695763</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="14">	<x>0.500000</x>	<y>100.500000</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="16">	<x>0.500000</x>	<y>100.500000</y>	<z>35.814082</z>	</vertex>
+			<vertex vid="18">	<x>0.500000</x>	<y>100.500000</y>	<z>71.500000</z>	</vertex>
+			<vertex vid="19">	<x>0.500000</x>	<y>100.500000</y>	<z>44.625826</z>	</vertex>
+			<vertex vid="20">	<x>0.500000</x>	<y>100.500000</y>	<z>74.080510</z>	</vertex>
+			<vertex vid="21">	<x>0.500000</x>	<y>3.063699</y>	<z>37.237754</z>	</vertex>
+			<vertex vid="22">	<x>0.500000</x>	<y>24.845916</y>	<z>31.250672</z>	</vertex>
+			<vertex vid="23">	<x>0.500000</x>	<y>25.346630</y>	<z>20.369966</z>	</vertex>
+			<vertex vid="24">	<x>0.500000</x>	<y>80.522898</y>	<z>25.864870</z>	</vertex>
+			<vertex vid="25">	<x>0.500000</x>	<y>11.376854</y>	<z>74.511050</z>	</vertex>
+			<vertex vid="26">	<x>0.500000</x>	<y>35.196282</y>	<z>69.298640</z>	</vertex>
+			<vertex vid="27">	<x>0.500000</x>	<y>33.573052</y>	<z>41.632184</z>	</vertex>
+			<vertex vid="28">	<x>0.500000</x>	<y>38.350398</y>	<z>53.327710</z>	</vertex>
+			<vertex vid="29">	<x>0.500000</x>	<y>37.527132</y>	<z>65.224213</z>	</vertex>
+			<vertex vid="30">	<x>0.500000</x>	<y>38.589141</y>	<z>56.902143</z>	</vertex>
+			<vertex vid="32">	<x>0.500000</x>	<y>94.766761</y>	<z>60.828835</z>	</vertex>
+			<vertex vid="33">	<x>0.500000</x>	<y>97.126689</y>	<z>68.569435</z>	</vertex>
+			<vertex vid="34">	<x>0.500000</x>	<y>34.911246</y>	<z>13.091235</z>	</vertex>
+			<vertex vid="35">	<x>0.500000</x>	<y>43.231888</y>	<z>94.050515</z>	</vertex>
+			<vertex vid="36">	<x>0.500000</x>	<y>42.552663</y>	<z>27.757867</z>	</vertex>
+			<vertex vid="37">	<x>0.500000</x>	<y>68.367698</y>	<z>35.028143</z>	</vertex>
+			<vertex vid="39">	<x>0.500000</x>	<y>75.170197</y>	<z>26.805975</z>	</vertex>
+			<vertex vid="40">	<x>0.500000</x>	<y>63.751564</y>	<z>96.728437</z>	</vertex>
+			<vertex vid="41">	<x>0.500000</x>	<y>70.469759</y>	<z>61.925380</z>	</vertex>
+			<vertex vid="44">	<x>0.500000</x>	<y>76.918488</y>	<z>84.972932</z>	</vertex>
+			<vertex vid="45">	<x>0.500000</x>	<y>76.901904</y>	<z>69.385472</z>	</vertex>
+			<vertex vid="46">	<x>0.500000</x>	<y>90.138195</y>	<z>90.498774</z>	</vertex>
+			<vertex vid="47">	<x>46.575213</x>	<y>0.500000</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="48">	<x>38.245541</x>	<y>0.500000</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="49">	<x>2.795848</x>	<y>0.500000</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="50">	<x>100.500000</x>	<y>0.500000</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="51">	<x>95.871978</x>	<y>0.500000</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="52">	<x>75.704986</x>	<y>0.500000</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="53">	<x>46.750641</x>	<y>0.500000</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="54">	<x>38.060138</x>	<y>0.500000</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="55">	<x>2.669243</x>	<y>0.500000</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="56">	<x>95.695035</x>	<y>0.500000</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="57">	<x>100.500000</x>	<y>0.500000</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="58">	<x>76.157708</x>	<y>0.500000</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="59">	<x>100.500000</x>	<y>0.500000</y>	<z>35.746174</z>	</vertex>
+			<vertex vid="61">	<x>100.500000</x>	<y>0.500000</y>	<z>71.080936</z>	</vertex>
+			<vertex vid="62">	<x>100.500000</x>	<y>0.500000</y>	<z>44.229890</z>	</vertex>
+			<vertex vid="63">	<x>100.500000</x>	<y>0.500000</y>	<z>96.078805</z>	</vertex>
+			<vertex vid="64">	<x>25.612821</x>	<y>0.500000</y>	<z>32.628722</z>	</vertex>
+			<vertex vid="65">	<x>27.617509</x>	<y>0.500000</y>	<z>24.240805</z>	</vertex>
+			<vertex vid="66">	<x>27.007331</x>	<y>0.500000</y>	<z>16.273020</z>	</vertex>
+			<vertex vid="68">	<x>25.998309</x>	<y>0.500000</y>	<z>11.114835</z>	</vertex>
+			<vertex vid="69">	<x>12.971465</x>	<y>0.500000</y>	<z>38.570541</z>	</vertex>
+			<vertex vid="70">	<x>97.867921</x>	<y>0.500000</y>	<z>2.797214</z>	</vertex>
+			<vertex vid="71">	<x>86.185956</x>	<y>0.500000</y>	<z>26.345278</z>	</vertex>
+			<vertex vid="72">	<x>87.915678</x>	<y>0.500000</y>	<z>32.806762</z>	</vertex>
+			<vertex vid="73">	<x>61.076489</x>	<y>0.500000</y>	<z>17.364587</z>	</vertex>
+			<vertex vid="74">	<x>68.232236</x>	<y>0.500000</y>	<z>32.376799</z>	</vertex>
+			<vertex vid="75">	<x>67.368836</x>	<y>0.500000</y>	<z>26.263302</z>	</vertex>
+			<vertex vid="76">	<x>28.447040</x>	<y>0.500000</y>	<z>36.910060</z>	</vertex>
+			<vertex vid="77">	<x>75.144642</x>	<y>0.500000</y>	<z>44.920753</z>	</vertex>
+			<vertex vid="79">	<x>91.048749</x>	<y>0.500000</y>	<z>77.016477</z>	</vertex>
+			<vertex vid="80">	<x>3.670808</x>	<y>0.500000</y>	<z>68.719351</z>	</vertex>
+			<vertex vid="81">	<x>9.130064</x>	<y>0.500000</y>	<z>44.997544</z>	</vertex>
+			<vertex vid="82">	<x>27.963683</x>	<y>0.500000</y>	<z>10.143605</z>	</vertex>
+			<vertex vid="83">	<x>60.066200</x>	<y>0.500000</y>	<z>12.181217</z>	</vertex>
+			<vertex vid="84">	<x>42.200658</x>	<y>0.500000</y>	<z>96.545459</z>	</vertex>
+			<vertex vid="86">	<x>88.338101</x>	<y>0.500000</y>	<z>81.378656</z>	</vertex>
+			<vertex vid="87">	<x>87.941668</x>	<y>0.500000</y>	<z>92.484492</z>	</vertex>
+			<vertex vid="90">	<x>43.696976</x>	<y>0.500000</y>	<z>86.456533</z>	</vertex>
+			<vertex vid="91">	<x>42.263321</x>	<y>0.500000</y>	<z>78.017778</z>	</vertex>
+			<vertex vid="92">	<x>39.468736</x>	<y>0.500000</y>	<z>70.015618</z>	</vertex>
+			<vertex vid="93">	<x>39.620170</x>	<y>0.500000</y>	<z>67.665247</z>	</vertex>
+			<vertex vid="94">	<x>40.478050</x>	<y>0.500000</y>	<z>73.773189</z>	</vertex>
+			<vertex vid="95">	<x>47.003302</x>	<y>100.500000</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="96">	<x>37.890881</x>	<y>100.500000</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="97">	<x>98.308701</x>	<y>100.500000</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="98">	<x>100.500000</x>	<y>100.500000</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="100">	<x>76.159278</x>	<y>100.500000</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="101">	<x>100.500000</x>	<y>40.252744</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="102">	<x>100.500000</x>	<y>65.761237</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="103">	<x>33.650785</x>	<y>7.678516</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="104">	<x>46.313438</x>	<y>30.010077</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="105">	<x>54.690680</x>	<y>29.508128</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="106">	<x>63.109674</x>	<y>13.730279</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="107">	<x>40.968617</x>	<y>95.698919</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="108">	<x>13.418178</x>	<y>37.679134</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="109">	<x>18.876923</x>	<y>14.192486</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="110">	<x>75.854678</x>	<y>14.833162</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="111">	<x>88.078266</x>	<y>42.570243</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="112">	<x>25.042633</x>	<y>46.991407</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="113">	<x>22.307084</x>	<y>45.055232</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="115">	<x>76.250994</x>	<y>51.232031</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="116">	<x>68.973041</x>	<y>13.193003</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="117">	<x>78.760286</x>	<y>58.158863</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="119">	<x>32.643584</x>	<y>74.919984</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="120">	<x>74.941417</x>	<y>64.347079</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="121">	<x>39.589199</x>	<y>81.646890</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="122">	<x>12.067976</x>	<y>69.515800</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="123">	<x>18.742644</x>	<y>75.594500</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="124">	<x>83.227219</x>	<y>86.397042</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="125">	<x>16.928267</x>	<y>81.970217</y>	<z>0.500000</z>	</vertex>
+			<vertex vid="127">	<x>46.500000</x>	<y>100.500000</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="128">	<x>37.571834</x>	<y>100.500000</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="129">	<x>100.500000</x>	<y>100.500000</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="130">	<x>96.985019</x>	<y>100.500000</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="131">	<x>76.586807</x>	<y>100.500000</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="132">	<x>100.500000</x>	<y>40.010524</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="134">	<x>100.500000</x>	<y>65.718448</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="135">	<x>33.920693</x>	<y>7.393355</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="136">	<x>46.344576</x>	<y>30.019356</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="137">	<x>54.690127</x>	<y>29.501068</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="138">	<x>63.058413</x>	<y>13.553241</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="139">	<x>41.205486</x>	<y>95.368224</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="140">	<x>13.128158</x>	<y>37.702109</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="141">	<x>18.860961</x>	<y>14.181169</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="142">	<x>76.020375</x>	<y>14.833247</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="143">	<x>88.277640</x>	<y>42.750892</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="145">	<x>25.509047</x>	<y>46.530170</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="146">	<x>23.261784</x>	<y>45.667250</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="147">	<x>75.646275</x>	<y>50.385568</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="148">	<x>85.996490</x>	<y>46.095651</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="149">	<x>68.893260</x>	<y>13.085832</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="150">	<x>78.768323</x>	<y>58.114116</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="152">	<x>32.591655</x>	<y>74.833626</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="153">	<x>74.896333</x>	<y>64.400353</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="154">	<x>39.941924</x>	<y>81.138751</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="155">	<x>12.095785</x>	<y>69.295844</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="156">	<x>19.525924</x>	<y>75.665618</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="157">	<x>82.715854</x>	<y>86.270917</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="158">	<x>15.577398</x>	<y>83.811378</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="159">	<x>39.928129</x>	<y>83.749693</y>	<z>100.500000</z>	</vertex>
+			<vertex vid="160">	<x>100.500000</x>	<y>100.500000</y>	<z>35.829888</z>	</vertex>
+			<vertex vid="162">	<x>100.500000</x>	<y>100.500000</y>	<z>70.526446</z>	</vertex>
+			<vertex vid="163">	<x>100.500000</x>	<y>100.500000</y>	<z>45.340220</z>	</vertex>
+			<vertex vid="165">	<x>100.500000</x>	<y>100.500000</y>	<z>73.541742</z>	</vertex>
+			<vertex vid="166">	<x>25.672688</x>	<y>100.500000</y>	<z>32.607845</z>	</vertex>
+			<vertex vid="167">	<x>27.448438</x>	<y>100.500000</y>	<z>24.449298</z>	</vertex>
+			<vertex vid="168">	<x>26.637459</x>	<y>100.500000</y>	<z>11.318276</z>	</vertex>
+			<vertex vid="170">	<x>12.833780</x>	<y>100.500000</y>	<z>38.884924</z>	</vertex>
+			<vertex vid="172">	<x>86.201422</x>	<y>100.500000</y>	<z>26.164846</z>	</vertex>
+			<vertex vid="173">	<x>88.032600</x>	<y>100.500000</y>	<z>33.213831</z>	</vertex>
+			<vertex vid="174">	<x>61.084982</x>	<y>100.500000</y>	<z>17.420686</z>	</vertex>
+			<vertex vid="175">	<x>68.904708</x>	<y>100.500000</y>	<z>33.508316</z>	</vertex>
+			<vertex vid="176">	<x>67.387900</x>	<y>100.500000</y>	<z>26.120832</z>	</vertex>
+			<vertex vid="177">	<x>28.233767</x>	<y>100.500000</y>	<z>36.547490</z>	</vertex>
+			<vertex vid="178">	<x>3.603480</x>	<y>100.500000</y>	<z>68.624126</z>	</vertex>
+			<vertex vid="179">	<x>9.526399</x>	<y>100.500000</y>	<z>44.648462</z>	</vertex>
+			<vertex vid="180">	<x>75.261304</x>	<y>100.500000</y>	<z>44.871350</z>	</vertex>
+			<vertex vid="181">	<x>95.782603</x>	<y>100.500000</y>	<z>73.480414</z>	</vertex>
+			<vertex vid="182">	<x>91.336505</x>	<y>100.500000</y>	<z>76.254183</z>	</vertex>
+			<vertex vid="183">	<x>59.899229</x>	<y>100.500000</y>	<z>11.994399</z>	</vertex>
+			<vertex vid="184">	<x>42.247627</x>	<y>100.500000</y>	<z>96.201674</z>	</vertex>
+			<vertex vid="185">	<x>90.698385</x>	<y>100.500000</y>	<z>79.799931</z>	</vertex>
+			<vertex vid="186">	<x>88.026762</x>	<y>100.500000</y>	<z>81.603468</z>	</vertex>
+			<vertex vid="187">	<x>88.085133</x>	<y>100.500000</y>	<z>92.153127</z>	</vertex>
+			<vertex vid="189">	<x>43.828986</x>	<y>100.500000</y>	<z>86.375547</z>	</vertex>
+			<vertex vid="190">	<x>41.767238</x>	<y>100.500000</y>	<z>76.788521</z>	</vertex>
+			<vertex vid="192">	<x>39.472247</x>	<y>100.500000</y>	<z>70.036535</z>	</vertex>
+			<vertex vid="193">	<x>39.739730</x>	<y>100.500000</y>	<z>67.743715</z>	</vertex>
+			<vertex vid="194">	<x>40.713987</x>	<y>100.500000</y>	<z>74.019817</z>	</vertex>
+			<vertex vid="195">	<x>100.500000</x>	<y>80.275242</y>	<z>25.816327</z>	</vertex>
+			<vertex vid="197">	<x>100.500000</x>	<y>3.175347</y>	<z>37.289798</z>	</vertex>
+			<vertex vid="198">	<x>100.500000</x>	<y>24.843955</y>	<z>31.414132</z>	</vertex>
+			<vertex vid="199">	<x>100.500000</x>	<y>25.289644</y>	<z>20.289727</z>	</vertex>
+			<vertex vid="200">	<x>100.500000</x>	<y>11.753837</y>	<z>74.245696</z>	</vertex>
+			<vertex vid="201">	<x>100.500000</x>	<y>35.016074</y>	<z>69.472657</z>	</vertex>
+			<vertex vid="202">	<x>100.500000</x>	<y>33.168835</y>	<z>40.950509</z>	</vertex>
+			<vertex vid="203">	<x>100.500000</x>	<y>38.026884</y>	<z>53.425187</z>	</vertex>
+			<vertex vid="204">	<x>100.500000</x>	<y>37.265388</y>	<z>65.548860</z>	</vertex>
+			<vertex vid="205">	<x>100.500000</x>	<y>38.523343</y>	<z>57.190264</z>	</vertex>
+			<vertex vid="206">	<x>100.500000</x>	<y>94.590472</y>	<z>60.457442</z>	</vertex>
+			<vertex vid="207">	<x>100.500000</x>	<y>96.675489</y>	<z>68.267649</z>	</vertex>
+			<vertex vid="208">	<x>100.500000</x>	<y>34.548590</y>	<z>13.435735</z>	</vertex>
+			<vertex vid="209">	<x>100.500000</x>	<y>43.098018</y>	<z>93.938518</z>	</vertex>
+			<vertex vid="211">	<x>100.500000</x>	<y>43.282135</y>	<z>28.319531</z>	</vertex>
+			<vertex vid="212">	<x>100.500000</x>	<y>68.369101</y>	<z>34.958813</z>	</vertex>
+			<vertex vid="214">	<x>100.500000</x>	<y>75.164872</y>	<z>26.283817</z>	</vertex>
+			<vertex vid="215">	<x>100.500000</x>	<y>74.414107</y>	<z>28.159908</z>	</vertex>
+			<vertex vid="216">	<x>100.500000</x>	<y>64.152947</y>	<z>96.592196</z>	</vertex>
+			<vertex vid="217">	<x>100.500000</x>	<y>70.370942</y>	<z>61.914569</z>	</vertex>
+			<vertex vid="219">	<x>100.500000</x>	<y>77.333761</y>	<z>85.034046</z>	</vertex>
+			<vertex vid="220">	<x>100.500000</x>	<y>77.379594</y>	<z>69.903299</z>	</vertex>
+			<vertex vid="221">	<x>100.500000</x>	<y>90.368313</y>	<z>90.711629</z>	</vertex>
+			<vertex vid="222">	<x>26.686891</x>	<y>2.673979</y>	<z>25.663921</z>	</vertex>
+			<vertex vid="223">	<x>23.679680</x>	<y>8.508826</y>	<z>36.062988</z>	</vertex>
+			<vertex vid="227">	<x>6.971959</x>	<y>26.464105</y>	<z>31.963806</z>	</vertex>
+			<vertex vid="228">	<x>18.560289</x>	<y>14.910298</y>	<z>37.327864</z>	</vertex>
+			<vertex vid="230">	<x>20.595396</x>	<y>11.337760</y>	<z>38.783992</z>	</vertex>
+			<vertex vid="231">	<x>4.969291</x>	<y>27.264850</y>	<z>31.333220</z>	</vertex>
+			<vertex vid="232">	<x>12.411396</x>	<y>2.558097</y>	<z>39.644822</z>	</vertex>
+			<vertex vid="233">	<x>4.109228</x>	<y>27.299419</y>	<z>21.250187</z>	</vertex>
+			<vertex vid="234">	<x>16.887783</x>	<y>9.471431</y>	<z>6.113368</z>	</vertex>
+			<vertex vid="236">	<x>5.486614</x>	<y>27.570629</y>	<z>29.159101</z>	</vertex>
+			<vertex vid="238">	<x>29.700898</x>	<y>93.359417</y>	<z>19.135251</z>	</vertex>
+			<vertex vid="239">	<x>27.296982</x>	<y>94.000845</y>	<z>29.862197</z>	</vertex>
+			<vertex vid="241">	<x>29.785728</x>	<y>91.948101</y>	<z>13.589909</z>	</vertex>
+			<vertex vid="242">	<x>9.533101</x>	<y>77.984122</y>	<z>26.615447</z>	</vertex>
+			<vertex vid="246">	<x>24.421793</x>	<y>87.001333</y>	<z>11.878449</z>	</vertex>
+			<vertex vid="248">	<x>16.602056</x>	<y>85.488572</y>	<z>32.386135</z>	</vertex>
+			<vertex vid="249">	<x>92.557663</x>	<y>88.580117</y>	<z>17.834855</z>	</vertex>
+			<vertex vid="251">	<x>80.993348</x>	<y>12.515868</y>	<z>31.434679</z>	</vertex>
+			<vertex vid="252">	<x>86.052335</x>	<y>17.638848</y>	<z>30.999162</z>	</vertex>
+			<vertex vid="253">	<x>85.791309</x>	<y>4.181397</y>	<z>34.589761</z>	</vertex>
+			<vertex vid="254">	<x>81.299017</x>	<y>8.973836</y>	<z>32.575024</z>	</vertex>
+			<vertex vid="255">	<x>87.911644</x>	<y>16.270570</y>	<z>15.707361</z>	</vertex>
+			<vertex vid="256">	<x>92.558261</x>	<y>21.505423</y>	<z>18.751960</z>	</vertex>
+			<vertex vid="258">	<x>43.663672</x>	<y>87.670087</y>	<z>12.388821</z>	</vertex>
+			<vertex vid="259">	<x>57.702285</x>	<y>95.997512</y>	<z>15.105765</z>	</vertex>
+			<vertex vid="262">	<x>51.531362</x>	<y>83.786357</y>	<z>18.256531</z>	</vertex>
+			<vertex vid="264">	<x>56.880786</x>	<y>88.753078</y>	<z>18.196822</z>	</vertex>
+			<vertex vid="265">	<x>53.953984</x>	<y>84.677174</y>	<z>18.663103</z>	</vertex>
+			<vertex vid="267">	<x>74.071107</x>	<y>20.427600</y>	<z>40.679580</z>	</vertex>
+			<vertex vid="268">	<x>76.772285</x>	<y>11.051058</y>	<z>33.565083</z>	</vertex>
+			<vertex vid="269">	<x>71.606477</x>	<y>25.298338</y>	<z>47.708928</z>	</vertex>
+			<vertex vid="270">	<x>70.250789</x>	<y>21.707959</y>	<z>51.671059</z>	</vertex>
+			<vertex vid="272">	<x>74.812862</x>	<y>7.264779</y>	<z>38.736712</z>	</vertex>
+			<vertex vid="273">	<x>71.129289</x>	<y>17.054331</y>	<z>49.374777</z>	</vertex>
+			<vertex vid="274">	<x>32.280198</x>	<y>13.890956</y>	<z>30.606421</z>	</vertex>
+			<vertex vid="276">	<x>59.918133</x>	<y>27.024016</y>	<z>31.896595</z>	</vertex>
+			<vertex vid="277">	<x>67.504324</x>	<y>10.303268</y>	<z>21.312868</z>	</vertex>
+			<vertex vid="278">	<x>65.745637</x>	<y>28.300711</y>	<z>40.280628</z>	</vertex>
+			<vertex vid="279">	<x>67.848829</x>	<y>28.203375</y>	<z>46.099423</z>	</vertex>
+			<vertex vid="280">	<x>57.692000</x>	<y>21.469299</y>	<z>55.573572</z>	</vertex>
+			<vertex vid="282">	<x>29.241134</x>	<y>9.544133</y>	<z>46.231265</z>	</vertex>
+			<vertex vid="283">	<x>64.657296</x>	<y>20.871733</y>	<z>54.175192</z>	</vertex>
+			<vertex vid="286">	<x>80.937790</x>	<y>21.882514</y>	<z>72.756031</z>	</vertex>
+			<vertex vid="287">	<x>94.005430</x>	<y>37.496332</y>	<z>69.011964</z>	</vertex>
+			<vertex vid="290">	<x>92.284336</x>	<y>42.220023</y>	<z>55.822632</z>	</vertex>
+			<vertex vid="291">	<x>95.128673</x>	<y>40.699762</y>	<z>52.679662</z>	</vertex>
+			<vertex vid="292">	<x>94.716576</x>	<y>41.483862</y>	<z>61.814615</z>	</vertex>
+			<vertex vid="295">	<x>13.569392</x>	<y>30.324187</y>	<z>70.129799</z>	</vertex>
+			<vertex vid="296">	<x>17.924818</x>	<y>27.949618</y>	<z>70.543459</z>	</vertex>
+			<vertex vid="299">	<x>14.076876</x>	<y>25.564112</y>	<z>38.186897</z>	</vertex>
+			<vertex vid="301">	<x>15.924982</x>	<y>30.753420</y>	<z>53.527831</z>	</vertex>
+			<vertex vid="302">	<x>22.162826</x>	<y>25.980815</y>	<z>67.327315</z>	</vertex>
+			<vertex vid="303">	<x>23.651231</x>	<y>20.750888</y>	<z>64.491741</z>	</vertex>
+			<vertex vid="304">	<x>6.873300</x>	<y>35.223255</y>	<z>53.967236</z>	</vertex>
+			<vertex vid="305">	<x>8.753380</x>	<y>6.005115</y>	<z>68.279136</z>	</vertex>
+			<vertex vid="308">	<x>92.492956</x>	<y>91.084273</y>	<z>70.244350</z>	</vertex>
+			<vertex vid="311">	<x>92.036124</x>	<y>94.717409</y>	<z>72.806312</z>	</vertex>
+			<vertex vid="314">	<x>95.768081</x>	<y>91.403698</y>	<z>68.397367</z>	</vertex>
+			<vertex vid="320">	<x>50.219847</x>	<y>40.441506</y>	<z>18.562184</z>	</vertex>
+			<vertex vid="323">	<x>64.781050</x>	<y>11.539267</y>	<z>4.239629</z>	</vertex>
+			<vertex vid="324">	<x>39.111835</x>	<y>87.690326</y>	<z>7.622007</z>	</vertex>
+			<vertex vid="325">	<x>44.242853</x>	<y>21.755608</y>	<z>87.254999</z>	</vertex>
+			<vertex vid="326">	<x>42.872957</x>	<y>18.528668</y>	<z>85.267482</z>	</vertex>
+			<vertex vid="328">	<x>58.245613</x>	<y>19.826069</y>	<z>89.826706</z>	</vertex>
+			<vertex vid="329">	<x>56.515633</x>	<y>23.683427</y>	<z>91.301590</z>	</vertex>
+			<vertex vid="330">	<x>50.990334</x>	<y>17.173592</y>	<z>86.708255</z>	</vertex>
+			<vertex vid="331">	<x>44.671115</x>	<y>16.422589</y>	<z>84.604619</z>	</vertex>
+			<vertex vid="332">	<x>45.181182</x>	<y>13.019537</y>	<z>86.135201</z>	</vertex>
+			<vertex vid="333">	<x>4.824347</x>	<y>31.745943</y>	<z>18.357818</z>	</vertex>
+			<vertex vid="335">	<x>15.087151</x>	<y>38.568902</y>	<z>97.301500</z>	</vertex>
+			<vertex vid="337">	<x>26.321416</x>	<y>29.301032</y>	<z>82.258606</z>	</vertex>
+			<vertex vid="338">	<x>19.832443</x>	<y>28.397986</y>	<z>72.283505</z>	</vertex>
+			<vertex vid="339">	<x>83.416139</x>	<y>47.825228</y>	<z>91.667109</z>	</vertex>
+			<vertex vid="340">	<x>68.227901</x>	<y>20.211694</y>	<z>87.758666</z>	</vertex>
+			<vertex vid="341">	<x>73.212769</x>	<y>14.760636</y>	<z>97.025243</z>	</vertex>
+			<vertex vid="343">	<x>85.102935</x>	<y>48.281663</y>	<z>89.888402</z>	</vertex>
+			<vertex vid="344">	<x>69.110796</x>	<y>19.460182</y>	<z>85.943337</z>	</vertex>
+			<vertex vid="345">	<x>85.206224</x>	<y>3.738672</y>	<z>81.260178</z>	</vertex>
+			<vertex vid="347">	<x>91.543509</x>	<y>97.044228</y>	<z>86.855726</z>	</vertex>
+			<vertex vid="348">	<x>90.177971</x>	<y>98.082316</y>	<z>91.565835</z>	</vertex>
+			<vertex vid="350">	<x>90.159702</x>	<y>98.347353</y>	<z>81.677285</z>	</vertex>
+			<vertex vid="351">	<x>37.017394</x>	<y>46.193541</y>	<z>23.808332</z>	</vertex>
+			<vertex vid="352">	<x>42.807164</x>	<y>47.223108</y>	<z>20.736456</z>	</vertex>
+			<vertex vid="353">	<x>5.490545</x>	<y>32.465937</y>	<z>21.626215</z>	</vertex>
+			<vertex vid="354">	<x>28.993792</x>	<y>51.249806</y>	<z>10.927209</z>	</vertex>
+			<vertex vid="359">	<x>34.520042</x>	<y>25.462361</y>	<z>82.385816</z>	</vertex>
+			<vertex vid="361">	<x>28.875693</x>	<y>29.398730</y>	<z>81.252701</z>	</vertex>
+			<vertex vid="362">	<x>55.149457</x>	<y>51.085562</y>	<z>25.461408</z>	</vertex>
+			<vertex vid="364">	<x>62.090363</x>	<y>46.483660</y>	<z>42.324629</z>	</vertex>
+			<vertex vid="365">	<x>55.697605</x>	<y>52.279739</y>	<z>27.776144</z>	</vertex>
+			<vertex vid="367">	<x>47.337775</x>	<y>52.323231</y>	<z>49.339243</z>	</vertex>
+			<vertex vid="368">	<x>29.019067</x>	<y>27.226714</y>	<z>71.484263</z>	</vertex>
+			<vertex vid="371">	<x>39.050720</x>	<y>16.951302</y>	<z>69.713317</z>	</vertex>
+			<vertex vid="373">	<x>28.194816</x>	<y>42.268959</y>	<z>46.829801</z>	</vertex>
+			<vertex vid="376">	<x>36.335295</x>	<y>49.273512</y>	<z>41.295367</z>	</vertex>
+			<vertex vid="378">	<x>38.792828</x>	<y>50.544319</y>	<z>43.827700</z>	</vertex>
+			<vertex vid="379">	<x>44.063638</x>	<y>52.372147</y>	<z>46.349300</z>	</vertex>
+			<vertex vid="380">	<x>47.611339</x>	<y>52.896045</y>	<z>44.991781</z>	</vertex>
+			<vertex vid="382">	<x>34.718727</x>	<y>15.271781</y>	<z>66.313985</z>	</vertex>
+			<vertex vid="383">	<x>80.347371</x>	<y>52.141161</y>	<z>96.271459</z>	</vertex>
+			<vertex vid="384">	<x>81.673947</x>	<y>50.174717</y>	<z>92.708019</z>	</vertex>
+			<vertex vid="385">	<x>88.363518</x>	<y>53.163948</y>	<z>53.372108</z>	</vertex>
+			<vertex vid="386">	<x>92.066917</x>	<y>62.015781</y>	<z>39.714860</z>	</vertex>
+			<vertex vid="390">	<x>56.373655</x>	<y>54.253721</y>	<z>25.508997</z>	</vertex>
+			<vertex vid="392">	<x>65.578907</x>	<y>63.544385</y>	<z>19.193508</z>	</vertex>
+			<vertex vid="393">	<x>73.506674</x>	<y>64.311777</y>	<z>9.982053</z>	</vertex>
+			<vertex vid="394">	<x>80.396303</x>	<y>63.954807</y>	<z>14.918047</z>	</vertex>
+			<vertex vid="396">	<x>90.382229</x>	<y>61.284618</y>	<z>42.218925</z>	</vertex>
+			<vertex vid="399">	<x>82.342406</x>	<y>55.365502</y>	<z>90.482135</z>	</vertex>
+			<vertex vid="400">	<x>35.270097</x>	<y>45.799330</y>	<z>76.208979</z>	</vertex>
+			<vertex vid="403">	<x>43.985232</x>	<y>64.723049</y>	<z>73.792892</z>	</vertex>
+			<vertex vid="404">	<x>29.639005</x>	<y>29.296351</y>	<z>79.302365</z>	</vertex>
+			<vertex vid="405">	<x>47.227408</x>	<y>67.430733</y>	<z>74.189946</z>	</vertex>
+			<vertex vid="406">	<x>78.516515</x>	<y>61.559706</y>	<z>88.408759</z>	</vertex>
+			<vertex vid="409">	<x>28.611667</x>	<y>29.091442</y>	<z>75.219344</z>	</vertex>
+			<vertex vid="411">	<x>89.521254</x>	<y>58.252368</y>	<z>60.366117</z>	</vertex>
+			<vertex vid="412">	<x>86.163944</x>	<y>63.387697</y>	<z>66.727282</z>	</vertex>
+			<vertex vid="413">	<x>82.440459</x>	<y>61.331652</y>	<z>84.327426</z>	</vertex>
+			<vertex vid="414">	<x>51.397633</x>	<y>67.547624</y>	<z>69.163318</z>	</vertex>
+			<vertex vid="417">	<x>8.307102</x>	<y>73.859767</y>	<z>30.923638</z>	</vertex>
+			<vertex vid="430">	<x>28.220954</x>	<y>65.790384</y>	<z>4.744135</z>	</vertex>
+			<vertex vid="431">	<x>31.513088</x>	<y>74.961554</y>	<z>2.981586</z>	</vertex>
+			<vertex vid="432">	<x>55.782245</x>	<y>74.743570</y>	<z>16.802755</z>	</vertex>
+			<vertex vid="436">	<x>37.175352</x>	<y>80.541202</y>	<z>3.465279</z>	</vertex>
+			<vertex vid="437">	<x>39.107405</x>	<y>81.781389</y>	<z>3.896876</z>	</vertex>
+			<vertex vid="438">	<x>72.612294</x>	<y>66.125430</y>	<z>8.853035</z>	</vertex>
+			<vertex vid="440">	<x>40.738209</x>	<y>68.599855</y>	<z>76.299531</z>	</vertex>
+			<vertex vid="442">	<x>40.699064</x>	<y>73.915068</y>	<z>78.695235</z>	</vertex>
+			<vertex vid="447">	<x>42.305608</x>	<y>79.300007</y>	<z>89.993026</z>	</vertex>
+			<vertex vid="449">	<x>24.738673</x>	<y>75.475234</y>	<z>4.999358</z>	</vertex>
+			<vertex vid="452">	<x>37.163060</x>	<y>57.827046</y>	<z>45.409290</z>	</vertex>
+			<vertex vid="453">	<x>20.779912</x>	<y>74.627027</y>	<z>53.693873</z>	</vertex>
+			<vertex vid="455">	<x>30.957199</x>	<y>74.902178</y>	<z>72.460500</z>	</vertex>
+			<vertex vid="457">	<x>24.634354</x>	<y>75.364542</y>	<z>70.349744</z>	</vertex>
+			<vertex vid="459">	<x>28.235379</x>	<y>75.716503</y>	<z>70.803453</z>	</vertex>
+			<vertex vid="461">	<x>18.674447</x>	<y>78.326004</y>	<z>40.151891</z>	</vertex>
+			<vertex vid="462">	<x>13.863383</x>	<y>78.847333</y>	<z>37.002691</z>	</vertex>
+			<vertex vid="463">	<x>90.380828</x>	<y>62.238114</y>	<z>60.402651</z>	</vertex>
+			<vertex vid="465">	<x>88.252641</x>	<y>66.695527</y>	<z>64.698968</z>	</vertex>
+			<vertex vid="467">	<x>92.393604</x>	<y>77.465926</y>	<z>78.142984</z>	</vertex>
+			<vertex vid="468">	<x>93.940772</x>	<y>77.905647</y>	<z>69.797872</z>	</vertex>
+			<vertex vid="471">	<x>48.142008</x>	<y>81.241905</y>	<z>30.408943</z>	</vertex>
+			<vertex vid="472">	<x>53.062038</x>	<y>82.082499</y>	<z>18.912852</z>	</vertex>
+			<vertex vid="473">	<x>25.178150</x>	<y>77.868194</y>	<z>5.624559</z>	</vertex>
+			<vertex vid="475">	<x>51.741138</x>	<y>82.698107</y>	<z>61.526907</z>	</vertex>
+			<vertex vid="476">	<x>51.510402</x>	<y>85.647819</y>	<z>58.008071</z>	</vertex>
+			<vertex vid="478">	<x>75.347623</x>	<y>89.995263</y>	<z>47.935332</z>	</vertex>
+			<vertex vid="479">	<x>71.595842</x>	<y>92.271121</y>	<z>45.881015</z>	</vertex>
+			<vertex vid="481">	<x>81.117775</x>	<y>79.969998</y>	<z>58.952036</z>	</vertex>
+			<vertex vid="482">	<x>40.476700</x>	<y>92.043725</y>	<z>70.377646</z>	</vertex>
+			<vertex vid="483">	<x>40.857060</x>	<y>94.388800</y>	<z>66.301878</z>	</vertex>
+			<vertex vid="484">	<x>76.083292</x>	<y>75.702124</y>	<z>9.191068</z>	</vertex>
+			<vertex vid="485">	<x>91.151165</x>	<y>91.451299</y>	<z>82.721090</z>	</vertex>
+			<vertex vid="486">	<x>91.524833</x>	<y>94.106215</y>	<z>84.299568</z>	</vertex>
+			<vertex vid="488">	<x>90.818476</x>	<y>95.417890</y>	<z>82.026848</z>	</vertex>
+			<vertex vid="491">	<x>42.654312</x>	<y>91.710847</y>	<z>87.978782</z>	</vertex>
+			<vertex vid="495">	<x>44.786303</x>	<y>7.706059</y>	<z>85.087481</z>	</vertex>
+			<vertex vid="496">	<x>39.097863</x>	<y>5.079773</y>	<z>69.252206</z>	</vertex>
+		</vertices>
+
+		<faces>
+			<face fid="2">
+				<vertex vid="130" />	<vertex vid="187" />	<vertex vid="186" />	<vertex vid="185" />	<vertex vid="129" />	
+			</face>
+
+			<face fid="4">
+				<vertex vid="187" />	<vertex vid="348" />	<vertex vid="130" />	
+			</face>
+
+			<face fid="5">
+				<vertex vid="131" />	<vertex vid="187" />	<vertex vid="130" />	
+			</face>
+
+			<face fid="6">
+				<vertex vid="157" />	<vertex vid="131" />	<vertex vid="130" />	
+			</face>
+
+			<face fid="7">
+				<vertex vid="131" />	<vertex vid="187" />	<vertex vid="348" />	<vertex vid="157" />	
+			</face>
+
+			<face fid="8">
+				<vertex vid="127" />	<vertex vid="184" />	<vertex vid="189" />	<vertex vid="186" />	<vertex vid="187" />	<vertex vid="131" />	
+			</face>
+
+			<face fid="9">
+				<vertex vid="127" />	<vertex vid="131" />	<vertex vid="157" />	<vertex vid="153" />	<vertex vid="154" />	<vertex vid="159" />	<vertex vid="139" />	
+			</face>
+
+			<face fid="10">
+				<vertex vid="139" />	<vertex vid="184" />	<vertex vid="127" />	
+			</face>
+
+			<face fid="11">
+				<vertex vid="128" />	<vertex vid="184" />	<vertex vid="127" />	
+			</face>
+
+			<face fid="12">
+				<vertex vid="128" />	<vertex vid="127" />	<vertex vid="139" />	
+			</face>
+
+			<face fid="13">
+				<vertex vid="128" />	<vertex vid="184" />	<vertex vid="139" />	
+			</face>
+
+			<face fid="14">
+				<vertex vid="20" />	<vertex vid="194" />	<vertex vid="190" />	<vertex vid="189" />	<vertex vid="184" />	<vertex vid="128" />	<vertex vid="14" />	
+			</face>
+
+			<face fid="15">
+				<vertex vid="139" />	<vertex vid="159" />	<vertex vid="158" />	<vertex vid="14" />	<vertex vid="128" />	
+			</face>
+
+			<face fid="16">
+				<vertex vid="14" />	<vertex vid="20" />	<vertex vid="46" />	
+			</face>
+
+			<face fid="17">
+				<vertex vid="129" />	<vertex vid="221" />	<vertex vid="219" />	<vertex vid="216" />	<vertex vid="134" />	
+			</face>
+
+			<face fid="18">
+				<vertex vid="130" />	<vertex vid="348" />	<vertex vid="347" />	<vertex vid="129" />	
+			</face>
+
+			<face fid="19">
+				<vertex vid="129" />	<vertex vid="134" />	<vertex vid="150" />	<vertex vid="153" />	<vertex vid="157" />	<vertex vid="130" />	
+			</face>
+
+			<face fid="20">
+				<vertex vid="157" />	<vertex vid="348" />	<vertex vid="130" />	
+			</face>
+
+			<face fid="21">
+				<vertex vid="46" />	<vertex vid="158" />	<vertex vid="14" />	
+			</face>
+
+			<face fid="22">
+				<vertex vid="14" />	<vertex vid="158" />	<vertex vid="156" />	<vertex vid="155" />	<vertex vid="13" />	
+			</face>
+
+			<face fid="23">
+				<vertex vid="13" />	<vertex vid="14" />	<vertex vid="46" />	<vertex vid="44" />	<vertex vid="40" />	
+			</face>
+
+			<face fid="24">
+				<vertex vid="139" />	<vertex vid="184" />	<vertex vid="189" />	<vertex vid="491" />	<vertex vid="159" />	
+			</face>
+
+			<face fid="25">
+				<vertex vid="157" />	<vertex vid="348" />	<vertex vid="347" />	<vertex vid="486" />	<vertex vid="485" />	<vertex vid="406" />	<vertex vid="153" />	
+			</face>
+
+			<face fid="26">
+				<vertex vid="20" />	<vertex vid="194" />	<vertex vid="491" />	<vertex vid="159" />	<vertex vid="158" />	<vertex vid="46" />	
+			</face>
+
+			<face fid="27">
+				<vertex vid="152" />	<vertex vid="156" />	<vertex vid="158" />	<vertex vid="159" />	<vertex vid="154" />	
+			</face>
+
+			<face fid="28">
+				<vertex vid="159" />	<vertex vid="491" />	<vertex vid="447" />	<vertex vid="154" />	
+			</face>
+
+			<face fid="29">
+				<vertex vid="46" />	<vertex vid="158" />	<vertex vid="156" />	<vertex vid="44" />	
+			</face>
+
+			<face fid="30">
+				<vertex vid="154" />	<vertex vid="447" />	<vertex vid="406" />	<vertex vid="153" />	
+			</face>
+
+			<face fid="31">
+				<vertex vid="152" />	<vertex vid="442" />	<vertex vid="447" />	<vertex vid="154" />	
+			</face>
+
+			<face fid="32">
+				<vertex vid="136" />	<vertex vid="145" />	<vertex vid="152" />	<vertex vid="154" />	<vertex vid="153" />	<vertex vid="150" />	<vertex vid="147" />	<vertex vid="137" />	
+			</face>
+
+			<face fid="33">
+				<vertex vid="45" />	<vertex vid="457" />	<vertex vid="455" />	<vertex vid="442" />	<vertex vid="152" />	<vertex vid="156" />	<vertex vid="44" />	
+			</face>
+
+			<face fid="34">
+				<vertex vid="146" />	<vertex vid="155" />	<vertex vid="156" />	<vertex vid="152" />	<vertex vid="145" />	
+			</face>
+
+			<face fid="35">
+				<vertex vid="44" />	<vertex vid="156" />	<vertex vid="155" />	<vertex vid="40" />	
+			</face>
+
+			<face fid="36">
+				<vertex vid="152" />	<vertex vid="442" />	<vertex vid="440" />	<vertex vid="400" />	<vertex vid="404" />	<vertex vid="361" />	<vertex vid="145" />	
+			</face>
+
+			<face fid="37">
+				<vertex vid="40" />	<vertex vid="155" />	<vertex vid="146" />	<vertex vid="335" />	<vertex vid="35" />	
+			</face>
+
+			<face fid="38">
+				<vertex vid="40" />	<vertex vid="155" />	<vertex vid="13" />	
+			</face>
+
+			<face fid="39">
+				<vertex vid="13" />	<vertex vid="155" />	<vertex vid="146" />	<vertex vid="140" />	<vertex vid="12" />	
+			</face>
+
+			<face fid="40">
+				<vertex vid="134" />	<vertex vid="216" />	<vertex vid="209" />	<vertex vid="132" />	
+			</face>
+
+			<face fid="41">
+				<vertex vid="150" />	<vertex vid="399" />	<vertex vid="216" />	<vertex vid="134" />	
+			</face>
+
+			<face fid="42">
+				<vertex vid="143" />	<vertex vid="148" />	<vertex vid="150" />	<vertex vid="134" />	<vertex vid="132" />	
+			</face>
+
+			<face fid="43">
+				<vertex vid="12" />	<vertex vid="13" />	<vertex vid="40" />	<vertex vid="35" />	
+			</face>
+
+			<face fid="44">
+				<vertex vid="153" />	<vertex vid="406" />	<vertex vid="399" />	<vertex vid="150" />	
+			</face>
+
+			<face fid="45">
+				<vertex vid="150" />	<vertex vid="383" />	<vertex vid="148" />	
+			</face>
+
+			<face fid="47">
+				<vertex vid="147" />	<vertex vid="150" />	<vertex vid="148" />	
+			</face>
+
+			<face fid="48">
+				<vertex vid="150" />	<vertex vid="383" />	<vertex vid="147" />	
+			</face>
+
+			<face fid="49">
+				<vertex vid="147" />	<vertex vid="383" />	<vertex vid="148" />	
+			</face>
+
+			<face fid="50">
+				<vertex vid="137" />	<vertex vid="147" />	<vertex vid="148" />	<vertex vid="143" />	<vertex vid="142" />	<vertex vid="149" />	<vertex vid="138" />	
+			</face>
+
+			<face fid="51">
+				<vertex vid="147" />	<vertex vid="383" />	<vertex vid="384" />	<vertex vid="329" />	<vertex vid="137" />	
+			</face>
+
+			<face fid="52">
+				<vertex vid="148" />	<vertex vid="383" />	<vertex vid="384" />	<vertex vid="339" />	<vertex vid="143" />	
+			</face>
+
+			<face fid="53">
+				<vertex vid="145" />	<vertex vid="361" />	<vertex vid="359" />	<vertex vid="325" />	<vertex vid="136" />	
+			</face>
+
+			<face fid="54">
+				<vertex vid="135" />	<vertex vid="141" />	<vertex vid="140" />	<vertex vid="146" />	<vertex vid="145" />	<vertex vid="136" />	
+			</face>
+
+			<face fid="55">
+				<vertex vid="146" />	<vertex vid="335" />	<vertex vid="337" />	<vertex vid="361" />	<vertex vid="145" />	
+			</face>
+
+			<face fid="56">
+				<vertex vid="140" />	<vertex vid="335" />	<vertex vid="146" />	
+			</face>
+
+			<face fid="57">
+				<vertex vid="143" />	<vertex vid="339" />	<vertex vid="343" />	<vertex vid="209" />	<vertex vid="132" />	
+			</face>
+
+			<face fid="58">
+				<vertex vid="56" />	<vertex vid="142" />	<vertex vid="143" />	<vertex vid="132" />	<vertex vid="57" />	
+			</face>
+
+			<face fid="59">
+				<vertex vid="143" />	<vertex vid="339" />	<vertex vid="340" />	<vertex vid="341" />	<vertex vid="142" />	
+			</face>
+
+			<face fid="60">
+				<vertex vid="57" />	<vertex vid="132" />	<vertex vid="209" />	<vertex vid="201" />	<vertex vid="200" />	<vertex vid="63" />	
+			</face>
+
+			<face fid="61">
+				<vertex vid="35" />	<vertex vid="335" />	<vertex vid="140" />	<vertex vid="12" />	
+			</face>
+
+			<face fid="62">
+				<vertex vid="12" />	<vertex vid="140" />	<vertex vid="141" />	<vertex vid="55" />	<vertex vid="7" />	
+			</face>
+
+			<face fid="63">
+				<vertex vid="25" />	<vertex vid="6" />	<vertex vid="7" />	<vertex vid="12" />	<vertex vid="35" />	<vertex vid="26" />	
+			</face>
+
+			<face fid="64">
+				<vertex vid="140" />	<vertex vid="335" />	<vertex vid="337" />	<vertex vid="141" />	
+			</face>
+
+			<face fid="65">
+				<vertex vid="137" />	<vertex vid="329" />	<vertex vid="328" />	<vertex vid="138" />	
+			</face>
+
+			<face fid="66">
+				<vertex vid="136" />	<vertex vid="325" />	<vertex vid="329" />	<vertex vid="137" />	
+			</face>
+
+			<face fid="67">
+				<vertex vid="54" />	<vertex vid="135" />	<vertex vid="136" />	<vertex vid="137" />	<vertex vid="138" />	<vertex vid="53" />	
+			</face>
+
+			<face fid="68">
+				<vertex vid="136" />	<vertex vid="325" />	<vertex vid="326" />	<vertex vid="135" />	
+			</face>
+
+			<face fid="69">
+				<vertex vid="56" />	<vertex vid="142" />	<vertex vid="341" />	<vertex vid="87" />	
+			</face>
+
+			<face fid="70">
+				<vertex vid="58" />	<vertex vid="149" />	<vertex vid="142" />	<vertex vid="56" />	
+			</face>
+
+			<face fid="71">
+				<vertex vid="149" />	<vertex vid="341" />	<vertex vid="142" />	
+			</face>
+
+			<face fid="72">
+				<vertex vid="141" />	<vertex vid="337" />	<vertex vid="361" />	<vertex vid="359" />	<vertex vid="326" />	<vertex vid="135" />	
+			</face>
+
+			<face fid="73">
+				<vertex vid="55" />	<vertex vid="141" />	<vertex vid="135" />	<vertex vid="54" />	
+			</face>
+
+			<face fid="74">
+				<vertex vid="25" />	<vertex vid="296" />	<vertex vid="338" />	<vertex vid="337" />	<vertex vid="141" />	<vertex vid="55" />	<vertex vid="6" />	
+			</face>
+
+			<face fid="75">
+				<vertex vid="58" />	<vertex vid="149" />	<vertex vid="341" />	<vertex vid="87" />	
+			</face>
+
+			<face fid="76">
+				<vertex vid="138" />	<vertex vid="328" />	<vertex vid="340" />	<vertex vid="341" />	<vertex vid="149" />	
+			</face>
+
+			<face fid="77">
+				<vertex vid="53" />	<vertex vid="138" />	<vertex vid="149" />	<vertex vid="58" />	
+			</face>
+
+			<face fid="78">
+				<vertex vid="84" />	<vertex vid="332" />	<vertex vid="330" />	<vertex vid="328" />	<vertex vid="138" />	<vertex vid="53" />	
+			</face>
+
+			<face fid="79">
+				<vertex vid="54" />	<vertex vid="135" />	<vertex vid="326" />	<vertex vid="331" />	<vertex vid="332" />	<vertex vid="84" />	
+			</face>
+
+			<face fid="80">
+				<vertex vid="79" />	<vertex vid="63" />	<vertex vid="57" />	<vertex vid="56" />	<vertex vid="87" />	<vertex vid="86" />	
+			</face>
+
+			<face fid="81">
+				<vertex vid="56" />	<vertex vid="58" />	<vertex vid="87" />	
+			</face>
+
+			<face fid="82">
+				<vertex vid="84" />	<vertex vid="90" />	<vertex vid="86" />	<vertex vid="87" />	<vertex vid="58" />	<vertex vid="53" />	
+			</face>
+
+			<face fid="83">
+				<vertex vid="84" />	<vertex vid="53" />	<vertex vid="54" />	
+			</face>
+
+			<face fid="84">
+				<vertex vid="8" />	<vertex vid="94" />	<vertex vid="91" />	<vertex vid="90" />	<vertex vid="84" />	<vertex vid="54" />	<vertex vid="55" />	<vertex vid="6" />	
+			</face>
+
+			<face fid="85">
+				<vertex vid="6" />	<vertex vid="55" />	<vertex vid="7" />	
+			</face>
+
+			<face fid="86">
+				<vertex vid="383" />	<vertex vid="150" />	<vertex vid="399" />	<vertex vid="384" />	
+			</face>
+
+			<face fid="87">
+				<vertex vid="165" />	<vertex vid="221" />	<vertex vid="129" />	
+			</face>
+
+			<face fid="88">
+				<vertex vid="129" />	<vertex vid="347" />	<vertex vid="350" />	<vertex vid="185" />	
+			</face>
+
+			<face fid="89">
+				<vertex vid="129" />	<vertex vid="347" />	<vertex vid="486" />	<vertex vid="221" />	
+			</face>
+
+			<face fid="90">
+				<vertex vid="26" />	<vertex vid="295" />	<vertex vid="338" />	<vertex vid="337" />	<vertex vid="335" />	<vertex vid="35" />	
+			</face>
+
+			<face fid="91">
+				<vertex vid="181" />	<vertex vid="165" />	<vertex vid="129" />	<vertex vid="185" />	<vertex vid="182" />	
+			</face>
+
+			<face fid="92">
+				<vertex vid="26" />	<vertex vid="35" />	<vertex vid="40" />	<vertex vid="44" />	<vertex vid="45" />	<vertex vid="41" />	<vertex vid="29" />	
+			</face>
+
+			<face fid="93">
+				<vertex vid="201" />	<vertex vid="209" />	<vertex vid="216" />	<vertex vid="219" />	<vertex vid="220" />	<vertex vid="217" />	<vertex vid="204" />	
+			</face>
+
+			<face fid="94">
+				<vertex vid="216" />	<vertex vid="413" />	<vertex vid="467" />	<vertex vid="219" />	
+			</face>
+
+			<face fid="95">
+				<vertex vid="209" />	<vertex vid="343" />	<vertex vid="399" />	<vertex vid="216" />	
+			</face>
+
+			<face fid="96">
+				<vertex vid="87" />	<vertex vid="341" />	<vertex vid="340" />	<vertex vid="344" />	<vertex vid="345" />	<vertex vid="86" />	
+			</face>
+
+			<face fid="97">
+				<vertex vid="84" />	<vertex vid="332" />	<vertex vid="495" />	<vertex vid="90" />	
+			</face>
+
+			<face fid="98">
+				<vertex vid="4" />	<vertex vid="8" />	<vertex vid="6" />	<vertex vid="25" />	
+			</face>
+
+			<face fid="99">
+				<vertex vid="63" />	<vertex vid="200" />	<vertex vid="61" />	
+			</face>
+
+			<face fid="100">
+				<vertex vid="79" />	<vertex vid="200" />	<vertex vid="63" />	
+			</face>
+
+			<face fid="101">
+				<vertex vid="61" />	<vertex vid="63" />	<vertex vid="79" />	
+			</face>
+
+			<face fid="102">
+				<vertex vid="209" />	<vertex vid="343" />	<vertex vid="287" />	<vertex vid="201" />	
+			</face>
+
+			<face fid="103">
+				<vertex vid="186" />	<vertex vid="350" />	<vertex vid="347" />	<vertex vid="348" />	<vertex vid="187" />	
+			</face>
+
+			<face fid="104">
+				<vertex vid="339" />	<vertex vid="384" />	<vertex vid="399" />	<vertex vid="343" />	
+			</face>
+
+			<face fid="105">
+				<vertex vid="325" />	<vertex vid="359" />	<vertex vid="404" />	<vertex vid="400" />	<vertex vid="403" />	<vertex vid="405" />	<vertex vid="406" />	<vertex vid="384" />	<vertex vid="329" />	
+			</face>
+
+			<face fid="106">
+				<vertex vid="329" />	<vertex vid="384" />	<vertex vid="339" />	<vertex vid="340" />	<vertex vid="328" />	
+			</face>
+
+			<face fid="107">
+				<vertex vid="406" />	<vertex vid="413" />	<vertex vid="399" />	
+			</face>
+
+			<face fid="108">
+				<vertex vid="286" />	<vertex vid="344" />	<vertex vid="340" />	<vertex vid="339" />	<vertex vid="343" />	<vertex vid="287" />	
+			</face>
+
+			<face fid="109">
+				<vertex vid="325" />	<vertex vid="329" />	<vertex vid="328" />	<vertex vid="330" />	<vertex vid="331" />	<vertex vid="326" />	
+			</face>
+
+			<face fid="110">
+				<vertex vid="162" />	<vertex vid="207" />	<vertex vid="220" />	<vertex vid="219" />	<vertex vid="221" />	<vertex vid="165" />	
+			</face>
+
+			<face fid="111">
+				<vertex vid="165" />	<vertex vid="221" />	<vertex vid="486" />	<vertex vid="488" />	<vertex vid="181" />	
+			</face>
+
+			<face fid="112">
+				<vertex vid="219" />	<vertex vid="467" />	<vertex vid="485" />	<vertex vid="486" />	<vertex vid="221" />	
+			</face>
+
+			<face fid="113">
+				<vertex vid="33" />	<vertex vid="45" />	<vertex vid="44" />	<vertex vid="46" />	<vertex vid="20" />	<vertex vid="18" />	
+			</face>
+
+			<face fid="114">
+				<vertex vid="287" />	<vertex vid="343" />	<vertex vid="399" />	<vertex vid="413" />	<vertex vid="412" />	<vertex vid="411" />	<vertex vid="292" />	
+			</face>
+
+			<face fid="115">
+				<vertex vid="186" />	<vertex vid="350" />	<vertex vid="488" />	<vertex vid="485" />	<vertex vid="406" />	<vertex vid="447" />	<vertex vid="491" />	<vertex vid="189" />	
+			</face>
+
+			<face fid="116">
+				<vertex vid="447" />	<vertex vid="491" />	<vertex vid="190" />	<vertex vid="482" />	<vertex vid="442" />	
+			</face>
+
+			<face fid="117">
+				<vertex vid="406" />	<vertex vid="447" />	<vertex vid="405" />	
+			</face>
+
+			<face fid="118">
+				<vertex vid="330" />	<vertex vid="344" />	<vertex vid="340" />	<vertex vid="328" />	
+			</face>
+
+			<face fid="119">
+				<vertex vid="406" />	<vertex vid="485" />	<vertex vid="467" />	<vertex vid="413" />	
+			</face>
+
+			<face fid="120">
+				<vertex vid="405" />	<vertex vid="414" />	<vertex vid="412" />	<vertex vid="413" />	<vertex vid="406" />	
+			</face>
+
+			<face fid="121">
+				<vertex vid="350" />	<vertex vid="488" />	<vertex vid="486" />	<vertex vid="347" />	
+			</face>
+
+			<face fid="122">
+				<vertex vid="190" />	<vertex vid="491" />	<vertex vid="189" />	
+			</face>
+
+			<face fid="124">
+				<vertex vid="186" />	<vertex vid="189" />	<vertex vid="190" />	<vertex vid="182" />	<vertex vid="185" />	
+			</face>
+
+			<face fid="125">
+				<vertex vid="330" />	<vertex vid="344" />	<vertex vid="345" />	<vertex vid="495" />	<vertex vid="332" />	
+			</face>
+
+			<face fid="126">
+				<vertex vid="270" />	<vertex vid="286" />	<vertex vid="344" />	<vertex vid="330" />	<vertex vid="331" />	<vertex vid="371" />	<vertex vid="283" />	
+			</face>
+
+			<face fid="127">
+				<vertex vid="330" />	<vertex vid="332" />	<vertex vid="331" />	
+			</face>
+
+			<face fid="128">
+				<vertex vid="91" />	<vertex vid="495" />	<vertex vid="332" />	<vertex vid="331" />	<vertex vid="371" />	<vertex vid="496" />	<vertex vid="94" />	
+			</face>
+
+			<face fid="129">
+				<vertex vid="90" />	<vertex vid="495" />	<vertex vid="345" />	<vertex vid="86" />	
+			</face>
+
+			<face fid="130">
+				<vertex vid="90" />	<vertex vid="495" />	<vertex vid="91" />	
+			</face>
+
+			<face fid="131">
+				<vertex vid="86" />	<vertex vid="90" />	<vertex vid="91" />	<vertex vid="79" />	
+			</face>
+
+			<face fid="132">
+				<vertex vid="79" />	<vertex vid="345" />	<vertex vid="344" />	<vertex vid="286" />	
+			</face>
+
+			<face fid="133">
+				<vertex vid="326" />	<vertex vid="359" />	<vertex vid="404" />	<vertex vid="409" />	<vertex vid="368" />	<vertex vid="371" />	<vertex vid="331" />	
+			</face>
+
+			<face fid="134">
+				<vertex vid="345" />	<vertex vid="495" />	<vertex vid="91" />	
+			</face>
+
+			<face fid="135">
+				<vertex vid="486" />	<vertex vid="488" />	<vertex vid="485" />	
+			</face>
+
+			<face fid="136">
+				<vertex vid="219" />	<vertex vid="467" />	<vertex vid="468" />	<vertex vid="220" />	
+			</face>
+
+			<face fid="137">
+				<vertex vid="413" />	<vertex vid="467" />	<vertex vid="468" />	<vertex vid="465" />	<vertex vid="412" />	
+			</face>
+
+			<face fid="138">
+				<vertex vid="182" />	<vertex vid="488" />	<vertex vid="350" />	<vertex vid="185" />	
+			</face>
+
+			<face fid="139">
+				<vertex vid="308" />	<vertex vid="467" />	<vertex vid="485" />	<vertex vid="488" />	<vertex vid="182" />	<vertex vid="311" />	
+			</face>
+
+			<face fid="140">
+				<vertex vid="338" />	<vertex vid="409" />	<vertex vid="404" />	<vertex vid="361" />	<vertex vid="337" />	
+			</face>
+
+			<face fid="141">
+				<vertex vid="361" />	<vertex vid="404" />	<vertex vid="359" />	
+			</face>
+
+			<face fid="142">
+				<vertex vid="185" />	<vertex vid="350" />	<vertex vid="186" />	
+			</face>
+
+			<face fid="143">
+				<vertex vid="86" />	<vertex vid="345" />	<vertex vid="79" />	
+			</face>
+
+			<face fid="146">
+				<vertex vid="405" />	<vertex vid="442" />	<vertex vid="482" />	<vertex vid="475" />	<vertex vid="414" />	
+			</face>
+
+			<face fid="147">
+				<vertex vid="403" />	<vertex vid="440" />	<vertex vid="442" />	<vertex vid="405" />	
+			</face>
+
+			<face fid="148">
+				<vertex vid="440" />	<vertex vid="455" />	<vertex vid="442" />	
+			</face>
+
+			<face fid="150">
+				<vertex vid="79" />	<vertex vid="91" />	<vertex vid="94" />	<vertex vid="92" />	<vertex vid="93" />	<vertex vid="77" />	
+			</face>
+
+			<face fid="152">
+				<vertex vid="182" />	<vertex vid="190" />	<vertex vid="194" />	<vertex vid="192" />	<vertex vid="193" />	<vertex vid="180" />	
+			</face>
+
+			<face fid="153">
+				<vertex vid="311" />	<vertex vid="308" />	<vertex vid="481" />	<vertex vid="475" />	<vertex vid="482" />	<vertex vid="190" />	
+			</face>
+
+			<face fid="155">
+				<vertex vid="459" />	<vertex vid="482" />	<vertex vid="442" />	<vertex vid="455" />	
+			</face>
+
+			<face fid="157">
+				<vertex vid="192" />	<vertex vid="482" />	<vertex vid="190" />	<vertex vid="194" />	
+			</face>
+
+			<face fid="158">
+				<vertex vid="403" />	<vertex vid="440" />	<vertex vid="455" />	<vertex vid="459" />	<vertex vid="453" />	<vertex vid="452" />	<vertex vid="379" />	
+			</face>
+
+			<face fid="159">
+				<vertex vid="41" />	<vertex vid="457" />	<vertex vid="455" />	<vertex vid="440" />	<vertex vid="400" />	<vertex vid="409" />	<vertex vid="338" />	<vertex vid="295" />	<vertex vid="29" />	
+			</face>
+
+			<face fid="161">
+				<vertex vid="368" />	<vertex vid="409" />	<vertex vid="400" />	<vertex vid="403" />	<vertex vid="367" />	
+			</face>
+
+			<face fid="162">
+				<vertex vid="79" />	<vertex vid="200" />	<vertex vid="61" />	
+			</face>
+
+			<face fid="163">
+				<vertex vid="200" />	<vertex vid="79" />	<vertex vid="286" />	<vertex vid="287" />	<vertex vid="201" />	
+			</face>
+
+			<face fid="164">
+				<vertex vid="79" />	<vertex vid="286" />	<vertex vid="270" />	<vertex vid="273" />	<vertex vid="77" />	
+			</face>
+
+			<face fid="166">
+				<vertex vid="180" />	<vertex vid="163" />	<vertex vid="162" />	<vertex vid="181" />	<vertex vid="182" />	
+			</face>
+
+			<face fid="167">
+				<vertex vid="180" />	<vertex vid="308" />	<vertex vid="311" />	<vertex vid="182" />	
+			</face>
+
+			<face fid="168">
+				<vertex vid="18" />	<vertex vid="178" />	<vertex vid="192" />	<vertex vid="194" />	<vertex vid="20" />	
+			</face>
+
+			<face fid="169">
+				<vertex vid="162" />	<vertex vid="207" />	<vertex vid="314" />	<vertex vid="308" />	<vertex vid="311" />	<vertex vid="182" />	<vertex vid="181" />	
+			</face>
+
+			<face fid="170">
+				<vertex vid="62" />	<vertex vid="61" />	<vertex vid="79" />	<vertex vid="77" />	
+			</face>
+
+			<face fid="171">
+				<vertex vid="162" />	<vertex vid="165" />	<vertex vid="181" />	
+			</face>
+
+			<face fid="172">
+				<vertex vid="403" />	<vertex vid="367" />	<vertex vid="414" />	<vertex vid="405" />	
+			</face>
+
+			<face fid="173">
+				<vertex vid="302" />	<vertex vid="368" />	<vertex vid="409" />	<vertex vid="338" />	<vertex vid="296" />	
+			</face>
+
+			<face fid="174">
+				<vertex vid="61" />	<vertex vid="200" />	<vertex vid="201" />	<vertex vid="204" />	<vertex vid="205" />	<vertex vid="203" />	<vertex vid="202" />	<vertex vid="198" />	<vertex vid="197" />	<vertex vid="62" />	
+			</face>
+
+			<face fid="175">
+				<vertex vid="25" />	<vertex vid="296" />	<vertex vid="302" />	<vertex vid="303" />	<vertex vid="305" />	<vertex vid="4" />	
+			</face>
+
+			<face fid="176">
+				<vertex vid="26" />	<vertex vid="295" />	<vertex vid="296" />	<vertex vid="25" />	
+			</face>
+
+			<face fid="177">
+				<vertex vid="21" />	<vertex vid="3" />	<vertex vid="4" />	<vertex vid="25" />	<vertex vid="26" />	<vertex vid="29" />	<vertex vid="30" />	<vertex vid="28" />	<vertex vid="27" />	<vertex vid="22" />	
+			</face>
+
+			<face fid="178">
+				<vertex vid="305" />	<vertex vid="496" />	<vertex vid="94" />	<vertex vid="8" />	
+			</face>
+
+			<face fid="179">
+				<vertex vid="4" />	<vertex vid="80" />	<vertex vid="92" />	<vertex vid="94" />	<vertex vid="8" />	
+			</face>
+
+			<face fid="180">
+				<vertex vid="94" />	<vertex vid="496" />	<vertex vid="92" />	
+			</face>
+
+			<face fid="183">
+				<vertex vid="296" />	<vertex vid="338" />	<vertex vid="295" />	
+			</face>
+
+			<face fid="184">
+				<vertex vid="270" />	<vertex vid="286" />	<vertex vid="287" />	<vertex vid="292" />	<vertex vid="290" />	<vertex vid="269" />	
+			</face>
+
+			<face fid="186">
+				<vertex vid="280" />	<vertex vid="371" />	<vertex vid="368" />	<vertex vid="367" />	<vertex vid="364" />	<vertex vid="279" />	
+			</face>
+
+			<face fid="187">
+				<vertex vid="301" />	<vertex vid="373" />	<vertex vid="378" />	<vertex vid="379" />	<vertex vid="367" />	<vertex vid="368" />	<vertex vid="302" />	
+			</face>
+
+			<face fid="188">
+				<vertex vid="302" />	<vertex vid="368" />	<vertex vid="371" />	<vertex vid="382" />	<vertex vid="303" />	
+			</face>
+
+			<face fid="189">
+				<vertex vid="4" />	<vertex vid="305" />	<vertex vid="80" />	
+			</face>
+
+			<face fid="190">
+				<vertex vid="163" />	<vertex vid="206" />	<vertex vid="207" />	<vertex vid="162" />	
+			</face>
+
+			<face fid="191">
+				<vertex vid="193" />	<vertex vid="483" />	<vertex vid="482" />	<vertex vid="192" />	
+			</face>
+
+			<face fid="192">
+				<vertex vid="166" />	<vertex vid="177" />	<vertex vid="193" />	<vertex vid="192" />	<vertex vid="178" />	<vertex vid="179" />	<vertex vid="170" />	
+			</face>
+
+			<face fid="193">
+				<vertex vid="33" />	<vertex vid="178" />	<vertex vid="192" />	<vertex vid="482" />	<vertex vid="459" />	<vertex vid="457" />	<vertex vid="45" />	
+			</face>
+
+			<face fid="194">
+				<vertex vid="33" />	<vertex vid="178" />	<vertex vid="18" />	
+			</face>
+
+			<face fid="195">
+				<vertex vid="19" />	<vertex vid="179" />	<vertex vid="178" />	<vertex vid="18" />	
+			</face>
+
+			<face fid="196">
+				<vertex vid="32" />	<vertex vid="33" />	<vertex vid="18" />	<vertex vid="19" />	
+			</face>
+
+			<face fid="197">
+				<vertex vid="475" />	<vertex vid="482" />	<vertex vid="483" />	<vertex vid="476" />	
+			</face>
+
+			<face fid="198">
+				<vertex vid="459" />	<vertex vid="482" />	<vertex vid="483" />	<vertex vid="239" />	<vertex vid="461" />	<vertex vid="453" />	
+			</face>
+
+			<face fid="199">
+				<vertex vid="314" />	<vertex vid="468" />	<vertex vid="308" />	
+			</face>
+
+			<face fid="200">
+				<vertex vid="163" />	<vertex vid="206" />	<vertex vid="314" />	<vertex vid="308" />	<vertex vid="180" />	
+			</face>
+
+			<face fid="201">
+				<vertex vid="465" />	<vertex vid="481" />	<vertex vid="308" />	<vertex vid="468" />	
+			</face>
+
+			<face fid="202">
+				<vertex vid="41" />	<vertex vid="457" />	<vertex vid="45" />	
+			</face>
+
+			<face fid="203">
+				<vertex vid="453" />	<vertex vid="459" />	<vertex vid="457" />	<vertex vid="41" />	
+			</face>
+
+			<face fid="204">
+				<vertex vid="29" />	<vertex vid="295" />	<vertex vid="26" />	
+			</face>
+
+			<face fid="205">
+				<vertex vid="30" />	<vertex vid="304" />	<vertex vid="301" />	<vertex vid="302" />	<vertex vid="296" />	<vertex vid="295" />	<vertex vid="29" />	
+			</face>
+
+			<face fid="206">
+				<vertex vid="92" />	<vertex vid="496" />	<vertex vid="93" />	
+			</face>
+
+			<face fid="207">
+				<vertex vid="80" />	<vertex vid="305" />	<vertex vid="496" />	<vertex vid="92" />	
+			</face>
+
+			<face fid="208">
+				<vertex vid="64" />	<vertex vid="76" />	<vertex vid="93" />	<vertex vid="92" />	<vertex vid="80" />	<vertex vid="81" />	<vertex vid="69" />	
+			</face>
+
+			<face fid="209">
+				<vertex vid="3" />	<vertex vid="81" />	<vertex vid="80" />	<vertex vid="4" />	
+			</face>
+
+			<face fid="210">
+				<vertex vid="32" />	<vertex vid="41" />	<vertex vid="45" />	<vertex vid="33" />	
+			</face>
+
+			<face fid="211">
+				<vertex vid="206" />	<vertex vid="217" />	<vertex vid="220" />	<vertex vid="207" />	
+			</face>
+
+			<face fid="212">
+				<vertex vid="220" />	<vertex vid="468" />	<vertex vid="314" />	<vertex vid="207" />	
+			</face>
+
+			<face fid="213">
+				<vertex vid="468" />	<vertex vid="314" />	<vertex vid="206" />	
+			</face>
+
+			<face fid="214">
+				<vertex vid="220" />	<vertex vid="468" />	<vertex vid="217" />	
+			</face>
+
+			<face fid="215">
+				<vertex vid="463" />	<vertex vid="465" />	<vertex vid="468" />	<vertex vid="217" />	
+			</face>
+
+			<face fid="216">
+				<vertex vid="201" />	<vertex vid="287" />	<vertex vid="292" />	<vertex vid="204" />	
+			</face>
+
+			<face fid="217">
+				<vertex vid="93" />	<vertex vid="496" />	<vertex vid="371" />	<vertex vid="283" />	<vertex vid="273" />	<vertex vid="77" />	
+			</face>
+
+			<face fid="219">
+				<vertex vid="280" />	<vertex vid="371" />	<vertex vid="382" />	<vertex vid="282" />	
+			</face>
+
+			<face fid="220">
+				<vertex vid="371" />	<vertex vid="496" />	<vertex vid="382" />	
+			</face>
+
+			<face fid="221">
+				<vertex vid="93" />	<vertex vid="496" />	<vertex vid="382" />	<vertex vid="282" />	<vertex vid="76" />	
+			</face>
+
+			<face fid="222">
+				<vertex vid="303" />	<vertex vid="382" />	<vertex vid="496" />	<vertex vid="305" />	
+			</face>
+
+			<face fid="223">
+				<vertex vid="33" />	<vertex vid="178" />	<vertex vid="179" />	<vertex vid="32" />	
+			</face>
+
+			<face fid="224">
+				<vertex vid="206" />	<vertex vid="314" />	<vertex vid="207" />	
+			</face>
+
+			<face fid="225">
+				<vertex vid="180" />	<vertex vid="478" />	<vertex vid="481" />	<vertex vid="308" />	
+			</face>
+
+			<face fid="226">
+				<vertex vid="414" />	<vertex vid="475" />	<vertex vid="481" />	<vertex vid="465" />	<vertex vid="412" />	
+			</face>
+
+			<face fid="227">
+				<vertex vid="414" />	<vertex vid="475" />	<vertex vid="476" />	<vertex vid="471" />	<vertex vid="380" />	
+			</face>
+
+			<face fid="228">
+				<vertex vid="364" />	<vertex vid="385" />	<vertex vid="411" />	<vertex vid="412" />	<vertex vid="414" />	<vertex vid="367" />	
+			</face>
+
+			<face fid="229">
+				<vertex vid="80" />	<vertex vid="305" />	<vertex vid="303" />	<vertex vid="230" />	<vertex vid="232" />	<vertex vid="81" />	
+			</face>
+
+			<face fid="230">
+				<vertex vid="180" />	<vertex vid="479" />	<vertex vid="476" />	<vertex vid="483" />	<vertex vid="193" />	
+			</face>
+
+			<face fid="231">
+				<vertex vid="175" />	<vertex vid="180" />	<vertex vid="193" />	<vertex vid="177" />	
+			</face>
+
+			<face fid="232">
+				<vertex vid="177" />	<vertex vid="239" />	<vertex vid="483" />	<vertex vid="193" />	
+			</face>
+
+			<face fid="233">
+				<vertex vid="230" />	<vertex vid="303" />	<vertex vid="302" />	<vertex vid="301" />	<vertex vid="299" />	<vertex vid="228" />	
+			</face>
+
+			<face fid="234">
+				<vertex vid="74" />	<vertex vid="77" />	<vertex vid="93" />	<vertex vid="76" />	
+			</face>
+
+			<face fid="235">
+				<vertex vid="471" />	<vertex vid="476" />	<vertex vid="483" />	<vertex vid="239" />	
+			</face>
+
+			<face fid="236">
+				<vertex vid="412" />	<vertex vid="465" />	<vertex vid="463" />	<vertex vid="411" />	
+			</face>
+
+			<face fid="237">
+				<vertex vid="223" />	<vertex vid="282" />	<vertex vid="382" />	<vertex vid="303" />	<vertex vid="230" />	
+			</face>
+
+			<face fid="238">
+				<vertex vid="29" />	<vertex vid="41" />	<vertex vid="30" />	
+			</face>
+
+			<face fid="239">
+				<vertex vid="396" />	<vertex vid="463" />	<vertex vid="465" />	<vertex vid="481" />	<vertex vid="478" />	
+			</face>
+
+			<face fid="240">
+				<vertex vid="204" />	<vertex vid="217" />	<vertex vid="205" />	
+			</face>
+
+			<face fid="241">
+				<vertex vid="204" />	<vertex vid="292" />	<vertex vid="217" />	
+			</face>
+
+			<face fid="242">
+				<vertex vid="204" />	<vertex vid="292" />	<vertex vid="205" />	
+			</face>
+
+			<face fid="243">
+				<vertex vid="160" />	<vertex vid="195" />	<vertex vid="215" />	<vertex vid="212" />	<vertex vid="217" />	<vertex vid="206" />	<vertex vid="163" />	
+			</face>
+
+			<face fid="244">
+				<vertex vid="476" />	<vertex vid="479" />	<vertex vid="478" />	<vertex vid="481" />	<vertex vid="475" />	
+			</face>
+
+			<face fid="245">
+				<vertex vid="205" />	<vertex vid="217" />	<vertex vid="212" />	<vertex vid="203" />	
+			</face>
+
+			<face fid="246">
+				<vertex vid="217" />	<vertex vid="463" />	<vertex vid="396" />	<vertex vid="386" />	<vertex vid="212" />	
+			</face>
+
+			<face fid="247">
+				<vertex vid="217" />	<vertex vid="292" />	<vertex vid="411" />	<vertex vid="463" />	
+			</face>
+
+			<face fid="248">
+				<vertex vid="453" />	<vertex vid="452" />	<vertex vid="378" />	<vertex vid="373" />	<vertex vid="304" />	<vertex vid="30" />	
+			</face>
+
+			<face fid="249">
+				<vertex vid="462" />	<vertex vid="461" />	<vertex vid="453" />	<vertex vid="41" />	
+			</face>
+
+			<face fid="250">
+				<vertex vid="30" />	<vertex vid="41" />	<vertex vid="37" />	<vertex vid="28" />	
+			</face>
+
+			<face fid="251">
+				<vertex vid="205" />	<vertex vid="292" />	<vertex vid="217" />	
+			</face>
+
+			<face fid="252">
+				<vertex vid="292" />	<vertex vid="411" />	<vertex vid="385" />	<vertex vid="290" />	
+			</face>
+
+			<face fid="253">
+				<vertex vid="205" />	<vertex vid="292" />	<vertex vid="290" />	<vertex vid="291" />	<vertex vid="203" />	
+			</face>
+
+			<face fid="254">
+				<vertex vid="385" />	<vertex vid="411" />	<vertex vid="463" />	<vertex vid="396" />	
+			</face>
+
+			<face fid="255">
+				<vertex vid="32" />	<vertex vid="179" />	<vertex vid="170" />	<vertex vid="248" />	<vertex vid="462" />	<vertex vid="41" />	
+			</face>
+
+			<face fid="256">
+				<vertex vid="19" />	<vertex vid="179" />	<vertex vid="32" />	
+			</face>
+
+			<face fid="257">
+				<vertex vid="24" />	<vertex vid="39" />	<vertex vid="37" />	<vertex vid="41" />	<vertex vid="32" />	<vertex vid="19" />	<vertex vid="16" />	
+			</face>
+
+			<face fid="258">
+				<vertex vid="37" />	<vertex vid="417" />	<vertex vid="462" />	<vertex vid="41" />	
+			</face>
+
+			<face fid="259">
+				<vertex vid="472" />	<vertex vid="479" />	<vertex vid="476" />	<vertex vid="471" />	
+			</face>
+
+			<face fid="260">
+				<vertex vid="28" />	<vertex vid="304" />	<vertex vid="30" />	
+			</face>
+
+			<face fid="261">
+				<vertex vid="290" />	<vertex vid="385" />	<vertex vid="396" />	<vertex vid="386" />	<vertex vid="291" />	
+			</face>
+
+			<face fid="262">
+				<vertex vid="279" />	<vertex vid="364" />	<vertex vid="385" />	<vertex vid="290" />	<vertex vid="269" />	
+			</face>
+
+			<face fid="263">
+				<vertex vid="202" />	<vertex vid="291" />	<vertex vid="290" />	<vertex vid="269" />	<vertex vid="267" />	<vertex vid="252" />	<vertex vid="198" />	
+			</face>
+
+			<face fid="264">
+				<vertex vid="270" />	<vertex vid="283" />	<vertex vid="280" />	<vertex vid="279" />	<vertex vid="269" />	
+			</face>
+
+			<face fid="265">
+				<vertex vid="74" />	<vertex vid="272" />	<vertex vid="273" />	<vertex vid="283" />	<vertex vid="280" />	<vertex vid="282" />	<vertex vid="76" />	
+			</face>
+
+			<face fid="266">
+				<vertex vid="276" />	<vertex vid="278" />	<vertex vid="279" />	<vertex vid="280" />	<vertex vid="282" />	<vertex vid="223" />	<vertex vid="274" />	
+			</face>
+
+			<face fid="267">
+				<vertex vid="453" />	<vertex vid="461" />	<vertex vid="452" />	
+			</face>
+
+			<face fid="268">
+				<vertex vid="365" />	<vertex vid="390" />	<vertex vid="392" />	<vertex vid="396" />	<vertex vid="385" />	<vertex vid="364" />	
+			</face>
+
+			<face fid="269">
+				<vertex vid="203" />	<vertex vid="291" />	<vertex vid="386" />	<vertex vid="212" />	
+			</face>
+
+			<face fid="270">
+				<vertex vid="203" />	<vertex vid="291" />	<vertex vid="202" />	
+			</face>
+
+			<face fid="271">
+				<vertex vid="203" />	<vertex vid="212" />	<vertex vid="211" />	<vertex vid="202" />	
+			</face>
+
+			<face fid="272">
+				<vertex vid="37" />	<vertex vid="417" />	<vertex vid="376" />	<vertex vid="373" />	<vertex vid="304" />	<vertex vid="28" />	
+			</face>
+
+			<face fid="273">
+				<vertex vid="28" />	<vertex vid="37" />	<vertex vid="36" />	<vertex vid="27" />	
+			</face>
+
+			<face fid="274">
+				<vertex vid="27" />	<vertex vid="231" />	<vertex vid="227" />	<vertex vid="299" />	<vertex vid="301" />	<vertex vid="304" />	<vertex vid="28" />	
+			</face>
+
+			<face fid="276">
+				<vertex vid="301" />	<vertex vid="373" />	<vertex vid="376" />	<vertex vid="351" />	<vertex vid="299" />	
+			</face>
+
+			<face fid="277">
+				<vertex vid="273" />	<vertex vid="283" />	<vertex vid="270" />	
+			</face>
+
+			<face fid="278">
+				<vertex vid="202" />	<vertex vid="291" />	<vertex vid="386" />	<vertex vid="211" />	
+			</face>
+
+			<face fid="279">
+				<vertex vid="272" />	<vertex vid="273" />	<vertex vid="270" />	<vertex vid="269" />	<vertex vid="267" />	<vertex vid="268" />	
+			</face>
+
+			<face fid="280">
+				<vertex vid="379" />	<vertex vid="380" />	<vertex vid="367" />	
+			</face>
+
+			<face fid="281">
+				<vertex vid="272" />	<vertex vid="77" />	<vertex vid="273" />	
+			</face>
+
+			<face fid="282">
+				<vertex vid="364" />	<vertex vid="367" />	<vertex vid="380" />	<vertex vid="365" />	
+			</face>
+
+			<face fid="283">
+				<vertex vid="173" />	<vertex vid="195" />	<vertex vid="215" />	<vertex vid="386" />	<vertex vid="396" />	<vertex vid="478" />	<vertex vid="180" />	
+			</face>
+
+			<face fid="284">
+				<vertex vid="180" />	<vertex vid="478" />	<vertex vid="479" />	
+			</face>
+
+			<face fid="285">
+				<vertex vid="392" />	<vertex vid="432" />	<vertex vid="472" />	<vertex vid="479" />	<vertex vid="478" />	<vertex vid="396" />	
+			</face>
+
+			<face fid="286">
+				<vertex vid="376" />	<vertex vid="378" />	<vertex vid="373" />	
+			</face>
+
+			<face fid="287">
+				<vertex vid="269" />	<vertex vid="279" />	<vertex vid="278" />	<vertex vid="267" />	
+			</face>
+
+			<face fid="288">
+				<vertex vid="160" />	<vertex vid="163" />	<vertex vid="180" />	<vertex vid="173" />	
+			</face>
+
+			<face fid="289">
+				<vertex vid="16" />	<vertex vid="170" />	<vertex vid="179" />	<vertex vid="19" />	
+			</face>
+
+			<face fid="290">
+				<vertex vid="471" />	<vertex vid="380" />	<vertex vid="379" />	<vertex vid="452" />	<vertex vid="461" />	<vertex vid="239" />	
+			</face>
+
+			<face fid="291">
+				<vertex vid="378" />	<vertex vid="452" />	<vertex vid="379" />	
+			</face>
+
+			<face fid="292">
+				<vertex vid="352" />	<vertex vid="362" />	<vertex vid="365" />	<vertex vid="380" />	<vertex vid="379" />	<vertex vid="378" />	<vertex vid="376" />	<vertex vid="351" />	
+			</face>
+
+			<face fid="293">
+				<vertex vid="279" />	<vertex vid="364" />	<vertex vid="365" />	<vertex vid="362" />	<vertex vid="278" />	
+			</face>
+
+			<face fid="294">
+				<vertex vid="173" />	<vertex vid="180" />	<vertex vid="175" />	<vertex vid="176" />	<vertex vid="172" />	
+			</face>
+
+			<face fid="295">
+				<vertex vid="175" />	<vertex vid="265" />	<vertex vid="472" />	<vertex vid="479" />	<vertex vid="180" />	
+			</face>
+
+			<face fid="296">
+				<vertex vid="376" />	<vertex vid="417" />	<vertex vid="462" />	<vertex vid="461" />	<vertex vid="452" />	<vertex vid="378" />	
+			</face>
+
+			<face fid="297">
+				<vertex vid="76" />	<vertex vid="282" />	<vertex vid="223" />	<vertex vid="64" />	
+			</face>
+
+			<face fid="298">
+				<vertex vid="380" />	<vertex vid="471" />	<vertex vid="472" />	<vertex vid="432" />	<vertex vid="390" />	<vertex vid="365" />	
+			</face>
+
+			<face fid="299">
+				<vertex vid="272" />	<vertex vid="268" />	<vertex vid="254" />	<vertex vid="253" />	<vertex vid="77" />	
+			</face>
+
+			<face fid="300">
+				<vertex vid="77" />	<vertex vid="272" />	<vertex vid="74" />	
+			</face>
+
+			<face fid="302">
+				<vertex vid="72" />	<vertex vid="77" />	<vertex vid="74" />	<vertex vid="75" />	<vertex vid="71" />	
+			</face>
+
+			<face fid="304">
+				<vertex vid="77" />	<vertex vid="253" />	<vertex vid="197" />	<vertex vid="62" />	
+			</face>
+
+			<face fid="305">
+				<vertex vid="77" />	<vertex vid="253" />	<vertex vid="72" />	
+			</face>
+
+			<face fid="306">
+				<vertex vid="81" />	<vertex vid="232" />	<vertex vid="69" />	
+			</face>
+
+			<face fid="307">
+				<vertex vid="21" />	<vertex vid="232" />	<vertex vid="81" />	<vertex vid="3" />	
+			</face>
+
+			<face fid="308">
+				<vertex vid="59" />	<vertex vid="62" />	<vertex vid="77" />	<vertex vid="72" />	
+			</face>
+
+			<face fid="309">
+				<vertex vid="2" />	<vertex vid="69" />	<vertex vid="81" />	<vertex vid="3" />	
+			</face>
+
+			<face fid="310">
+				<vertex vid="62" />	<vertex vid="197" />	<vertex vid="59" />	
+			</face>
+
+			<face fid="311">
+				<vertex vid="2" />	<vertex vid="3" />	<vertex vid="21" />	
+			</face>
+
+			<face fid="313">
+				<vertex vid="396" />	<vertex vid="392" />	<vertex vid="393" />	<vertex vid="394" />	<vertex vid="386" />	
+			</face>
+
+			<face fid="314">
+				<vertex vid="198" />	<vertex vid="202" />	<vertex vid="211" />	<vertex vid="208" />	<vertex vid="199" />	
+			</face>
+
+			<face fid="315">
+				<vertex vid="239" />	<vertex vid="461" />	<vertex vid="462" />	<vertex vid="248" />	
+			</face>
+
+			<face fid="317">
+				<vertex vid="351" />	<vertex vid="376" />	<vertex vid="417" />	<vertex vid="354" />	
+			</face>
+
+			<face fid="318">
+				<vertex vid="251" />	<vertex vid="268" />	<vertex vid="267" />	<vertex vid="252" />	
+			</face>
+
+			<face fid="319">
+				<vertex vid="256" />	<vertex vid="252" />	<vertex vid="267" />	<vertex vid="278" />	<vertex vid="362" />	<vertex vid="115" />	
+			</face>
+
+			<face fid="320">
+				<vertex vid="267" />	<vertex vid="278" />	<vertex vid="276" />	<vertex vid="277" />	<vertex vid="268" />	
+			</face>
+
+			<face fid="321">
+				<vertex vid="36" />	<vertex vid="353" />	<vertex vid="236" />	<vertex vid="231" />	<vertex vid="27" />	
+			</face>
+
+			<face fid="322">
+				<vertex vid="22" />	<vertex vid="27" />	<vertex vid="36" />	<vertex vid="34" />	<vertex vid="23" />	
+			</face>
+
+			<face fid="323">
+				<vertex vid="22" />	<vertex vid="231" />	<vertex vid="27" />	
+			</face>
+
+			<face fid="324">
+				<vertex vid="69" />	<vertex vid="232" />	<vertex vid="230" />	<vertex vid="223" />	<vertex vid="64" />	
+			</face>
+
+			<face fid="325">
+				<vertex vid="22" />	<vertex vid="231" />	<vertex vid="227" />	<vertex vid="228" />	<vertex vid="230" />	<vertex vid="232" />	<vertex vid="21" />	
+			</face>
+
+			<face fid="326">
+				<vertex vid="21" />	<vertex vid="232" />	<vertex vid="69" />	<vertex vid="2" />	
+			</face>
+
+			<face fid="327">
+				<vertex vid="166" />	<vertex vid="239" />	<vertex vid="248" />	<vertex vid="170" />	
+			</face>
+
+			<face fid="328">
+				<vertex vid="11" />	<vertex vid="168" />	<vertex vid="167" />	<vertex vid="166" />	<vertex vid="170" />	<vertex vid="16" />	
+			</face>
+
+			<face fid="329">
+				<vertex vid="16" />	<vertex vid="170" />	<vertex vid="248" />	<vertex vid="242" />	<vertex vid="24" />	
+			</face>
+
+			<face fid="330">
+				<vertex vid="211" />	<vertex vid="386" />	<vertex vid="212" />	
+			</face>
+
+			<face fid="331">
+				<vertex vid="215" />	<vertex vid="386" />	<vertex vid="394" />	<vertex vid="214" />	
+			</face>
+
+			<face fid="332">
+				<vertex vid="212" />	<vertex vid="386" />	<vertex vid="215" />	
+			</face>
+
+			<face fid="333">
+				<vertex vid="208" />	<vertex vid="211" />	<vertex vid="386" />	<vertex vid="394" />	<vertex vid="117" />	
+			</face>
+
+			<face fid="334">
+				<vertex vid="278" />	<vertex vid="362" />	<vertex vid="320" />	<vertex vid="276" />	
+			</face>
+
+			<face fid="335">
+				<vertex vid="228" />	<vertex vid="299" />	<vertex vid="351" />	<vertex vid="352" />	<vertex vid="320" />	<vertex vid="274" />	<vertex vid="223" />	
+			</face>
+
+			<face fid="336">
+				<vertex vid="227" />	<vertex vid="299" />	<vertex vid="228" />	
+			</face>
+
+			<face fid="337">
+				<vertex vid="228" />	<vertex vid="223" />	<vertex vid="230" />	
+			</face>
+
+			<face fid="338">
+				<vertex vid="74" />	<vertex vid="272" />	<vertex vid="268" />	<vertex vid="75" />	
+			</face>
+
+			<face fid="339">
+				<vertex vid="1" />	<vertex vid="49" />	<vertex vid="68" />	<vertex vid="66" />	<vertex vid="65" />	<vertex vid="64" />	<vertex vid="69" />	<vertex vid="2" />	
+			</face>
+
+			<face fid="340">
+				<vertex vid="242" />	<vertex vid="417" />	<vertex vid="462" />	<vertex vid="248" />	
+			</face>
+
+			<face fid="341">
+				<vertex vid="236" />	<vertex vid="353" />	<vertex vid="354" />	<vertex vid="351" />	<vertex vid="299" />	<vertex vid="227" />	
+			</face>
+
+			<face fid="342">
+				<vertex vid="66" />	<vertex vid="222" />	<vertex vid="223" />	<vertex vid="228" />	<vertex vid="227" />	<vertex vid="236" />	<vertex vid="233" />	<vertex vid="234" />	<vertex vid="68" />	
+			</face>
+
+			<face fid="343">
+				<vertex vid="1" />	<vertex vid="2" />	<vertex vid="21" />	<vertex vid="22" />	<vertex vid="23" />	
+			</face>
+
+			<face fid="344">
+				<vertex vid="65" />	<vertex vid="73" />	<vertex vid="75" />	<vertex vid="74" />	<vertex vid="76" />	<vertex vid="64" />	
+			</face>
+
+			<face fid="345">
+				<vertex vid="177" />	<vertex vid="239" />	<vertex vid="262" />	<vertex vid="265" />	<vertex vid="175" />	
+			</face>
+
+			<face fid="346">
+				<vertex vid="167" />	<vertex vid="174" />	<vertex vid="176" />	<vertex vid="175" />	<vertex vid="177" />	<vertex vid="166" />	
+			</face>
+
+			<face fid="347">
+				<vertex vid="166" />	<vertex vid="239" />	<vertex vid="177" />	
+			</face>
+
+			<face fid="348">
+				<vertex vid="64" />	<vertex vid="223" />	<vertex vid="222" />	<vertex vid="65" />	
+			</face>
+
+			<face fid="349">
+				<vertex vid="59" />	<vertex vid="197" />	<vertex vid="198" />	<vertex vid="199" />	<vertex vid="50" />	
+			</face>
+
+			<face fid="350">
+				<vertex vid="197" />	<vertex vid="253" />	<vertex vid="254" />	<vertex vid="251" />	<vertex vid="252" />	<vertex vid="198" />	
+			</face>
+
+			<face fid="351">
+				<vertex vid="72" />	<vertex vid="253" />	<vertex vid="197" />	<vertex vid="59" />	
+			</face>
+
+			<face fid="352">
+				<vertex vid="98" />	<vertex vid="195" />	<vertex vid="160" />	
+			</face>
+
+			<face fid="353">
+				<vertex vid="98" />	<vertex vid="160" />	<vertex vid="173" />	<vertex vid="172" />	<vertex vid="97" />	
+			</face>
+
+			<face fid="354">
+				<vertex vid="160" />	<vertex vid="195" />	<vertex vid="173" />	
+			</face>
+
+			<face fid="355">
+				<vertex vid="24" />	<vertex vid="16" />	<vertex vid="11" />	
+			</face>
+
+			<face fid="357">
+				<vertex vid="223" />	<vertex vid="274" />	<vertex vid="222" />	
+			</face>
+
+			<face fid="358">
+				<vertex vid="70" />	<vertex vid="50" />	<vertex vid="59" />	<vertex vid="72" />	<vertex vid="71" />	
+			</face>
+
+			<face fid="359">
+				<vertex vid="37" />	<vertex vid="417" />	<vertex vid="354" />	<vertex vid="353" />	<vertex vid="36" />	
+			</face>
+
+			<face fid="360">
+				<vertex vid="39" />	<vertex vid="242" />	<vertex vid="417" />	<vertex vid="37" />	
+			</face>
+
+			<face fid="361">
+				<vertex vid="34" />	<vertex vid="36" />	<vertex vid="37" />	<vertex vid="39" />	<vertex vid="10" />	<vertex vid="9" />	
+			</face>
+
+			<face fid="362">
+				<vertex vid="101" />	<vertex vid="208" />	<vertex vid="211" />	<vertex vid="212" />	<vertex vid="215" />	<vertex vid="214" />	<vertex vid="102" />	
+			</face>
+
+			<face fid="363">
+				<vertex vid="72" />	<vertex vid="253" />	<vertex vid="254" />	<vertex vid="71" />	
+			</face>
+
+			<face fid="364">
+				<vertex vid="254" />	<vertex vid="268" />	<vertex vid="251" />	
+			</face>
+
+			<face fid="365">
+				<vertex vid="110" />	<vertex vid="255" />	<vertex vid="251" />	<vertex vid="268" />	<vertex vid="277" />	<vertex vid="323" />	<vertex vid="116" />	
+			</face>
+
+			<face fid="366">
+				<vertex vid="75" />	<vertex vid="268" />	<vertex vid="277" />	<vertex vid="73" />	
+			</face>
+
+			<face fid="367">
+				<vertex vid="75" />	<vertex vid="268" />	<vertex vid="254" />	<vertex vid="71" />	
+			</face>
+
+			<face fid="368">
+				<vertex vid="172" />	<vertex vid="249" />	<vertex vid="195" />	<vertex vid="173" />	
+			</face>
+
+			<face fid="369">
+				<vertex vid="176" />	<vertex vid="264" />	<vertex vid="265" />	<vertex vid="175" />	
+			</face>
+
+			<face fid="370">
+				<vertex vid="167" />	<vertex vid="238" />	<vertex vid="239" />	<vertex vid="166" />	
+			</face>
+
+			<face fid="371">
+				<vertex vid="239" />	<vertex vid="248" />	<vertex vid="242" />	<vertex vid="246" />	<vertex vid="241" />	<vertex vid="238" />	
+			</face>
+
+			<face fid="373">
+				<vertex vid="106" />	<vertex vid="323" />	<vertex vid="277" />	<vertex vid="276" />	<vertex vid="105" />	
+			</face>
+
+			<face fid="374">
+				<vertex vid="274" />	<vertex vid="320" />	<vertex vid="276" />	
+			</face>
+
+			<face fid="375">
+				<vertex vid="65" />	<vertex vid="222" />	<vertex vid="274" />	<vertex vid="276" />	<vertex vid="277" />	<vertex vid="73" />	
+			</face>
+
+			<face fid="376">
+				<vertex vid="231" />	<vertex vid="236" />	<vertex vid="227" />	
+			</face>
+
+			<face fid="377">
+				<vertex vid="71" />	<vertex vid="254" />	<vertex vid="251" />	<vertex vid="255" />	<vertex vid="70" />	
+			</face>
+
+			<face fid="379">
+				<vertex vid="23" />	<vertex vid="233" />	<vertex vid="236" />	<vertex vid="231" />	<vertex vid="22" />	
+			</face>
+
+			<face fid="380">
+				<vertex vid="198" />	<vertex vid="252" />	<vertex vid="256" />	<vertex vid="199" />	
+			</face>
+
+			<face fid="381">
+				<vertex vid="251" />	<vertex vid="255" />	<vertex vid="256" />	<vertex vid="252" />	
+			</face>
+
+			<face fid="383">
+				<vertex vid="262" />	<vertex vid="472" />	<vertex vid="471" />	<vertex vid="239" />	
+			</face>
+
+			<face fid="384">
+				<vertex vid="417" />	<vertex vid="242" />	<vertex vid="449" />	<vertex vid="430" />	<vertex vid="354" />	
+			</face>
+
+			<face fid="385">
+				<vertex vid="66" />	<vertex vid="222" />	<vertex vid="274" />	<vertex vid="104" />	<vertex vid="103" />	<vertex vid="82" />	
+			</face>
+
+			<face fid="386">
+				<vertex vid="238" />	<vertex vid="258" />	<vertex vid="262" />	<vertex vid="239" />	
+			</face>
+
+			<face fid="387">
+				<vertex vid="195" />	<vertex vid="214" />	<vertex vid="215" />	
+			</face>
+
+			<face fid="388">
+				<vertex vid="236" />	<vertex vid="353" />	<vertex vid="333" />	<vertex vid="233" />	
+			</face>
+
+			<face fid="389">
+				<vertex vid="365" />	<vertex vid="390" />	<vertex vid="362" />	
+			</face>
+
+			<face fid="390">
+				<vertex vid="34" />	<vertex vid="333" />	<vertex vid="353" />	<vertex vid="36" />	
+			</face>
+
+			<face fid="391">
+				<vertex vid="11" />	<vertex vid="246" />	<vertex vid="242" />	<vertex vid="24" />	
+			</face>
+
+			<face fid="392">
+				<vertex vid="24" />	<vertex vid="242" />	<vertex vid="39" />	
+			</face>
+
+			<face fid="393">
+				<vertex vid="11" />	<vertex vid="10" />	<vertex vid="39" />	<vertex vid="24" />	
+			</face>
+
+			<face fid="395">
+				<vertex vid="10" />	<vertex vid="122" />	<vertex vid="449" />	<vertex vid="242" />	<vertex vid="39" />	
+			</face>
+
+			<face fid="396">
+				<vertex vid="71" />	<vertex vid="75" />	<vertex vid="73" />	<vertex vid="83" />	<vertex vid="52" />	<vertex vid="51" />	<vertex vid="70" />	
+			</face>
+
+			<face fid="397">
+				<vertex vid="97" />	<vertex vid="249" />	<vertex vid="172" />	
+			</face>
+
+			<face fid="398">
+				<vertex vid="97" />	<vertex vid="172" />	<vertex vid="176" />	<vertex vid="174" />	<vertex vid="183" />	<vertex vid="100" />	
+			</face>
+
+			<face fid="399">
+				<vertex vid="172" />	<vertex vid="249" />	<vertex vid="484" />	<vertex vid="264" />	<vertex vid="176" />	
+			</face>
+
+			<face fid="400">
+				<vertex vid="174" />	<vertex vid="259" />	<vertex vid="264" />	<vertex vid="176" />	
+			</face>
+
+			<face fid="401">
+				<vertex vid="102" />	<vertex vid="214" />	<vertex vid="195" />	<vertex vid="98" />	
+			</face>
+
+			<face fid="402">
+				<vertex vid="214" />	<vertex vid="394" />	<vertex vid="393" />	<vertex vid="438" />	<vertex vid="484" />	<vertex vid="249" />	<vertex vid="195" />	
+			</face>
+
+			<face fid="403">
+				<vertex vid="246" />	<vertex vid="473" />	<vertex vid="449" />	<vertex vid="242" />	
+			</face>
+
+			<face fid="404">
+				<vertex vid="102" />	<vertex vid="214" />	<vertex vid="394" />	<vertex vid="117" />	
+			</face>
+
+			<face fid="405">
+				<vertex vid="115" />	<vertex vid="362" />	<vertex vid="390" />	<vertex vid="392" />	<vertex vid="393" />	<vertex vid="117" />	
+			</face>
+
+			<face fid="406">
+				<vertex vid="354" />	<vertex vid="430" />	<vertex vid="431" />	<vertex vid="436" />	<vertex vid="437" />	<vertex vid="432" />	<vertex vid="390" />	<vertex vid="362" />	<vertex vid="352" />	
+			</face>
+
+			<face fid="407">
+				<vertex vid="105" />	<vertex vid="320" />	<vertex vid="362" />	<vertex vid="115" />	
+			</face>
+
+			<face fid="408">
+				<vertex vid="352" />	<vertex vid="362" />	<vertex vid="320" />	
+			</face>
+
+			<face fid="409">
+				<vertex vid="65" />	<vertex vid="222" />	<vertex vid="66" />	
+			</face>
+
+			<face fid="410">
+				<vertex vid="98" />	<vertex vid="195" />	<vertex vid="249" />	<vertex vid="97" />	
+			</face>
+
+			<face fid="412">
+				<vertex vid="66" />	<vertex vid="82" />	<vertex vid="48" />	<vertex vid="47" />	<vertex vid="83" />	<vertex vid="73" />	<vertex vid="65" />	
+			</face>
+
+			<face fid="413">
+				<vertex vid="174" />	<vertex vid="259" />	<vertex vid="258" />	<vertex vid="238" />	<vertex vid="167" />	
+			</face>
+
+			<face fid="414">
+				<vertex vid="95" />	<vertex vid="183" />	<vertex vid="174" />	<vertex vid="167" />	<vertex vid="168" />	<vertex vid="96" />	
+			</face>
+
+			<face fid="415">
+				<vertex vid="168" />	<vertex vid="241" />	<vertex vid="238" />	<vertex vid="167" />	
+			</face>
+
+			<face fid="417">
+				<vertex vid="113" />	<vertex vid="112" />	<vertex vid="354" />	<vertex vid="353" />	<vertex vid="333" />	<vertex vid="108" />	
+			</face>
+
+			<face fid="418">
+				<vertex vid="109" />	<vertex vid="234" />	<vertex vid="233" />	<vertex vid="333" />	<vertex vid="108" />	
+			</face>
+
+			<face fid="419">
+				<vertex vid="34" />	<vertex vid="333" />	<vertex vid="233" />	<vertex vid="23" />	
+			</face>
+
+			<face fid="420">
+				<vertex vid="23" />	<vertex vid="233" />	<vertex vid="234" />	<vertex vid="1" />	
+			</face>
+
+			<face fid="421">
+				<vertex vid="73" />	<vertex vid="277" />	<vertex vid="323" />	<vertex vid="83" />	
+			</face>
+
+			<face fid="423">
+				<vertex vid="104" />	<vertex vid="320" />	<vertex vid="352" />	<vertex vid="354" />	<vertex vid="112" />	
+			</face>
+
+			<face fid="424">
+				<vertex vid="23" />	<vertex vid="34" />	<vertex vid="9" />	<vertex vid="5" />	<vertex vid="1" />	
+			</face>
+
+			<face fid="425">
+				<vertex vid="199" />	<vertex vid="208" />	<vertex vid="101" />	<vertex vid="50" />	
+			</face>
+
+			<face fid="426">
+				<vertex vid="199" />	<vertex vid="256" />	<vertex vid="111" />	<vertex vid="208" />	
+			</face>
+
+			<face fid="427">
+				<vertex vid="70" />	<vertex vid="255" />	<vertex vid="256" />	<vertex vid="199" />	
+			</face>
+
+			<face fid="428">
+				<vertex vid="241" />	<vertex vid="324" />	<vertex vid="258" />	<vertex vid="238" />	
+			</face>
+
+			<face fid="429">
+				<vertex vid="392" />	<vertex vid="432" />	<vertex vid="438" />	<vertex vid="393" />	
+			</face>
+
+			<face fid="430">
+				<vertex vid="105" />	<vertex vid="320" />	<vertex vid="104" />	
+			</face>
+
+			<face fid="431">
+				<vertex vid="264" />	<vertex vid="484" />	<vertex vid="438" />	<vertex vid="432" />	<vertex vid="472" />	<vertex vid="265" />	
+			</face>
+
+			<face fid="432">
+				<vertex vid="124" />	<vertex vid="484" />	<vertex vid="264" />	<vertex vid="259" />	<vertex vid="183" />	<vertex vid="100" />	
+			</face>
+
+			<face fid="434">
+				<vertex vid="265" />	<vertex vid="472" />	<vertex vid="262" />	
+			</face>
+
+			<face fid="435">
+				<vertex vid="258" />	<vertex vid="324" />	<vertex vid="437" />	<vertex vid="432" />	<vertex vid="472" />	<vertex vid="262" />	
+			</face>
+
+			<face fid="436">
+				<vertex vid="9" />	<vertex vid="108" />	<vertex vid="333" />	<vertex vid="34" />	
+			</face>
+
+			<face fid="437">
+				<vertex vid="110" />	<vertex vid="255" />	<vertex vid="256" />	<vertex vid="111" />	
+			</face>
+
+			<face fid="438">
+				<vertex vid="183" />	<vertex vid="259" />	<vertex vid="174" />	
+			</face>
+
+			<face fid="439">
+				<vertex vid="97" />	<vertex vid="249" />	<vertex vid="484" />	<vertex vid="124" />	
+			</face>
+
+			<face fid="440">
+				<vertex vid="120" />	<vertex vid="438" />	<vertex vid="432" />	<vertex vid="437" />	<vertex vid="121" />	
+			</face>
+
+			<face fid="441">
+				<vertex vid="95" />	<vertex vid="183" />	<vertex vid="259" />	<vertex vid="258" />	<vertex vid="324" />	<vertex vid="107" />	
+			</face>
+
+			<face fid="442">
+				<vertex vid="117" />	<vertex vid="394" />	<vertex vid="393" />	
+			</face>
+
+			<face fid="443">
+				<vertex vid="70" />	<vertex vid="255" />	<vertex vid="110" />	<vertex vid="51" />	
+			</face>
+
+			<face fid="444">
+				<vertex vid="68" />	<vertex vid="82" />	<vertex vid="66" />	
+			</face>
+
+			<face fid="445">
+				<vertex vid="107" />	<vertex vid="324" />	<vertex vid="241" />	<vertex vid="168" />	<vertex vid="96" />	
+			</face>
+
+			<face fid="446">
+				<vertex vid="168" />	<vertex vid="241" />	<vertex vid="246" />	<vertex vid="11" />	
+			</face>
+
+			<face fid="447">
+				<vertex vid="241" />	<vertex vid="324" />	<vertex vid="437" />	<vertex vid="436" />	<vertex vid="473" />	<vertex vid="246" />	
+			</face>
+
+			<face fid="448">
+				<vertex vid="100" />	<vertex vid="183" />	<vertex vid="95" />	
+			</face>
+
+			<face fid="449">
+				<vertex vid="101" />	<vertex vid="208" />	<vertex vid="111" />	
+			</face>
+
+			<face fid="450">
+				<vertex vid="96" />	<vertex vid="168" />	<vertex vid="11" />	
+			</face>
+
+			<face fid="451">
+				<vertex vid="11" />	<vertex vid="246" />	<vertex vid="473" />	<vertex vid="125" />	
+			</face>
+
+			<face fid="453">
+				<vertex vid="83" />	<vertex vid="323" />	<vertex vid="116" />	<vertex vid="52" />	
+			</face>
+
+			<face fid="454">
+				<vertex vid="47" />	<vertex vid="106" />	<vertex vid="323" />	<vertex vid="83" />	
+			</face>
+
+			<face fid="455">
+				<vertex vid="47" />	<vertex vid="52" />	<vertex vid="83" />	
+			</face>
+
+			<face fid="456">
+				<vertex vid="354" />	<vertex vid="430" />	<vertex vid="112" />	
+			</face>
+
+			<face fid="457">
+				<vertex vid="68" />	<vertex vid="234" />	<vertex vid="109" />	<vertex vid="103" />	<vertex vid="82" />	
+			</face>
+
+			<face fid="458">
+				<vertex vid="49" />	<vertex vid="234" />	<vertex vid="68" />	
+			</face>
+
+			<face fid="459">
+				<vertex vid="82" />	<vertex vid="103" />	<vertex vid="48" />	
+			</face>
+
+			<face fid="460">
+				<vertex vid="49" />	<vertex vid="48" />	<vertex vid="82" />	<vertex vid="68" />	
+			</face>
+
+			<face fid="461">
+				<vertex vid="120" />	<vertex vid="438" />	<vertex vid="484" />	<vertex vid="124" />	
+			</face>
+
+			<face fid="462">
+				<vertex vid="117" />	<vertex vid="393" />	<vertex vid="438" />	<vertex vid="120" />	
+			</face>
+
+			<face fid="463">
+				<vertex vid="121" />	<vertex vid="437" />	<vertex vid="324" />	<vertex vid="107" />	
+			</face>
+
+			<face fid="464">
+				<vertex vid="431" />	<vertex vid="449" />	<vertex vid="473" />	<vertex vid="436" />	
+			</face>
+
+			<face fid="465">
+				<vertex vid="436" />	<vertex vid="473" />	<vertex vid="125" />	
+			</face>
+
+			<face fid="466">
+				<vertex vid="125" />	<vertex vid="473" />	<vertex vid="449" />	<vertex vid="123" />	
+			</face>
+
+			<face fid="467">
+				<vertex vid="430" />	<vertex vid="449" />	<vertex vid="431" />	
+			</face>
+
+			<face fid="468">
+				<vertex vid="119" />	<vertex vid="431" />	<vertex vid="449" />	<vertex vid="123" />	
+			</face>
+
+			<face fid="469">
+				<vertex vid="122" />	<vertex vid="449" />	<vertex vid="430" />	<vertex vid="113" />	
+			</face>
+
+			<face fid="470">
+				<vertex vid="49" />	<vertex vid="109" />	<vertex vid="234" />	
+			</face>
+
+			<face fid="471">
+				<vertex vid="123" />	<vertex vid="449" />	<vertex vid="122" />	
+			</face>
+
+			<face fid="472">
+				<vertex vid="112" />	<vertex vid="430" />	<vertex vid="431" />	<vertex vid="119" />	
+			</face>
+
+			<face fid="473">
+				<vertex vid="116" />	<vertex vid="323" />	<vertex vid="106" />	
+			</face>
+
+			<face fid="475">
+				<vertex vid="436" />	<vertex vid="121" />	<vertex vid="437" />	
+			</face>
+
+			<face fid="476">
+				<vertex vid="121" />	<vertex vid="436" />	<vertex vid="431" />	<vertex vid="119" />	
+			</face>
+
+			<face fid="477">
+				<vertex vid="70" />	<vertex vid="51" />	<vertex vid="50" />	
+			</face>
+
+			<face fid="479">
+				<vertex vid="5" />	<vertex vid="49" />	<vertex vid="1" />	
+			</face>
+
+			<face fid="483">
+				<vertex vid="120" />	<vertex vid="124" />	<vertex vid="97" />	<vertex vid="98" />	<vertex vid="102" />	<vertex vid="117" />	
+			</face>
+
+			<face fid="484">
+				<vertex vid="124" />	<vertex vid="100" />	<vertex vid="97" />	
+			</face>
+
+			<face fid="485">
+				<vertex vid="95" />	<vertex vid="100" />	<vertex vid="124" />	<vertex vid="120" />	<vertex vid="121" />	<vertex vid="107" />	
+			</face>
+
+			<face fid="486">
+				<vertex vid="107" />	<vertex vid="96" />	<vertex vid="95" />	
+			</face>
+
+			<face fid="487">
+				<vertex vid="107" />	<vertex vid="121" />	<vertex vid="125" />	<vertex vid="11" />	<vertex vid="96" />	
+			</face>
+
+			<face fid="488">
+				<vertex vid="11" />	<vertex vid="125" />	<vertex vid="123" />	<vertex vid="122" />	<vertex vid="10" />	
+			</face>
+
+			<face fid="489">
+				<vertex vid="119" />	<vertex vid="123" />	<vertex vid="125" />	<vertex vid="121" />	
+			</face>
+
+			<face fid="490">
+				<vertex vid="104" />	<vertex vid="112" />	<vertex vid="119" />	<vertex vid="121" />	<vertex vid="120" />	<vertex vid="117" />	<vertex vid="115" />	<vertex vid="105" />	
+			</face>
+
+			<face fid="491">
+				<vertex vid="113" />	<vertex vid="122" />	<vertex vid="123" />	<vertex vid="119" />	<vertex vid="112" />	
+			</face>
+
+			<face fid="492">
+				<vertex vid="10" />	<vertex vid="122" />	<vertex vid="113" />	<vertex vid="108" />	<vertex vid="9" />	
+			</face>
+
+			<face fid="493">
+				<vertex vid="111" />	<vertex vid="117" />	<vertex vid="102" />	<vertex vid="101" />	
+			</face>
+
+			<face fid="495">
+				<vertex vid="105" />	<vertex vid="115" />	<vertex vid="111" />	<vertex vid="110" />	<vertex vid="116" />	<vertex vid="106" />	
+			</face>
+
+			<face fid="496">
+				<vertex vid="103" />	<vertex vid="109" />	<vertex vid="108" />	<vertex vid="113" />	<vertex vid="112" />	<vertex vid="104" />	
+			</face>
+
+			<face fid="497">
+				<vertex vid="51" />	<vertex vid="110" />	<vertex vid="111" />	<vertex vid="101" />	<vertex vid="50" />	
+			</face>
+
+			<face fid="498">
+				<vertex vid="9" />	<vertex vid="108" />	<vertex vid="109" />	<vertex vid="49" />	<vertex vid="5" />	
+			</face>
+
+			<face fid="499">
+				<vertex vid="48" />	<vertex vid="103" />	<vertex vid="104" />	<vertex vid="105" />	<vertex vid="106" />	<vertex vid="47" />	
+			</face>
+
+			<face fid="500">
+				<vertex vid="52" />	<vertex vid="116" />	<vertex vid="110" />	<vertex vid="51" />	
+			</face>
+
+			<face fid="501">
+				<vertex vid="47" />	<vertex vid="106" />	<vertex vid="116" />	<vertex vid="52" />	
+			</face>
+
+			<face fid="502">
+				<vertex vid="49" />	<vertex vid="109" />	<vertex vid="103" />	<vertex vid="48" />	
+			</face>
+
+			<face fid="503">
+				<vertex vid="115" />	<vertex vid="117" />	<vertex vid="111" />	
+			</face>
+
+			<face fid="505">
+				<vertex vid="258" />	<vertex vid="259" />	<vertex vid="264" />	<vertex vid="265" />	<vertex vid="262" />	
+			</face>
+
+			<face fid="507">
+				<vertex vid="351" />	<vertex vid="354" />	<vertex vid="352" />	
+			</face>
+
+			<face fid="508">
+				<vertex vid="326" />	<vertex vid="359" />	<vertex vid="325" />	
+			</face>
+
+			<face fid="511">
+				<vertex vid="400" />	<vertex vid="409" />	<vertex vid="404" />	
+			</face>
+
+			<face fid="512">
+				<vertex vid="280" />	<vertex vid="283" />	<vertex vid="371" />	
+			</face>
+
+			<face fid="513">
+				<vertex vid="304" />	<vertex vid="373" />	<vertex vid="301" />	
+			</face>
+
+			<face fid="517">
+				<vertex vid="390" />	<vertex vid="432" />	<vertex vid="392" />	
+			</face>
+
+			<face fid="518">
+				<vertex vid="400" />	<vertex vid="440" />	<vertex vid="403" />	
+			</face>
+
+			<face fid="527">
+				<vertex vid="194" />	<vertex vid="190" />	<vertex vid="491" />	
+			</face>
+
+			<face fid="528">
+				<vertex vid="457" />	<vertex vid="459" />	<vertex vid="455" />	
+			</face>
+
+			<face fid="529">
+				<vertex vid="216" />	<vertex vid="399" />	<vertex vid="413" />	
+			</face>
+
+			<face fid="530">
+				<vertex vid="406" />	<vertex vid="399" />	<vertex vid="384" />	
+			</face>
+
+			<face fid="531">
+				<vertex vid="488" />	<vertex vid="182" />	<vertex vid="181" />	
+			</face>
+
+			<face fid="532">
+				<vertex vid="447" />	<vertex vid="442" />	<vertex vid="405" />	
+			</face>
+
+			<face fid="533">
+				<vertex vid="91" />	<vertex vid="79" />	<vertex vid="345" />	
+			</face>
+
+			<face fid="534">
+				<vertex vid="308" />	<vertex vid="468" />	<vertex vid="467" />	
+			</face>
+
+			<face fid="535">
+				<vertex vid="190" />	<vertex vid="182" />	<vertex vid="311" />	
+			</face>
+
+			<face fid="536">
+				<vertex vid="379" />	<vertex vid="367" />	<vertex vid="403" />	
+			</face>
+
+			<face fid="537">
+				<vertex vid="8" />	<vertex vid="4" />	<vertex vid="305" />	
+			</face>
+
+			<face fid="538">
+				<vertex vid="206" />	<vertex vid="217" />	<vertex vid="468" />	
+			</face>
+
+			<face fid="539">
+				<vertex vid="380" />	<vertex vid="367" />	<vertex vid="414" />	
+			</face>
+
+			<face fid="540">
+				<vertex vid="30" />	<vertex vid="41" />	<vertex vid="453" />	
+			</face>
+
+			<face fid="541">
+				<vertex vid="115" />	<vertex vid="111" />	<vertex vid="256" />	
+			</face>
+
+			<face fid="542">
+				<vertex vid="117" />	<vertex vid="111" />	<vertex vid="208" />	
+			</face>
+
+			<face fid="543">
+				<vertex vid="276" />	<vertex vid="320" />	<vertex vid="105" />	
+			</face>
+
+			<face fid="544">
+				<vertex vid="274" />	<vertex vid="320" />	<vertex vid="104" />	
+			</face>
+
+			<face fid="545">
+				<vertex vid="234" />	<vertex vid="49" />	<vertex vid="1" />	
+			</face>
+
+			<face fid="546">
+				<vertex vid="199" />	<vertex vid="50" />	<vertex vid="70" />	
+			</face>
+
+			<face fid="547">
+				<vertex vid="125" />	<vertex vid="121" />	<vertex vid="436" />	
+			</face>
+
+			<face fid="548">
+				<vertex vid="430" />	<vertex vid="112" />	<vertex vid="113" />	
+			</face>
+
+		</faces>
+
+		<blocks>
+			<block bid="1">
+				<face fid="343" />
+				<face fid="339" />
+				<face fid="348" inverted="true" />
+				<face fid="325" inverted="true" />
+				<face fid="409" inverted="true" />
+				<face fid="420" />
+				<face fid="342" inverted="true" />
+				<face fid="337" inverted="true" />
+				<face fid="379" inverted="true" />
+				<face fid="376" inverted="true" />
+				<face fid="324" inverted="true" />
+				<face fid="326" inverted="true" />
+				<face fid="458" />
+				<face fid="545" />
+			</block>
+
+			<block bid="2">
+				<face fid="355" />
+				<face fid="328" inverted="true" />
+				<face fid="370" inverted="true" />
+				<face fid="415" inverted="true" />
+				<face fid="371" />
+				<face fid="391" />
+				<face fid="327" inverted="true" />
+				<face fid="329" inverted="true" />
+				<face fid="446" />
+			</block>
+
+			<block bid="3">
+				<face fid="353" inverted="true" />
+				<face fid="352" inverted="true" />
+				<face fid="410" />
+				<face fid="368" />
+				<face fid="354" inverted="true" />
+				<face fid="397" />
+			</block>
+
+			<block bid="4">
+				<face fid="358" />
+				<face fid="349" inverted="true" />
+				<face fid="350" inverted="true" />
+				<face fid="427" />
+				<face fid="381" inverted="true" />
+				<face fid="380" inverted="true" />
+				<face fid="363" />
+				<face fid="351" inverted="true" />
+				<face fid="377" />
+				<face fid="546" />
+			</block>
+
+			<block bid="5">
+				<face fid="346" inverted="true" />
+				<face fid="370" />
+				<face fid="413" />
+				<face fid="386" />
+				<face fid="369" inverted="true" />
+				<face fid="347" />
+				<face fid="505" />
+				<face fid="400" inverted="true" />
+				<face fid="345" />
+			</block>
+
+			<block bid="6">
+				<face fid="344" />
+				<face fid="348" />
+				<face fid="279" inverted="true" />
+				<face fid="375" />
+				<face fid="357" />
+				<face fid="266" inverted="true" />
+				<face fid="320" inverted="true" />
+				<face fid="287" inverted="true" />
+				<face fid="264" inverted="true" />
+				<face fid="338" inverted="true" />
+				<face fid="297" />
+				<face fid="277" inverted="true" />
+				<face fid="366" inverted="true" />
+				<face fid="265" />
+			</block>
+
+			<block bid="7">
+				<face fid="170" />
+				<face fid="174" inverted="true" />
+				<face fid="350" />
+				<face fid="279" />
+				<face fid="163" inverted="true" />
+				<face fid="318" />
+				<face fid="263" inverted="true" />
+				<face fid="184" />
+				<face fid="270" inverted="true" />
+				<face fid="242" inverted="true" />
+				<face fid="253" inverted="true" />
+				<face fid="216" inverted="true" />
+				<face fid="299" />
+				<face fid="304" />
+				<face fid="162" inverted="true" />
+				<face fid="164" />
+				<face fid="364" />
+				<face fid="281" />
+			</block>
+
+			<block bid="8">
+				<face fid="177" />
+				<face fid="209" />
+				<face fid="325" />
+				<face fid="176" inverted="true" />
+				<face fid="336" />
+				<face fid="233" inverted="true" />
+				<face fid="323" inverted="true" />
+				<face fid="274" inverted="true" />
+				<face fid="205" inverted="true" />
+				<face fid="260" inverted="true" />
+				<face fid="204" inverted="true" />
+				<face fid="229" inverted="true" />
+				<face fid="307" />
+				<face fid="189" inverted="true" />
+				<face fid="175" inverted="true" />
+			</block>
+
+			<block bid="9">
+				<face fid="196" />
+				<face fid="195" inverted="true" />
+				<face fid="223" inverted="true" />
+				<face fid="256" />
+				<face fid="194" />
+			</block>
+
+			<block bid="10">
+				<face fid="166" inverted="true" />
+				<face fid="190" inverted="true" />
+				<face fid="224" inverted="true" />
+				<face fid="200" />
+				<face fid="169" inverted="true" />
+				<face fid="167" />
+			</block>
+
+			<block bid="11">
+				<face fid="412" />
+				<face fid="499" />
+				<face fid="409" />
+				<face fid="375" inverted="true" />
+				<face fid="385" />
+				<face fid="374" inverted="true" />
+				<face fid="373" inverted="true" />
+				<face fid="430" inverted="true" />
+				<face fid="454" />
+				<face fid="459" />
+				<face fid="421" inverted="true" />
+				<face fid="543" inverted="true" />
+				<face fid="544" />
+			</block>
+
+			<block bid="12">
+				<face fid="486" />
+				<face fid="414" inverted="true" />
+				<face fid="415" />
+				<face fid="413" inverted="true" />
+				<face fid="428" />
+				<face fid="441" />
+				<face fid="445" />
+				<face fid="438" inverted="true" />
+			</block>
+
+			<block bid="13">
+				<face fid="83" />
+				<face fid="67" inverted="true" />
+				<face fid="68" />
+				<face fid="65" inverted="true" />
+				<face fid="109" />
+				<face fid="66" inverted="true" />
+				<face fid="78" />
+				<face fid="79" />
+				<face fid="127" />
+			</block>
+
+			<block bid="14">
+				<face fid="12" inverted="true" />
+				<face fid="11" inverted="true" />
+				<face fid="10" />
+				<face fid="13" />
+			</block>
+
+			<block bid="15">
+				<face fid="424" />
+				<face fid="479" />
+				<face fid="498" />
+				<face fid="420" inverted="true" />
+				<face fid="418" inverted="true" />
+				<face fid="419" inverted="true" />
+				<face fid="436" inverted="true" />
+				<face fid="470" />
+				<face fid="545" inverted="true" />
+			</block>
+
+			<block bid="16">
+				<face fid="477" />
+				<face fid="497" />
+				<face fid="425" inverted="true" />
+				<face fid="427" inverted="true" />
+				<face fid="437" />
+				<face fid="426" inverted="true" />
+				<face fid="449" inverted="true" />
+				<face fid="443" />
+				<face fid="546" inverted="true" />
+			</block>
+
+			<block bid="19">
+				<face fid="63" />
+				<face fid="85" />
+				<face fid="62" inverted="true" />
+				<face fid="176" />
+				<face fid="64" inverted="true" />
+				<face fid="61" inverted="true" />
+				<face fid="183" inverted="true" />
+				<face fid="90" inverted="true" />
+				<face fid="74" />
+			</block>
+
+			<block bid="20">
+				<face fid="80" />
+				<face fid="58" inverted="true" />
+				<face fid="60" inverted="true" />
+				<face fid="163" />
+				<face fid="59" />
+				<face fid="108" />
+				<face fid="57" inverted="true" />
+				<face fid="102" inverted="true" />
+				<face fid="143" />
+				<face fid="96" />
+				<face fid="100" />
+				<face fid="132" />
+				<face fid="69" />
+			</block>
+
+			<block bid="21">
+				<face fid="2" inverted="true" />
+				<face fid="18" />
+				<face fid="142" />
+				<face fid="103" />
+				<face fid="88" />
+				<face fid="4" />
+			</block>
+
+			<block bid="23">
+				<face fid="444" />
+				<face fid="496" />
+				<face fid="342" />
+				<face fid="357" inverted="true" />
+				<face fid="336" inverted="true" />
+				<face fid="385" inverted="true" />
+				<face fid="418" />
+				<face fid="335" inverted="true" />
+				<face fid="388" />
+				<face fid="341" inverted="true" />
+				<face fid="423" inverted="true" />
+				<face fid="417" inverted="true" />
+				<face fid="507" inverted="true" />
+				<face fid="457" />
+				<face fid="544" inverted="true" />
+			</block>
+
+			<block bid="24">
+				<face fid="54" inverted="true" />
+				<face fid="68" inverted="true" />
+				<face fid="64" />
+				<face fid="508" />
+				<face fid="53" inverted="true" />
+				<face fid="56" inverted="true" />
+				<face fid="55" inverted="true" />
+				<face fid="72" />
+			</block>
+
+			<block bid="25">
+				<face fid="337" />
+				<face fid="266" />
+				<face fid="233" />
+				<face fid="374" />
+				<face fid="335" />
+				<face fid="334" inverted="true" />
+				<face fid="293" inverted="true" />
+				<face fid="186" inverted="true" />
+				<face fid="276" />
+				<face fid="408" />
+				<face fid="187" inverted="true" />
+				<face fid="286" inverted="true" />
+				<face fid="292" inverted="true" />
+				<face fid="282" inverted="true" />
+				<face fid="280" inverted="true" />
+				<face fid="237" />
+				<face fid="188" inverted="true" />
+				<face fid="219" />
+			</block>
+
+			<block bid="26">
+				<face fid="495" />
+				<face fid="381" />
+				<face fid="320" />
+				<face fid="318" inverted="true" />
+				<face fid="373" />
+				<face fid="437" inverted="true" />
+				<face fid="334" />
+				<face fid="319" inverted="true" />
+				<face fid="407" />
+				<face fid="473" />
+				<face fid="365" />
+				<face fid="541" inverted="true" />
+				<face fid="543" />
+			</block>
+
+			<block bid="27">
+				<face fid="50" inverted="true" />
+				<face fid="65" />
+				<face fid="59" inverted="true" />
+				<face fid="49" inverted="true" />
+				<face fid="106" />
+				<face fid="51" />
+				<face fid="52" inverted="true" />
+				<face fid="76" />
+				<face fid="71" />
+			</block>
+
+			<block bid="28">
+				<face fid="503" />
+				<face fid="314" inverted="true" />
+				<face fid="380" />
+				<face fid="287" />
+				<face fid="263" />
+				<face fid="426" />
+				<face fid="293" />
+				<face fid="319" />
+				<face fid="262" inverted="true" />
+				<face fid="278" inverted="true" />
+				<face fid="405" />
+				<face fid="333" inverted="true" />
+				<face fid="261" inverted="true" />
+				<face fid="389" />
+				<face fid="268" inverted="true" />
+				<face fid="442" inverted="true" />
+				<face fid="313" inverted="true" />
+				<face fid="541" />
+				<face fid="542" inverted="true" />
+			</block>
+
+			<block bid="29">
+				<face fid="322" />
+				<face fid="379" />
+				<face fid="323" />
+				<face fid="419" />
+				<face fid="388" inverted="true" />
+				<face fid="321" inverted="true" />
+				<face fid="390" inverted="true" />
+			</block>
+
+			<block bid="30">
+				<face fid="47" inverted="true" />
+				<face fid="49" />
+				<face fid="48" />
+				<face fid="45" inverted="true" />
+			</block>
+
+			<block bid="32">
+				<face fid="264" />
+				<face fid="184" inverted="true" />
+				<face fid="109" inverted="true" />
+				<face fid="108" inverted="true" />
+				<face fid="508" inverted="true" />
+				<face fid="186" />
+				<face fid="106" inverted="true" />
+				<face fid="262" />
+				<face fid="105" inverted="true" />
+				<face fid="104" inverted="true" />
+				<face fid="161" />
+				<face fid="252" inverted="true" />
+				<face fid="114" inverted="true" />
+				<face fid="511" />
+				<face fid="228" inverted="true" />
+				<face fid="172" inverted="true" />
+				<face fid="107" inverted="true" />
+				<face fid="120" inverted="true" />
+				<face fid="118" />
+				<face fid="133" />
+				<face fid="126" />
+				<face fid="512" />
+				<face fid="530" inverted="true" />
+			</block>
+
+			<block bid="33">
+				<face fid="273" />
+				<face fid="376" />
+				<face fid="274" />
+				<face fid="341" />
+				<face fid="276" inverted="true" />
+				<face fid="321" />
+				<face fid="359" />
+				<face fid="513" inverted="true" />
+				<face fid="272" inverted="true" />
+				<face fid="317" inverted="true" />
+			</block>
+
+			<block bid="34">
+				<face fid="271" inverted="true" />
+				<face fid="270" />
+				<face fid="278" />
+				<face fid="330" />
+				<face fid="269" inverted="true" />
+			</block>
+
+			<block bid="37">
+				<face fid="490" />
+				<face fid="430" />
+				<face fid="423" />
+				<face fid="408" inverted="true" />
+				<face fid="407" inverted="true" />
+				<face fid="405" inverted="true" />
+				<face fid="456" />
+				<face fid="472" />
+				<face fid="406" inverted="true" />
+				<face fid="517" inverted="true" />
+				<face fid="462" inverted="true" />
+				<face fid="429" inverted="true" />
+				<face fid="476" inverted="true" />
+				<face fid="440" inverted="true" />
+				<face fid="475" inverted="true" />
+			</block>
+
+			<block bid="38">
+				<face fid="32" inverted="true" />
+				<face fid="66" />
+				<face fid="53" />
+				<face fid="51" inverted="true" />
+				<face fid="48" inverted="true" />
+				<face fid="105" />
+				<face fid="86" inverted="true" />
+				<face fid="518" />
+				<face fid="36" />
+				<face fid="147" />
+				<face fid="44" inverted="true" />
+				<face fid="117" inverted="true" />
+				<face fid="31" inverted="true" />
+				<face fid="30" inverted="true" />
+				<face fid="141" />
+				<face fid="530" />
+				<face fid="532" inverted="true" />
+			</block>
+
+			<block bid="39">
+				<face fid="361" />
+				<face fid="492" />
+				<face fid="436" />
+				<face fid="417" />
+				<face fid="390" />
+				<face fid="359" inverted="true" />
+				<face fid="456" inverted="true" />
+				<face fid="469" />
+				<face fid="384" inverted="true" />
+				<face fid="395" inverted="true" />
+				<face fid="360" inverted="true" />
+				<face fid="548" />
+			</block>
+
+			<block bid="40">
+				<face fid="493" />
+				<face fid="362" inverted="true" />
+				<face fid="449" />
+				<face fid="333" />
+				<face fid="330" inverted="true" />
+				<face fid="404" inverted="true" />
+				<face fid="331" inverted="true" />
+				<face fid="332" inverted="true" />
+				<face fid="542" />
+			</block>
+
+			<block bid="41">
+				<face fid="42" inverted="true" />
+				<face fid="40" inverted="true" />
+				<face fid="57" />
+				<face fid="52" />
+				<face fid="45" />
+				<face fid="104" />
+				<face fid="86" />
+				<face fid="95" />
+				<face fid="41" inverted="true" />
+			</block>
+
+			<block bid="42">
+				<face fid="43" />
+				<face fid="39" inverted="true" />
+				<face fid="61" />
+				<face fid="56" />
+				<face fid="37" />
+				<face fid="38" inverted="true" />
+			</block>
+
+			<block bid="43">
+				<face fid="238" />
+				<face fid="205" />
+				<face fid="183" />
+				<face fid="187" />
+				<face fid="161" inverted="true" />
+				<face fid="513" />
+				<face fid="518" inverted="true" />
+				<face fid="248" />
+				<face fid="159" inverted="true" />
+				<face fid="291" />
+				<face fid="158" inverted="true" />
+				<face fid="203" inverted="true" />
+				<face fid="173" />
+				<face fid="536" inverted="true" />
+				<face fid="540" />
+				<face fid="528" inverted="true" />
+			</block>
+
+			<block bid="44">
+				<face fid="240" inverted="true" />
+				<face fid="242" />
+				<face fid="251" />
+				<face fid="241" inverted="true" />
+			</block>
+
+			<block bid="45">
+				<face fid="250" />
+				<face fid="260" />
+				<face fid="286" />
+				<face fid="272" />
+				<face fid="248" inverted="true" />
+				<face fid="296" />
+				<face fid="267" inverted="true" />
+				<face fid="249" inverted="true" />
+				<face fid="258" inverted="true" />
+				<face fid="540" inverted="true" />
+			</block>
+
+			<block bid="46">
+				<face fid="245" inverted="true" />
+				<face fid="253" />
+				<face fid="261" />
+				<face fid="252" />
+				<face fid="269" />
+				<face fid="251" inverted="true" />
+				<face fid="247" inverted="true" />
+				<face fid="254" />
+				<face fid="246" inverted="true" />
+			</block>
+
+			<block bid="47">
+				<face fid="491" />
+				<face fid="472" inverted="true" />
+				<face fid="469" inverted="true" />
+				<face fid="467" inverted="true" />
+				<face fid="471" inverted="true" />
+				<face fid="468" inverted="true" />
+				<face fid="548" inverted="true" />
+			</block>
+
+			<block bid="48">
+				<face fid="93" inverted="true" />
+				<face fid="216" />
+				<face fid="102" />
+				<face fid="114" />
+				<face fid="95" inverted="true" />
+				<face fid="241" />
+				<face fid="247" />
+				<face fid="236" />
+				<face fid="94" inverted="true" />
+				<face fid="137" />
+				<face fid="214" inverted="true" />
+				<face fid="215" />
+				<face fid="136" inverted="true" />
+				<face fid="529" inverted="true" />
+			</block>
+
+			<block bid="49">
+				<face fid="92" />
+				<face fid="34" inverted="true" />
+				<face fid="204" />
+				<face fid="90" />
+				<face fid="55" />
+				<face fid="511" inverted="true" />
+				<face fid="36" inverted="true" />
+				<face fid="37" inverted="true" />
+				<face fid="159" />
+				<face fid="148" />
+				<face fid="35" inverted="true" />
+				<face fid="202" inverted="true" />
+				<face fid="33" inverted="true" />
+				<face fid="140" />
+			</block>
+
+			<block bid="50">
+				<face fid="371" inverted="true" />
+				<face fid="386" inverted="true" />
+				<face fid="428" inverted="true" />
+				<face fid="507" />
+				<face fid="292" />
+				<face fid="389" inverted="true" />
+				<face fid="317" />
+				<face fid="406" />
+				<face fid="384" />
+				<face fid="291" inverted="true" />
+				<face fid="296" inverted="true" />
+				<face fid="467" />
+				<face fid="298" inverted="true" />
+				<face fid="290" inverted="true" />
+				<face fid="403" />
+				<face fid="383" inverted="true" />
+				<face fid="315" inverted="true" />
+				<face fid="340" />
+				<face fid="464" />
+				<face fid="435" inverted="true" />
+				<face fid="447" />
+			</block>
+
+			<block bid="51">
+				<face fid="282" />
+				<face fid="268" />
+				<face fid="228" />
+				<face fid="517" />
+				<face fid="254" inverted="true" />
+				<face fid="236" inverted="true" />
+				<face fid="298" />
+				<face fid="227" />
+				<face fid="285" />
+				<face fid="226" inverted="true" />
+				<face fid="239" inverted="true" />
+				<face fid="244" inverted="true" />
+				<face fid="259" inverted="true" />
+				<face fid="539" />
+			</block>
+
+			<block bid="52">
+				<face fid="280" />
+				<face fid="172" />
+				<face fid="147" inverted="true" />
+				<face fid="158" />
+				<face fid="267" />
+				<face fid="148" inverted="true" />
+				<face fid="290" />
+				<face fid="227" inverted="true" />
+				<face fid="146" inverted="true" />
+				<face fid="198" />
+				<face fid="155" inverted="true" />
+				<face fid="197" inverted="true" />
+				<face fid="235" inverted="true" />
+				<face fid="536" />
+				<face fid="539" inverted="true" />
+			</block>
+
+			<block bid="53">
+				<face fid="483" />
+				<face fid="439" inverted="true" />
+				<face fid="401" inverted="true" />
+				<face fid="410" inverted="true" />
+				<face fid="442" />
+				<face fid="462" />
+				<face fid="404" />
+				<face fid="402" inverted="true" />
+				<face fid="461" />
+			</block>
+
+			<block bid="54">
+				<face fid="393" />
+				<face fid="488" />
+				<face fid="451" />
+				<face fid="391" inverted="true" />
+				<face fid="395" />
+				<face fid="471" />
+				<face fid="403" inverted="true" />
+				<face fid="392" inverted="true" />
+				<face fid="466" />
+			</block>
+
+			<block bid="55">
+				<face fid="19" inverted="true" />
+				<face fid="17" inverted="true" />
+				<face fid="18" inverted="true" />
+				<face fid="107" />
+				<face fid="44" />
+				<face fid="41" />
+				<face fid="94" />
+				<face fid="119" />
+				<face fid="112" />
+				<face fid="25" />
+				<face fid="89" inverted="true" />
+				<face fid="20" inverted="true" />
+				<face fid="529" />
+			</block>
+
+			<block bid="56">
+				<face fid="23" />
+				<face fid="22" inverted="true" />
+				<face fid="38" />
+				<face fid="35" />
+				<face fid="29" />
+				<face fid="21" inverted="true" />
+			</block>
+
+			<block bid="57">
+				<face fid="294" inverted="true" />
+				<face fid="387" inverted="true" />
+				<face fid="368" inverted="true" />
+				<face fid="369" />
+				<face fid="313" />
+				<face fid="429" />
+				<face fid="331" />
+				<face fid="295" />
+				<face fid="285" inverted="true" />
+				<face fid="402" />
+				<face fid="283" inverted="true" />
+				<face fid="431" />
+				<face fid="284" inverted="true" />
+				<face fid="399" />
+			</block>
+
+			<block bid="59">
+				<face fid="302" />
+				<face fid="363" inverted="true" />
+				<face fid="338" />
+				<face fid="299" inverted="true" />
+				<face fid="305" inverted="true" />
+				<face fid="367" />
+				<face fid="300" />
+			</block>
+
+			<block bid="60">
+				<face fid="124" inverted="true" />
+				<face fid="142" inverted="true" />
+				<face fid="120" />
+				<face fid="117" />
+				<face fid="137" inverted="true" />
+				<face fid="226" />
+				<face fid="146" />
+				<face fid="119" inverted="true" />
+				<face fid="201" />
+				<face fid="139" inverted="true" />
+				<face fid="116" />
+				<face fid="115" inverted="true" />
+				<face fid="122" />
+				<face fid="138" inverted="true" />
+				<face fid="153" />
+				<face fid="532" />
+				<face fid="534" inverted="true" />
+				<face fid="535" />
+			</block>
+
+			<block bid="61">
+				<face fid="131" />
+				<face fid="143" inverted="true" />
+				<face fid="129" inverted="true" />
+				<face fid="130" />
+				<face fid="134" inverted="true" />
+				<face fid="533" inverted="true" />
+			</block>
+
+			<block bid="62">
+				<face fid="210" />
+				<face fid="192" inverted="true" />
+				<face fid="327" />
+				<face fid="347" inverted="true" />
+				<face fid="223" />
+				<face fid="203" />
+				<face fid="249" />
+				<face fid="202" />
+				<face fid="315" />
+				<face fid="198" inverted="true" />
+				<face fid="255" />
+				<face fid="193" inverted="true" />
+				<face fid="191" inverted="true" />
+				<face fid="232" inverted="true" />
+			</block>
+
+			<block bid="63">
+				<face fid="208" />
+				<face fid="324" />
+				<face fid="297" inverted="true" />
+				<face fid="229" />
+				<face fid="237" inverted="true" />
+				<face fid="306" />
+				<face fid="207" inverted="true" />
+				<face fid="222" inverted="true" />
+				<face fid="206" inverted="true" />
+				<face fid="221" inverted="true" />
+			</block>
+
+			<block bid="64">
+				<face fid="211" inverted="true" />
+				<face fid="224" />
+				<face fid="214" />
+				<face fid="213" />
+				<face fid="212" inverted="true" />
+				<face fid="538" />
+			</block>
+
+			<block bid="65">
+				<face fid="257" />
+				<face fid="289" inverted="true" />
+				<face fid="329" />
+				<face fid="256" inverted="true" />
+				<face fid="360" />
+				<face fid="258" />
+				<face fid="340" inverted="true" />
+				<face fid="392" />
+				<face fid="255" inverted="true" />
+			</block>
+
+			<block bid="66">
+				<face fid="288" inverted="true" />
+				<face fid="243" inverted="true" />
+				<face fid="354" />
+				<face fid="200" inverted="true" />
+				<face fid="199" inverted="true" />
+				<face fid="225" />
+				<face fid="332" />
+				<face fid="246" />
+				<face fid="215" inverted="true" />
+				<face fid="239" />
+				<face fid="283" />
+				<face fid="201" inverted="true" />
+				<face fid="213" inverted="true" />
+				<face fid="538" inverted="true" />
+			</block>
+
+			<block bid="67">
+				<face fid="308" />
+				<face fid="310" inverted="true" />
+				<face fid="351" />
+				<face fid="304" inverted="true" />
+				<face fid="305" />
+			</block>
+
+			<block bid="68">
+				<face fid="311" />
+				<face fid="309" />
+				<face fid="326" />
+				<face fid="307" inverted="true" />
+				<face fid="306" inverted="true" />
+			</block>
+
+			<block bid="69">
+				<face fid="489" />
+				<face fid="476" />
+				<face fid="468" />
+				<face fid="464" inverted="true" />
+				<face fid="466" inverted="true" />
+				<face fid="465" inverted="true" />
+				<face fid="547" inverted="true" />
+			</block>
+
+			<block bid="70">
+				<face fid="179" />
+				<face fid="189" />
+				<face fid="207" />
+				<face fid="178" inverted="true" />
+				<face fid="180" inverted="true" />
+				<face fid="537" inverted="true" />
+			</block>
+
+			<block bid="71">
+				<face fid="171" inverted="true" />
+				<face fid="110" inverted="true" />
+				<face fid="169" />
+				<face fid="136" />
+				<face fid="112" inverted="true" />
+				<face fid="139" />
+				<face fid="212" />
+				<face fid="199" />
+				<face fid="135" />
+				<face fid="111" inverted="true" />
+				<face fid="531" inverted="true" />
+				<face fid="534" />
+			</block>
+
+			<block bid="72">
+				<face fid="113" />
+				<face fid="27" inverted="true" />
+				<face fid="168" inverted="true" />
+				<face fid="194" inverted="true" />
+				<face fid="31" />
+				<face fid="33" />
+				<face fid="155" />
+				<face fid="29" inverted="true" />
+				<face fid="116" inverted="true" />
+				<face fid="193" />
+				<face fid="28" inverted="true" />
+				<face fid="26" inverted="true" />
+				<face fid="157" inverted="true" />
+				<face fid="527" inverted="true" />
+				<face fid="528" />
+			</block>
+
+			<block bid="74">
+				<face fid="455" />
+				<face fid="501" />
+				<face fid="454" inverted="true" />
+				<face fid="473" inverted="true" />
+				<face fid="453" inverted="true" />
+			</block>
+
+			<block bid="75">
+				<face fid="485" />
+				<face fid="448" inverted="true" />
+				<face fid="505" inverted="true" />
+				<face fid="441" inverted="true" />
+				<face fid="440" />
+				<face fid="435" />
+				<face fid="461" inverted="true" />
+				<face fid="431" inverted="true" />
+				<face fid="463" />
+				<face fid="432" inverted="true" />
+				<face fid="434" inverted="true" />
+			</block>
+
+			<block bid="76">
+				<face fid="82" />
+				<face fid="77" inverted="true" />
+				<face fid="78" inverted="true" />
+				<face fid="96" inverted="true" />
+				<face fid="76" inverted="true" />
+				<face fid="118" inverted="true" />
+				<face fid="129" />
+				<face fid="97" />
+				<face fid="125" />
+				<face fid="75" inverted="true" />
+			</block>
+
+			<block bid="77">
+				<face fid="9" inverted="true" />
+				<face fid="8" inverted="true" />
+				<face fid="10" inverted="true" />
+				<face fid="103" inverted="true" />
+				<face fid="30" />
+				<face fid="25" inverted="true" />
+				<face fid="115" />
+				<face fid="135" inverted="true" />
+				<face fid="28" />
+				<face fid="24" />
+				<face fid="121" inverted="true" />
+				<face fid="7" inverted="true" />
+			</block>
+
+			<block bid="78">
+				<face fid="460" />
+				<face fid="502" />
+				<face fid="458" inverted="true" />
+				<face fid="459" inverted="true" />
+				<face fid="470" inverted="true" />
+				<face fid="457" inverted="true" />
+			</block>
+
+			<block bid="79">
+				<face fid="487" />
+				<face fid="450" inverted="true" />
+				<face fid="446" inverted="true" />
+				<face fid="445" inverted="true" />
+				<face fid="475" />
+				<face fid="447" inverted="true" />
+				<face fid="451" inverted="true" />
+				<face fid="465" />
+				<face fid="463" inverted="true" />
+				<face fid="547" />
+			</block>
+
+			<block bid="80">
+				<face fid="98" />
+				<face fid="84" />
+				<face fid="73" inverted="true" />
+				<face fid="175" />
+				<face fid="79" inverted="true" />
+				<face fid="74" inverted="true" />
+				<face fid="72" inverted="true" />
+				<face fid="188" />
+				<face fid="133" inverted="true" />
+				<face fid="141" inverted="true" />
+				<face fid="173" inverted="true" />
+				<face fid="140" inverted="true" />
+				<face fid="130" inverted="true" />
+				<face fid="222" />
+				<face fid="178" />
+				<face fid="97" inverted="true" />
+				<face fid="128" inverted="true" />
+				<face fid="220" />
+				<face fid="537" />
+			</block>
+
+			<block bid="81">
+				<face fid="101" />
+				<face fid="99" inverted="true" />
+				<face fid="162" />
+				<face fid="100" inverted="true" />
+			</block>
+
+			<block bid="82">
+				<face fid="16" />
+				<face fid="15" inverted="true" />
+				<face fid="14" inverted="true" />
+				<face fid="13" inverted="true" />
+				<face fid="21" />
+				<face fid="122" inverted="true" />
+				<face fid="26" />
+				<face fid="24" inverted="true" />
+				<face fid="527" />
+			</block>
+
+			<block bid="83">
+				<face fid="91" inverted="true" />
+				<face fid="87" inverted="true" />
+				<face fid="88" inverted="true" />
+				<face fid="89" />
+				<face fid="138" />
+				<face fid="111" />
+				<face fid="121" />
+				<face fid="531" />
+			</block>
+
+			<block bid="84">
+				<face fid="150" />
+				<face fid="277" />
+				<face fid="164" inverted="true" />
+				<face fid="127" inverted="true" />
+				<face fid="132" inverted="true" />
+				<face fid="126" inverted="true" />
+				<face fid="134" />
+				<face fid="206" />
+				<face fid="180" />
+				<face fid="125" inverted="true" />
+				<face fid="128" />
+				<face fid="217" />
+				<face fid="533" />
+			</block>
+
+			<block bid="85">
+				<face fid="152" inverted="true" />
+				<face fid="167" inverted="true" />
+				<face fid="244" />
+				<face fid="197" />
+				<face fid="284" />
+				<face fid="153" inverted="true" />
+				<face fid="191" />
+				<face fid="225" inverted="true" />
+				<face fid="157" />
+				<face fid="230" />
+				<face fid="535" inverted="true" />
+			</block>
+
+			<block bid="86">
+				<face fid="396" />
+				<face fid="500" />
+				<face fid="377" inverted="true" />
+				<face fid="366" />
+				<face fid="364" inverted="true" />
+				<face fid="421" />
+				<face fid="443" inverted="true" />
+				<face fid="365" inverted="true" />
+				<face fid="367" inverted="true" />
+				<face fid="453" />
+			</block>
+
+			<block bid="87">
+				<face fid="484" />
+				<face fid="398" inverted="true" />
+				<face fid="397" inverted="true" />
+				<face fid="400" />
+				<face fid="438" />
+				<face fid="439" />
+				<face fid="399" inverted="true" />
+				<face fid="432" />
+			</block>
+
+			<block bid="88">
+				<face fid="6" inverted="true" />
+				<face fid="5" inverted="true" />
+				<face fid="4" inverted="true" />
+				<face fid="20" />
+				<face fid="7" />
+			</block>
+
+			<block bid="89">
+				<face fid="81" />
+				<face fid="70" inverted="true" />
+				<face fid="69" inverted="true" />
+				<face fid="71" inverted="true" />
+				<face fid="75" />
+			</block>
+
+			<block bid="90">
+				<face fid="231" inverted="true" />
+				<face fid="345" inverted="true" />
+				<face fid="383" />
+				<face fid="259" />
+				<face fid="235" />
+				<face fid="295" inverted="true" />
+				<face fid="232" />
+				<face fid="434" />
+				<face fid="230" inverted="true" />
+			</block>
+
+			<block bid="91">
+				<face fid="234" />
+				<face fid="265" inverted="true" />
+				<face fid="281" inverted="true" />
+				<face fid="219" inverted="true" />
+				<face fid="512" inverted="true" />
+				<face fid="300" inverted="true" />
+				<face fid="221" />
+				<face fid="220" inverted="true" />
+				<face fid="217" inverted="true" />
+			</block>
+
+		</blocks>
+	</model>
+	<sizing>
+		<params>
+			<param> <name>ACS_STRETCH_MAX_RATIO</name> <value>1.5</value> </param>
+			<param> <name>ACS3D_DIAMETER_MAX_RATIO</name> <value>0.1</value> </param>
+			<param> <name>ACS2D_DIAMETER_MAX_RATIO</name> <value>0.1</value> </param>
+			<param> <name>ACS2D_INNER_BOUNDARY_RATIO</name> <value>0.1</value> </param>
+			<param> <name>ACS_DIAMETER_MIN_RATIO</name> <value>0.009</value> </param>
+		</params>
+	</sizing>
+</meshdoc>

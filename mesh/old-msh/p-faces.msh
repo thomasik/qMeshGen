@@ -1,0 +1,35 @@
+#dwie scianki
+
+[POINTS
+#ID	X       Y	Z
+1	0	0	0
+2	0	0	2
+3	1	0	0
+4	1	0	2
+5	0	1	0
+6	0	1	1
+]
+
+[SURFACES
+1	1	[0,0,0] [1,0,0] [0,0,1]
+2	1	[0,0,0] [0,0,1] [0,1,0]
+]
+
+[FACES
+#ID   SURF_ID   PT_IDS
+1	1	1 3 4 2
+2	2	1 2 6 5
+]
+
+[BLOCKS
+1	1 2
+]
+
+[BOUNDARY_CONDITIONS
+#TYPE	WHERE	WHAT
+#0	PID1 PID2	string
+#1	FID1		string
+0	1 2	ala ma kota
+0	3 4	a=1 b=2
+1	1	warunek dla sciany
+]

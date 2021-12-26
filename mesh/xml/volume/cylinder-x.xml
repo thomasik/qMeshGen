@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meshdoc xmlns="http://www.icsr.agh.edu.pl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<header>
+		<creator>Tomasz Jurczyk</creator>
+		<version>1.0</version>
+		<description>simple open cylinder</description>
+	</header>
+	<model>
+		<surfaces>
+			<surface sid="1">
+				<cylinder>
+					<pt0> <x>0</x> <y>0</y> <z>1cm</z> </pt0>
+					<axis>  <x>0</x> <y>0</y> <z>9cm</z> </axis>
+					<radius> 3cm </radius>
+				</cylinder>
+			</surface>
+		</surfaces>
+		
+		<vertices>
+			<vertex vid="1"> <sid>1</sid> <u>0</u>	<v>0</v> </vertex>
+			<vertex vid="2"> <sid>1</sid> <u>0</u>	<v>1/3</v> </vertex>
+			<vertex vid="3"> <sid>1</sid> <u>0</u>	<v>2/3</v> </vertex>
+			<vertex vid="4"> <sid>1</sid> <u>1</u>	<v>0</v> </vertex>
+			<vertex vid="5"> <sid>1</sid> <u>1</u>	<v>1/3</v> </vertex>
+			<vertex vid="6"> <sid>1</sid> <u>1</u>	<v>2/3</v> </vertex>
+		</vertices>
+
+		
+		<faces>
+			<face fid="3" sid="1">
+				<vertex vid="1"> <u>0</u>	<v>0</v>  	</vertex>
+				<vertex vid="2"> <u>0</u>	<v>1/3</v> 	</vertex>
+				<vertex vid="5"> <u>1</u>	<v>1/3</v> 	</vertex>
+				<vertex vid="4"> <u>1</u>	<v>0</v>   	</vertex>
+			</face>
+			<face fid="4" sid="1">
+				<vertex vid="2"> <u>0</u> <v>1/3</v> </vertex>
+				<vertex vid="3"> <u>0</u> <v>2/3</v> </vertex>
+				<vertex vid="6"> <u>1</u> <v>2/3</v> </vertex>
+				<vertex vid="5"> <u>1</u> <v>1/3</v> </vertex>
+			</face>
+			<face fid="5" sid="1">
+				<vertex vid="3"> <u>0</u> <v>2/3</v> </vertex>
+				<vertex vid="1"> <u>0</u>   <v>1</v> </vertex>
+				<vertex vid="4"> <u>1</u>   <v>1</v> </vertex>
+				<vertex vid="6"> <u>1</u> <v>2/3</v> </vertex>
+			</face>
+		</faces>
+		
+		<blocks>
+			<block bid="1">
+				<face fid="3" />
+				<face fid="4" />
+				<face fid="5" />				
+			</block>
+		</blocks>
+	</model>
+</meshdoc>

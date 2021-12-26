@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meshdoc xmlns="http://www.icsr.agh.edu.pl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<header>
+		<creator>Tomasz Jurczyk</creator>
+		<version>1.0</version>
+		<description>cube</description>
+	</header>
+	<model>
+		<vertices>
+			<vertex vid="1">	<x>-1</x> <y>-1</y> <z>-1</z> </vertex>
+			<vertex vid="2">	 <x>1</x> <y>-1</y> <z>-1</z> </vertex>
+			<vertex vid="3">	 <x>1</x>  <y>1</y> <z>-1</z> </vertex>
+			<vertex vid="4">	<x>-1</x>  <y>1</y> <z>-1</z> </vertex>
+			<vertex vid="5">	<x>-1</x> <y>-1</y>  <z>1</z> </vertex>
+			<vertex vid="6">	 <x>1</x> <y>-1</y>  <z>1</z> </vertex>
+			<vertex vid="7">	 <x>1</x>  <y>1</y>  <z>1</z> </vertex>
+			<vertex vid="8">	<x>-1</x>  <y>1</y>  <z>1</z> </vertex>
+		</vertices>
+
+		<faces>
+			<face fid="1"> 
+				<vertex vid="1"/> <vertex vid="4"/> <vertex vid="3"/> <vertex vid="2"/> 
+			</face>
+			<face fid="2"> 
+				<vertex vid="1"/> <vertex vid="2"/> <vertex vid="6"/> <vertex vid="5"/> 
+			</face>
+			<face fid="3"> 
+				<vertex vid="2"/> <vertex vid="3"/> <vertex vid="7"/> <vertex vid="6"/> 
+			</face>
+			<face fid="4"> 
+				<vertex vid="3"/> <vertex vid="4"/> <vertex vid="8"/> <vertex vid="7"/> 
+			</face>
+			<face fid="5"> 
+				<vertex vid="4"/> <vertex vid="1"/> <vertex vid="5"/> <vertex vid="8"/> 
+			</face>
+			<face fid="6"> 
+				<vertex vid="5"/> <vertex vid="6"/> <vertex vid="7"/> <vertex vid="8"/> 
+			</face>
+		</faces>
+		
+		<blocks>
+			<block bid="1">
+				<face fid="1"/> 
+				<face fid="2"/> 
+				<face fid="3"/> 
+				<face fid="4"/> 
+				<face fid="5"/> 
+				<face fid="6"/> 
+			</block>
+		</blocks>
+	</model>
+
+	<sizing>
+		<sources>
+			<source3d bid="1" type="analytic">
+				<metric>
+					<lx>10cm</lx> <ly>10cm</ly> <lz>10cm</lz>
+					<ax>0</ax> <ay>0</ay> <az>0</az>
+				</metric>
+			</source3d>
+			<source3d bid="1" type="segment">
+				<point0> <x>0</x> <y>0.5</y> <z>0.5</z> </point0>
+				<point1> <x>1</x> <y>0.5</y> <z>0.5</z> </point1>
+				<radius>10cm</radius>
+				<metric>
+					<lx>10cm</lx> <ly>5mm</ly> <lz>5mm</lz>
+					<ax>0</ax> <ay>0</ay> <az>0</az>
+				</metric>
+			</source3d>
+		</sources>
+	</sizing>
+
+</meshdoc>

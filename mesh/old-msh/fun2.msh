@@ -1,0 +1,33 @@
+[POINTS
+#
+# ID	X	Y	Z
+#
+1	*1	0	0
+2	*1	20	0
+3	*1	20	20
+4	*1	0	20
+]
+
+[SURFACES
+#
+# ID	SURFACE-TYPE	DATA
+#
+# 1 -> plane: point and two vectors ([x,y,z] = pt0 + s*v0 + t*v1)
+# 2 -> [x,y,z] = [x(s,t), y(s,t), z(s,t)]
+#
+1	2	X=u Y=v Z=u*SIN(u)+v*SIN(v)
+]
+
+[FACES
+#
+# ID	SURF-ID	PT-IDS[optional param-values] -CURVE_ID[s0,s1]
+#
+1	1	1[0,0] 2[20,0] 3[20,20] 4[0,20]
+]
+
+[BLOCKS
+#
+# ID	FACE_IDS
+#
+1	1
+]

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meshdoc xmlns="http://www.icsr.agh.edu.pl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<header>
+		<creator>Tomasz Jurczyk</creator>
+		<version>1.0</version>
+		<description>simple tetrahedron</description>
+	</header>
+	<model>
+		<vertices>
+			<vertex vid="1">	<x>0</x> <y>0</y> <z>0</z> </vertex>
+			<vertex vid="2">	<x>1</x> <y>0</y> <z>0</z> </vertex>
+			<vertex vid="3">	<x>0</x> <y>1</y> <z>0</z> </vertex>
+			<vertex vid="4">	<x>0</x> <y>0</y> <z>1</z> </vertex>
+		</vertices>
+
+		<faces>
+			<face fid="1" label="f234"> 
+				<vertex vid="2"/> <vertex vid="3"/> <vertex vid="4"/> 
+			</face>
+			<face fid="2" label="f143"> 
+				<vertex vid="1"/> <vertex vid="4"/> <vertex vid="3"/>
+			</face>
+			<face fid="3" label="f124"> 
+				<vertex vid="1"/> <vertex vid="2"/> <vertex vid="4"/>
+			</face>
+			<face fid="4" label="132"> 
+				<vertex vid="1"/> <vertex vid="3"/> <vertex vid="2"/>
+			</face>
+		</faces>
+		
+		<blocks>
+			<block bid="1">
+				<face fid="1"/> 
+				<face fid="2"/> 
+				<face fid="3"/> 
+				<face fid="4"/> 
+			</block>
+		</blocks>
+	</model>
+</meshdoc>

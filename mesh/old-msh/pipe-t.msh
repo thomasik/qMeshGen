@@ -1,0 +1,33 @@
+[POINTS
+7	*2	-3/6*PI	PI
+8	*2	1/6*PI	PI
+9	*2	5/6*PI	PI
+]
+
+[POINTS
+13	 *4	0      PI/2
+]
+
+[SURFACES
+# dwa "kolanka" - æwieræ-torusy
+2	2	X=(0.03-0.01*sin(u))*cos(v) Y=0.04+(0.03-0.01*sin(u))*sin(v) Z=0.01*cos(u)
+# zamykaj¹ce pó³sfery
+4	2	X=-3cm+1cm*cos(u)*cos(v) Y=4cm+1cm*sin(v)*(1+sin(2*v)) Z=1cm*sin(u)*cos(v)
+]
+
+[FACES
+#
+# ID	SURF-ID	PT-IDS[optional param-values] -CURVE_ID[s0,s1]
+# (-ID) if empty area
+#
+#10	4	8[PI/3,0] 7[PI,0] 13[PI,PI/2] 13[PI/3,PI/2]
+11	4	7[PI,0] 9[5/3*PI,0] 13[5/3*PI,PI/2] 13[PI,PI/2]
+12	4	9[5/3*PI,0] 8[7/3*PI,0] 13[7/3*PI,PI/2] 13[5/3*PI,PI/2]
+]
+
+[BLOCKS
+#
+# ID	FACE_IDS
+#
+1	-11 -12
+]

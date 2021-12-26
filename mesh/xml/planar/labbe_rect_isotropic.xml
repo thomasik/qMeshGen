@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meshdoc xmlns="http://www.icsr.agh.edu.pl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<header>
+		<creator>Tomasz Jurczyk</creator>
+		<version>1.0</version>
+		<description>test-rectangle (from article) with isotropic CS</description>
+	</header>
+	<model>
+		<vertices>
+			<vertex vid="1"> <x>0</x> <y>0</y> </vertex>
+			<vertex vid="2"> <x>0</x> <y>9</y> </vertex>
+			<vertex vid="3"> <x>7</x> <y>9</y> </vertex>
+			<vertex vid="4"> <x>7</x> <y>0</y> </vertex>
+		</vertices>
+
+		<faces>
+			<face fid="1">
+				<vertex vid="1" />	<vertex vid="2" />
+				<vertex vid="3" />	<vertex vid="4" />
+			</face>
+		</faces>
+	</model>
+
+	<sizing>
+		<sources>
+			<source2d fid="1" type="analytic" multi="1">
+				<metric>
+					<lx>1-19*v/40</lx>
+					<ly>1-19*v/40</ly>
+					<angle>0</angle>
+				</metric>
+				<domain>2-v</domain>
+			</source2d>
+			<source2d fid="1" type="analytic" multi="1">
+				<metric>
+					<lx>20^((2*v-9)/5)</lx>
+					<ly>20^((2*v-9)/5)</ly>
+					<angle>0</angle>
+				</metric>
+				<domain>4.5-v</domain>
+			</source2d>
+			<source2d fid="1" type="analytic" multi="1">
+				<metric>
+					<lx>5^((9-2*v)/5)</lx>
+					<ly>5^((9-2*v)/5)</ly>
+					<angle>0</angle>
+				</metric>
+				<domain>7-v</domain>
+			</source2d>
+			<source2d fid="1" type="analytic" multi="1">
+				<metric>
+					<lx>0.2+0.8*(((v-7)/2)^4)</lx>
+					<ly>0.2+0.8*(((v-7)/2)^4)</ly>
+					<angle>0</angle>
+				</metric>
+			</source2d>
+		</sources>
+	</sizing>
+
+</meshdoc>

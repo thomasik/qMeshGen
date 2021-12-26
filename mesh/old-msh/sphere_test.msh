@@ -1,0 +1,17 @@
+[POINTS
+1	*1	0	0
+2	*1	PI	0
+3	*1	0	PI/2
+]
+
+[SURFACES
+1	2	X=cos(u)*cos(v) Y=sin(u)*cos(v) Z=sin(v)
+]
+
+[FACES
+1	1	1[0,0] 2[PI,0] 3[PI,PI/2] 3[0,PI/2]
+]
+
+[BLOCKS
+1	1
+]

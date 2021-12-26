@@ -1,0 +1,57 @@
+[POINTS
+#
+# ID	X	Y	Z
+# ID	*surf	S	T
+# ID	*surf	*curve	T
+#
+1	 0cm	0cm	0cm
+2	10cm	0cm	0cm
+3	10cm	4cm	0cm
+4	 0cm	4cm	0cm
+5	 0cm	2cm	2cm
+6	 8cm	2cm	2cm
+]
+
+[POINTS
+31	*2	*2	0
+32	*2	*2	2/3*PI
+33	*2	*2	4/3*PI
+]
+
+[CONTROL
+# FACE_ID ID=1	x y z lx ly angle
+# FACE_ID ID=2  s t lx ly angle
+#3 2 	0.6 3*PI/2	5mm 1mm 0
+#3 2 	0.6 PI/4	5mm 1mm 0
+3 2 	0.1 PI/3	10mm 2mm 0
+3 2 	0.1 3*PI/2	10mm 1mm PI/4
+3 2 	0.6 PI/2	10mm 0.4mm PI/6
+3 2 	0.6 3*PI/2	10mm 0.4mm PI/6
+3 2 	0.8 0		15mm 4mm 0
+]
+
+[CURVES
+#
+# ID	CURVE-TYPE	DATA
+2	1	U=0.3+0.1*cos(t) V=PI/4+PI/10*sin(t)
+]
+
+[SURFACES
+2	2	X=0.1*u Y=0.02-0.02*cos(v) Z=0.02*sin(v)
+]
+
+[FACES
+#
+# ID	SURF-ID	PT-IDS[optional param-values] -CURVE_ID[s0,s1]
+# (-ID) if empty area
+#
+3	2	1[0,0] 2[1,0] 6[0.8,PI/2] 3[1,PI] 4[0,PI] 5[0,PI/2]
+-3	2	31[*2,0] -2[0,2/3*PI] 32[*2,2/3*PI] -2[2/3*PI,4/3*PI] 33[*2,4/3*PI] -2[4/3*PI,2*PI]
+]
+
+[BLOCKS
+#
+# ID	FACE_IDS
+#
+1	3
+]

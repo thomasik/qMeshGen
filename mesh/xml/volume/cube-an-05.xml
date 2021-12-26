@@ -1,0 +1,1191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meshdoc xmlns="http://www.icsr.agh.edu.pl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<header>
+		<creator>Tomasz Jurczyk</creator>
+		<version>1.0</version>
+		<description>cube with anisotropic "grain-like" triangle-metric-sources</description>
+	</header>
+	<model>
+		<vertices>
+			<vertex vid="1">	<x>-4</x> <y>-4</y> <z>-4</z> </vertex>
+			<vertex vid="2">	 <x>4</x> <y>-4</y> <z>-4</z> </vertex>
+			<vertex vid="3">	 <x>4</x>  <y>4</y> <z>-4</z> </vertex>
+			<vertex vid="4">	<x>-4</x>  <y>4</y> <z>-4</z> </vertex>
+			<vertex vid="5">	<x>-4</x> <y>-4</y>  <z>4</z> </vertex>
+			<vertex vid="6">	 <x>4</x> <y>-4</y>  <z>4</z> </vertex>
+			<vertex vid="7">	 <x>4</x>  <y>4</y>  <z>4</z> </vertex>
+			<vertex vid="8">	<x>-4</x>  <y>4</y>  <z>4</z> </vertex>
+		</vertices>
+
+		<faces>
+			<face fid="1"> 
+				<vertex vid="1"/> <vertex vid="4"/> <vertex vid="3"/> <vertex vid="2"/> 
+			</face>
+			<face fid="2"> 
+				<vertex vid="1"/> <vertex vid="2"/> <vertex vid="6"/> <vertex vid="5"/> 
+			</face>
+			<face fid="3"> 
+				<vertex vid="2"/> <vertex vid="3"/> <vertex vid="7"/> <vertex vid="6"/> 
+			</face>
+			<face fid="4"> 
+				<vertex vid="3"/> <vertex vid="4"/> <vertex vid="8"/> <vertex vid="7"/> 
+			</face>
+			<face fid="5"> 
+				<vertex vid="4"/> <vertex vid="1"/> <vertex vid="5"/> <vertex vid="8"/> 
+			</face>
+			<face fid="6"> 
+				<vertex vid="5"/> <vertex vid="6"/> <vertex vid="7"/> <vertex vid="8"/> 
+			</face>
+		</faces>
+		
+		<blocks>
+			<block bid="1">
+				<face fid="1"/> 
+				<face fid="2"/> 
+				<face fid="3"/> 
+				<face fid="4"/> 
+				<face fid="5"/> 
+				<face fid="6"/> 
+			</block>
+		</blocks>
+	</model>
+	<sizing>
+		<sources>
+			<source3d bid="1" type="analytic">
+				<metric>
+					<lx>0.8</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax> <ay>0.0</ay> <az>0.0</az>
+				</metric>
+			</source3d>
+			
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>4.000000</x> <y>2.512931</y> <z>-3.959911</z>	</point0>
+				<point1> <x>3.969231</x> <y>2.515505</y> <z>-4.000000</z> </point1>
+				<point2> <x>3.957885</x> <y>2.535870</y> <z>-4.000000</z>	</point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+			
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>4.000000</x> <y>4.000000</y> <z>-2.827781</z> </point0>
+				<point1> <x>4.000000</x> <y>2.512931</y> <z>-3.959911</z> </point1>
+				<point2> <x>3.957885</x> <y>2.535870</y> <z>-4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>4.000000</x> <y>4.000000</y> <z>-2.827781</z> </point0>
+				<point1> <x>3.957885</x> <y>2.535870</y> <z>-4.000000</z> </point1>
+				<point2> <x>3.142229</x> <y>4.000000</y> <z>-4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>4.000000</x> <y>2.512931</y> <z>-3.959911</z> </point0>
+				<point1> <x>3.974008</x> <y>2.506929</y> <z>-4.000000</z> </point1>
+				<point2> <x>3.969231</x> <y>2.515505</y> <z>-4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>4.000000</x> <y>2.512931</y> <z>-3.959911</z> </point0>
+				<point1> <x>4.000000</x> <y>2.460273</y> <z>-4.000000</z> </point1>
+				<point2> <x>3.974008</x> <y>2.506929</y> <z>-4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-0.203500</x> <y>4.000000</y> <z>-3.960582</z> </point0>
+				<point1> <x>-0.220632</x> <y>4.000000</y> <z>-4.000000</z> </point1>
+				<point2> <x>-0.316459</x> <y>3.946417</y> <z>-4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-4.000000</x> <y>1.200038</y> <z>-1.174491</z> </point0>
+				<point1> <x>0.558298</x> <y>4.000000</y> <z>-2.207849</z> </point1>
+				<point2> <x>-0.220632</x> <y>4.000000</y> <z>-4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-4.000000</x> <y>1.200038</y> <z>-1.174491</z> </point0>
+				<point1> <x>-0.220632</x> <y>4.000000</y> <z>-4.000000</z> </point1>
+				<point2> <x>-4.000000</x> <y>1.886723</y> <z>-4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-4.000000</x> <y>1.200038</y> <z>-1.174491</z> </point0>
+				<point1> <x>0.558298</x> <y>4.000000</y> <z>-2.207849</z> </point1>
+				<point2> <x>-2.096141</x> <y>2.951287</y> <z>-4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-4.000000</x> <y>1.200038</y> <z>-1.174491</z> </point0>
+				<point1> <x>-2.096141</x> <y>2.951287</y> <z>-4.000000</z> </point1>
+				<point2> <x>-4.000000</x> <y>1.886723</y> <z>-4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>0.558298</x> <y>4.000000</y> <z>-2.207849</z> </point0>
+				<point1> <x>-0.203500</x> <y>4.000000</y> <z>-3.960582</z> </point1>
+				<point2> <x>-0.316459</x> <y>3.946417</y> <z>-4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>0.558298</x> <y>4.000000</y> <z>-2.207849</z> </point0>
+				<point1> <x>-0.316459</x> <y>3.946417</y> <z>-4.000000</z> </point1>
+				<point2> <x>-2.096141</x> <y>2.951287</y> <z>-4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>2.140508</x> <y>-1.053214</y> <z>0.713111</z> </point0>
+				<point1> <x>2.902134</x> <y>4.000000</y> <z>-1.955511</z> </point1>
+				<point2> <x>3.856150</x> <y>4.000000</y> <z>-2.256247</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>4.000000</x> <y>0.848843</y> <z>-0.787172</z> </point0>
+				<point1> <x>2.140508</x> <y>-1.053214</y> <z>0.713111</z> </point1>
+				<point2> <x>3.856150</x> <y>4.000000</y> <z>-2.256247</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>4.000000</x> <y>0.848843</y> <z>-0.787172</z> </point0>
+				<point1> <x>3.856150</x> <y>4.000000</y> <z>-2.256247</z> </point1>
+				<point2> <x>4.000000</x> <y>4.000000</y> <z>-2.301593</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>0.163880</x> <y>3.443334</y> <z>-0.824800</z> </point0>
+				<point1> <x>-4.000000</x> <y>1.101036</y> <z>-0.767127</z> </point1>
+				<point2> <x>0.615307</x> <y>4.000000</y> <z>-2.076683</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>0.163880</x> <y>3.443334</y> <z>-0.824800</z> </point0>
+				<point1> <x>0.615307</x> <y>4.000000</y> <z>-2.076683</z> </point1>
+				<point2> <x>0.937189</x> <y>4.000000</y> <z>-1.336100</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-4.000000</x> <y>1.101036</y> <z>-0.767127</z> </point0>
+				<point1> <x>-4.000000</x> <y>1.200038</y> <z>-1.174491</z> </point1>
+				<point2> <x>0.558298</x> <y>4.000000</y> <z>-2.207849</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-4.000000</x> <y>1.101036</y> <z>-0.767127</z> </point0>
+				<point1> <x>0.558298</x> <y>4.000000</y> <z>-2.207849</z> </point1>
+				<point2> <x>0.615307</x> <y>4.000000</y> <z>-2.076683</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>0.163880</x> <y>3.443334</y> <z>-0.824800</z> </point0>
+				<point1> <x>0.283369</x> <y>4.000000</y> <z>-0.662544</z> </point1>
+				<point2> <x>0.937189</x> <y>4.000000</y> <z>-1.336100</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>0.163880</x> <y>3.443334</y> <z>-0.824800</z> </point0>
+				<point1> <x>-1.550496</x> <y>0.530651</y> <z>1.115436</z> </point1>
+				<point2> <x>1.668949</x> <y>4.000000</y> <z>-1.566773</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>0.163880</x> <y>3.443334</y> <z>-0.824800</z> </point0>
+				<point1> <x>1.668949</x> <y>4.000000</y> <z>-1.566773</z> </point1>
+				<point2> <x>0.937189</x> <y>4.000000</y> <z>-1.336100</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>2.140508</x> <y>-1.053214</y> <z>0.713111</z> </point0>
+				<point1> <x>-1.550496</x> <y>0.530651</y> <z>1.115436</z> </point1>
+				<point2> <x>1.668949</x> <y>4.000000</y> <z>-1.566773</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>2.140508</x> <y>-1.053214</y> <z>0.713111</z> </point0>
+				<point1> <x>1.668949</x> <y>4.000000</y> <z>-1.566773</z> </point1>
+				<point2> <x>2.902134</x> <y>4.000000</y> <z>-1.955511</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-1.863213</x> <y>-4.000000</y> <z>-3.867343</z> </point0>
+				<point1> <x>-1.028430</x> <y>-4.000000</y> <z>-2.215184</z> </point1>
+				<point2> <x>-3.963789</x> <y>-2.546511</y> <z>-4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-1.863213</x> <y>-4.000000</y> <z>-3.867343</z> </point0>
+				<point1> <x>-3.963789</x> <y>-2.546511</y> <z>-4.000000</z> </point1>
+				<point2> <x>-3.695833</x> <y>-2.738034</y> <z>-4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-1.863213</x> <y>-4.000000</y> <z>-3.867343</z> </point0>
+				<point1> <x>-3.695833</x> <y>-2.738034</y> <z>-4.000000</z> </point1>
+				<point2> <x>-1.930241</x> <y>-4.000000</y> <z>-4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-4.000000</x> <y>-1.401868</y> <z>-0.902166</z> </point0>
+				<point1> <x>-0.513692</x> <y>-4.000000</y> <z>-1.196440</z> </point1>
+				<point2> <x>-3.972834</x> <y>-2.540046</y> <z>-4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-4.000000</x> <y>-1.401868</y> <z>-0.902166</z> </point0>
+				<point1> <x>-3.972834</x> <y>-2.540046</y> <z>-4.000000</z> </point1>
+				<point2> <x>-4.000000</x> <y>-2.520629</y> <z>-4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-0.513692</x> <y>-4.000000</y> <z>-1.196440</z> </point0>
+				<point1> <x>-1.028430</x> <y>-4.000000</y> <z>-2.215184</z> </point1>
+				<point2> <x>-3.963789</x> <y>-2.546511</y> <z>-4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-0.513692</x> <y>-4.000000</y> <z>-1.196440</z> </point0>
+				<point1> <x>-3.963789</x> <y>-2.546511</y> <z>-4.000000</z> </point1>
+				<point2> <x>-3.972834</x> <y>-2.540046</y> <z>-4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-1.028430</x> <y>-4.000000</y> <z>-2.215184</z> </point0>
+				<point1> <x>-4.000000</x> <y>-1.044545</y> <z>0.087258</z> </point1>
+				<point2> <x>-4.000000</x> <y>-2.520629</y> <z>-4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-1.028430</x> <y>-4.000000</y> <z>-2.215184</z> </point0>
+				<point1> <x>-4.000000</x> <y>-2.520629</y> <z>-4.000000</z> </point1>
+				<point2> <x>-3.963789</x> <y>-2.546511</y> <z>-4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-4.000000</x> <y>-1.044545</y> <z>0.087258</z> </point0>
+				<point1> <x>-1.028430</x> <y>-4.000000</y> <z>-2.215184</z> </point1>
+				<point2> <x>-0.415659</x> <y>-4.000000</y> <z>-1.002419</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>1.036767</x> <y>-4.000000</y> <z>-1.358788</z> </point0>
+				<point1> <x>4.000000</x> <y>0.236881</y> <z>-1.784481</z> </point1>
+				<point2> <x>3.944139</x> <y>-1.207384</y> <z>-4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>1.036767</x> <y>-4.000000</y> <z>-1.358788</z> </point0>
+				<point1> <x>3.944139</x> <y>-1.207384</y> <z>-4.000000</z> </point1>
+				<point2> <x>2.104433</x> <y>-4.000000</y> <z>-4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>4.000000</x> <y>0.236881</y> <z>-1.784481</z> </point0>
+				<point1> <x>4.000000</x> <y>-1.122590</y> <z>-4.000000</z> </point1>
+				<point2> <x>3.944139</x> <y>-1.207384</y> <z>-4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>2.140508</x> <y>-1.053214</y> <z>0.713111</z> </point0>
+				<point1> <x>4.000000</x> <y>0.848843</y> <z>-0.787172</z> </point1>
+				<point2> <x>0.978802</x> <y>-4.000000</y> <z>-1.215391</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>2.140508</x> <y>-1.053214</y> <z>0.713111</z> </point0>
+				<point1> <x>0.978802</x> <y>-4.000000</y> <z>-1.215391</z> </point1>
+				<point2> <x>0.840600</x> <y>-4.000000</y> <z>-0.873504</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>4.000000</x> <y>0.848843</y> <z>-0.787172</z> </point0>
+				<point1> <x>4.000000</x> <y>0.236881</y> <z>-1.784481</z> </point1>
+				<point2> <x>1.036767</x> <y>-4.000000</y> <z>-1.358788</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>4.000000</x> <y>0.848843</y> <z>-0.787172</z> </point0>
+				<point1> <x>1.036767</x> <y>-4.000000</y> <z>-1.358788</z> </point1>
+				<point2> <x>0.978802</x> <y>-4.000000</y> <z>-1.215391</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>0.163880</x> <y>3.443334</y> <z>-0.824800</z> </point0>
+				<point1> <x>-4.000000</x> <y>1.101036</y> <z>-0.767127</z> </point1>
+				<point2> <x>-2.075661</x> <y>4.000000</y> <z>-0.185467</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>0.163880</x> <y>3.443334</y> <z>-0.824800</z> </point0>
+				<point1> <x>-2.075661</x> <y>4.000000</y> <z>-0.185467</z> </point1>
+				<point2> <x>0.283369</x> <y>4.000000</y> <z>-0.662544</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-4.000000</x> <y>1.101036</y> <z>-0.767127</z> </point0>
+				<point1> <x>-4.000000</x> <y>2.435580</y> <z>-0.320205</z> </point1>
+				<point2> <x>-2.758226</x> <y>4.000000</y> <z>-0.047429</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-4.000000</x> <y>1.101036</y> <z>-0.767127</z> </point0>
+				<point1> <x>-2.758226</x> <y>4.000000</y> <z>-0.047429</z> </point1>
+				<point2> <x>-2.075661</x> <y>4.000000</y> <z>-0.185467</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>0.163880</x> <y>3.443334</y> <z>-0.824800</z> </point0>
+				<point1> <x>-4.000000</x> <y>1.101036</y> <z>-0.767127</z> </point1>
+				<point2> <x>-4.000000</x> <y>2.816095</y> <z>-0.192775</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>0.163880</x> <y>3.443334</y> <z>-0.824800</z> </point0>
+				<point1> <x>-4.000000</x> <y>1.101036</y> <z>-0.767127</z> </point1>
+				<point2> <x>-4.000000</x> <y>0.177004</y> <z>0.141819</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>0.163880</x> <y>3.443334</y> <z>-0.824800</z> </point0>
+				<point1> <x>0.261429</x> <y>4.000000</y> <z>-0.606358</z> </point1>
+				<point2> <x>0.283369</x> <y>4.000000</y> <z>-0.662544</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-1.550496</x> <y>0.530651</y> <z>1.115436</z> </point0>
+				<point1> <x>0.163880</x> <y>3.443334</y> <z>-0.824800</z> </point1>
+				<point2> <x>0.261429</x> <y>4.000000</y> <z>-0.606358</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-1.550496</x> <y>0.530651</y> <z>1.115436</z> </point0>
+				<point1> <x>0.261429</x> <y>4.000000</y> <z>-0.606358</z> </point1>
+				<point2> <x>-0.507199</x> <y>4.000000</y> <z>1.362005</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>0.163880</x> <y>3.443334</y> <z>-0.824800</z> </point0>
+				<point1> <x>0.283369</x> <y>4.000000</y> <z>-0.662544</z> </point1>
+				<point2> <x>-0.413805</x> <y>4.000000</y> <z>-0.521552</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-4.000000</x> <y>2.816095</y> <z>-0.192775</z> </point0>
+				<point1> <x>0.163880</x> <y>3.443334</y> <z>-0.824800</z> </point1>
+				<point2> <x>-0.413805</x> <y>4.000000</y> <z>-0.521552</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-4.000000</x> <y>2.816095</y> <z>-0.192775</z> </point0>
+				<point1> <x>-0.413805</x> <y>4.000000</y> <z>-0.521552</z> </point1>
+				<point2> <x>-4.000000</x> <y>4.000000</y> <z>0.203700</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>0.163880</x> <y>3.443334</y> <z>-0.824800</z> </point0>
+				<point1> <x>-1.550496</x> <y>0.530651</y> <z>1.115436</z> </point1>
+				<point2> <x>-4.000000</x> <y>-0.193961</y> <z>0.506727</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>0.163880</x> <y>3.443334</y> <z>-0.824800</z> </point0>
+				<point1> <x>-4.000000</x> <y>-0.193961</y> <z>0.506727</z> </point1>
+				<point2> <x>-4.000000</x> <y>0.177004</y> <z>0.141819</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-4.000000</x> <y>2.435580</y> <z>-0.320205</z> </point0>
+				<point1> <x>-2.758226</x> <y>4.000000</y> <z>-0.047429</z> </point1>
+				<point2> <x>-4.000000</x> <y>4.000000</y> <z>0.203700</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-4.000000</x> <y>-1.044545</y> <z>0.087258</z> </point0>
+				<point1> <x>-4.000000</x> <y>-1.401868</y> <z>-0.902166</z> </point1>
+				<point2> <x>-0.513692</x> <y>-4.000000</y> <z>-1.196440</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-4.000000</x> <y>-1.044545</y> <z>0.087258</z> </point0>
+				<point1> <x>-0.513692</x> <y>-4.000000</y> <z>-1.196440</z> </point1>
+				<point2> <x>-0.415659</x> <y>-4.000000</y> <z>-1.002419</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-1.550496</x> <y>0.530651</y> <z>1.115436</z> </point0>
+				<point1> <x>-2.823881</x> <y>0.083157</y> <z>4.000000</z> </point1>
+				<point2> <x>-1.634336</x> <y>3.704621</y> <z>4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-0.507199</x> <y>4.000000</y> <z>1.362005</z> </point0>
+				<point1> <x>-1.550496</x> <y>0.530651</y> <z>1.115436</z> </point1>
+				<point2> <x>-1.634336</x> <y>3.704621</y> <z>4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-0.507199</x> <y>4.000000</y> <z>1.362005</z> </point0>
+				<point1> <x>-1.634336</x> <y>3.704621</y> <z>4.000000</z> </point1>
+				<point2> <x>-1.537313</x> <y>4.000000</y> <z>4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>2.513127</x> <y>-1.683997</y> <z>1.973343</z> </point0>
+				<point1> <x>4.000000</x> <y>-0.939878</y> <z>2.166005</z> </point1>
+				<point2> <x>4.000000</x> <y>-0.889881</y> <z>1.894750</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>2.513127</x> <y>-1.683997</y> <z>1.973343</z> </point0>
+				<point1> <x>2.150487</x> <y>-2.247692</y> <z>4.000000</z> </point1>
+				<point2> <x>3.157310</x> <y>-1.719772</y> <z>4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>4.000000</x> <y>-0.939878</y> <z>2.166005</z> </point0>
+				<point1> <x>2.513127</x> <y>-1.683997</y> <z>1.973343</z> </point1>
+				<point2> <x>3.157310</x> <y>-1.719772</y> <z>4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>4.000000</x> <y>-0.939878</y> <z>2.166005</z> </point0>
+				<point1> <x>3.157310</x> <y>-1.719772</y> <z>4.000000</z> </point1>
+				<point2> <x>4.000000</x> <y>-1.277914</y> <z>4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>2.513127</x> <y>-1.683997</y> <z>1.973343</z> </point0>
+				<point1> <x>4.000000</x> <y>-1.826950</y> <z>1.770805</z> </point1>
+				<point2> <x>4.000000</x> <y>-0.889881</y> <z>1.894750</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>2.513127</x> <y>-1.683997</y> <z>1.973343</z> </point0>
+				<point1> <x>4.000000</x> <y>-1.826950</y> <z>1.770805</z> </point1>
+				<point2> <x>4.000000</x> <y>-4.000000</y> <z>1.483378</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>2.513127</x> <y>-1.683997</y> <z>1.973343</z> </point0>
+				<point1> <x>4.000000</x> <y>-4.000000</y> <z>1.483378</z> </point1>
+				<point2> <x>2.919348</x> <y>-4.000000</y> <z>1.616839</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>2.513127</x> <y>-1.683997</y> <z>1.973343</z> </point0>
+				<point1> <x>1.904731</x> <y>-4.000000</y> <z>1.742145</z> </point1>
+				<point2> <x>2.663112</x> <y>-4.000000</y> <z>1.648484</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>2.513127</x> <y>-1.683997</y> <z>1.973343</z> </point0>
+				<point1> <x>2.663112</x> <y>-4.000000</y> <z>1.648484</z> </point1>
+				<point2> <x>2.919348</x> <y>-4.000000</y> <z>1.616839</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>2.140508</x> <y>-1.053214</y> <z>0.713111</z> </point0>
+				<point1> <x>1.448439</x> <y>-4.000000</y> <z>0.620574</z> </point1>
+				<point2> <x>0.840600</x> <y>-4.000000</y> <z>-0.873504</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>2.140508</x> <y>-1.053214</y> <z>0.713111</z> </point0>
+				<point1> <x>-4.000000</x> <y>-0.488382</y> <z>0.361532</z> </point1>
+				<point2> <x>-0.295708</x> <y>-4.000000</y> <z>-0.990110</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>2.140508</x> <y>-1.053214</y> <z>0.713111</z> </point0>
+				<point1> <x>-0.295708</x> <y>-4.000000</y> <z>-0.990110</z> </point1>
+				<point2> <x>0.840600</x> <y>-4.000000</y> <z>-0.873504</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-4.000000</x> <y>-0.488382</y> <z>0.361532</z> </point0>
+				<point1> <x>-4.000000</x> <y>-1.044545</y> <z>0.087258</z> </point1>
+				<point2> <x>-0.415659</x> <y>-4.000000</y> <z>-1.002419</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-4.000000</x> <y>-0.488382</y> <z>0.361532</z> </point0>
+				<point1> <x>-0.415659</x> <y>-4.000000</y> <z>-1.002419</z> </point1>
+				<point2> <x>-0.295708</x> <y>-4.000000</y> <z>-0.990110</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-4.000000</x> <y>-3.678537</y> <z>0.716539</z> </point0>
+				<point1> <x>-2.660201</x> <y>-4.000000</y> <z>0.122098</z> </point1>
+				<point2> <x>-4.000000</x> <y>-4.000000</y> <z>0.793339</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-4.000000</x> <y>-1.044545</y> <z>0.087258</z> </point0>
+				<point1> <x>-4.000000</x> <y>-3.678537</y> <z>0.716539</z> </point1>
+				<point2> <x>-2.660201</x> <y>-4.000000</y> <z>0.122098</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-4.000000</x> <y>-1.044545</y> <z>0.087258</z> </point0>
+				<point1> <x>-2.660201</x> <y>-4.000000</y> <z>0.122098</z> </point1>
+				<point2> <x>-0.415659</x> <y>-4.000000</y> <z>-1.002419</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>2.140508</x> <y>-1.053214</y> <z>0.713111</z> </point0>
+				<point1> <x>2.513127</x> <y>-1.683997</y> <z>1.973343</z> </point1>
+				<point2> <x>1.904731</x> <y>-4.000000</y> <z>1.742145</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>2.140508</x> <y>-1.053214</y> <z>0.713111</z> </point0>
+				<point1> <x>1.904731</x> <y>-4.000000</y> <z>1.742145</z> </point1>
+				<point2> <x>1.537669</x> <y>-4.000000</y> <z>0.839901</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>2.140508</x> <y>-1.053214</y> <z>0.713111</z> </point0>
+				<point1> <x>2.513127</x> <y>-1.683997</y> <z>1.973343</z> </point1>
+				<point2> <x>-1.550496</x> <y>0.530651</y> <z>1.115436</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>2.140508</x> <y>-1.053214</y> <z>0.713111</z> </point0>
+				<point1> <x>1.448439</x> <y>-4.000000</y> <z>0.620574</z> </point1>
+				<point2> <x>1.537669</x> <y>-4.000000</y> <z>0.839901</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>2.140508</x> <y>-1.053214</y> <z>0.713111</z> </point0>
+				<point1> <x>-1.550496</x> <y>0.530651</y> <z>1.115436</z> </point1>
+				<point2> <x>-4.000000</x> <y>-0.193961</y> <z>0.506727</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>2.140508</x> <y>-1.053214</y> <z>0.713111</z> </point0>
+				<point1> <x>-4.000000</x> <y>-0.193961</y> <z>0.506727</z> </point1>
+				<point2> <x>-4.000000</x> <y>-0.488382</y> <z>0.361532</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>2.513127</x> <y>-1.683997</y> <z>1.973343</z> </point0>
+				<point1> <x>1.904731</x> <y>-4.000000</y> <z>1.742145</z> </point1>
+				<point2> <x>1.770944</x> <y>-3.638083</y> <z>4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>2.513127</x> <y>-1.683997</y> <z>1.973343</z> </point0>
+				<point1> <x>1.770944</x> <y>-3.638083</y> <z>4.000000</z> </point1>
+				<point2> <x>2.150487</x> <y>-2.247692</y> <z>4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>1.904731</x> <y>-4.000000</y> <z>1.742145</z> </point0>
+				<point1> <x>1.672150</x> <y>-4.000000</y> <z>4.000000</z> </point1>
+				<point2> <x>1.770944</x> <y>-3.638083</y> <z>4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>2.513127</x> <y>-1.683997</y> <z>1.973343</z> </point0>
+				<point1> <x>-1.550496</x> <y>0.530651</y> <z>1.115436</z> </point1>
+				<point2> <x>-2.823881</x> <y>0.083157</y> <z>4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>2.513127</x> <y>-1.683997</y> <z>1.973343</z> </point0>
+				<point1> <x>-2.823881</x> <y>0.083157</y> <z>4.000000</z> </point1>
+				<point2> <x>-0.633092</x> <y>-0.943385</y> <z>4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>2.513127</x> <y>-1.683997</y> <z>1.973343</z> </point0>
+				<point1> <x>1.776868</x> <y>-2.072625</y> <z>4.000000</z> </point1>
+				<point2> <x>2.150487</x> <y>-2.247692</y> <z>4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>2.513127</x> <y>-1.683997</y> <z>1.973343</z> </point0>
+				<point1> <x>1.776868</x> <y>-2.072625</y> <z>4.000000</z> </point1>
+				<point2> <x>1.158581</x> <y>-1.782913</y> <z>4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>2.513127</x> <y>-1.683997</y> <z>1.973343</z> </point0>
+				<point1> <x>1.158581</x> <y>-1.782913</y> <z>4.000000</z> </point1>
+				<point2> <x>-0.633092</x> <y>-0.943385</y> <z>4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-1.550496</x> <y>0.530651</y> <z>1.115436</z> </point0>
+				<point1> <x>-4.000000</x> <y>-0.193961</y> <z>0.506727</z> </point1>
+				<point2> <x>-3.804666</x> <y>-0.212370</y> <z>4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-1.550496</x> <y>0.530651</y> <z>1.115436</z> </point0>
+				<point1> <x>-3.804666</x> <y>-0.212370</y> <z>4.000000</z> </point1>
+				<point2> <x>-2.823881</x> <y>0.083157</y> <z>4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		
+			<source3d bid="1" type="triangle" directional="true">
+				<point0> <x>-4.000000</x> <y>-0.193961</y> <z>0.506727</z> </point0>
+				<point1> <x>-4.000000</x> <y>-0.271227</y> <z>4.000000</z> </point1>
+				<point2> <x>-3.804666</x> <y>-0.212370</y> <z>4.000000</z> </point2>
+				<metric>
+					<lx>0.05</lx> <ly>0.8</ly> <lz>0.8</lz>
+					<ax>0.0</ax>   <ay>0.0</ay> <az>0.0</az> 
+				</metric>
+				<radius>0.05</radius>
+			</source3d>
+
+		</sources>
+	</sizing>
+</meshdoc>

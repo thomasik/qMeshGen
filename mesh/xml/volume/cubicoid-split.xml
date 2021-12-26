@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meshdoc xmlns="http://www.icsr.agh.edu.pl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<header>
+		<creator>Tomasz Jurczyk</creator>
+		<version>1.0</version>
+		<description>simple cubicoid</description>
+	</header>
+	<model>
+		<vertices>
+			<vertex vid="1">	<x>-10cm</x> <y>-5cm</y> <z>-20cm</z> </vertex>
+			<vertex vid="2">	 <x>10cm</x> <y>-5cm</y> <z>-20cm</z> </vertex>
+			<vertex vid="3">	 <x>10cm</x>  <y>5cm</y> <z>-20cm</z> </vertex>
+			<vertex vid="4">	<x>-10cm</x>  <y>5cm</y> <z>-20cm</z> </vertex>
+			<vertex vid="5">	<x>-10cm</x> <y>-5cm</y>   <z>0cm</z> </vertex>
+			<vertex vid="6">	 <x>10cm</x> <y>-5cm</y>   <z>0cm</z> </vertex>
+			<vertex vid="7">	 <x>10cm</x>  <y>5cm</y>   <z>0cm</z> </vertex>
+			<vertex vid="8">	<x>-10cm</x>  <y>5cm</y>   <z>0cm</z> </vertex>
+			<vertex vid="9">	<x>-10cm</x> <y>-5cm</y>  <z>20cm</z> </vertex>
+			<vertex vid="10">	 <x>10cm</x> <y>-5cm</y>  <z>20cm</z> </vertex>
+			<vertex vid="11">	 <x>10cm</x>  <y>5cm</y>  <z>20cm</z> </vertex>
+			<vertex vid="12">	<x>-10cm</x>  <y>5cm</y>  <z>20cm</z> </vertex>
+		</vertices>
+
+		<faces>
+			<face fid="1"> 
+				<vertex vid="1"/> <vertex vid="4"/> <vertex vid="3"/> <vertex vid="2"/> 
+			</face>
+			<face fid="2"> 
+				<vertex vid="1"/> <vertex vid="2"/> <vertex vid="6"/> <vertex vid="5"/> 
+			</face>
+			<face fid="3"> 
+				<vertex vid="2"/> <vertex vid="3"/> <vertex vid="7"/> <vertex vid="6"/> 
+			</face>
+			<face fid="4"> 
+				<vertex vid="3"/> <vertex vid="4"/> <vertex vid="8"/> <vertex vid="7"/> 
+			</face>
+			<face fid="5"> 
+				<vertex vid="4"/> <vertex vid="1"/> <vertex vid="5"/> <vertex vid="8"/> 
+			</face>
+			<face fid="6"> 
+				<vertex vid="5"/> <vertex vid="6"/> <vertex vid="7"/> <vertex vid="8"/> 
+			</face>
+			<face fid="7"> 
+				<vertex vid="5"/> <vertex vid="6"/> <vertex vid="10"/> <vertex vid="9"/> 
+			</face>
+			<face fid="8"> 
+				<vertex vid="6"/> <vertex vid="7"/> <vertex vid="11"/> <vertex vid="10"/> 
+			</face>
+			<face fid="9"> 
+				<vertex vid="7"/> <vertex vid="8"/> <vertex vid="12"/> <vertex vid="11"/> 
+			</face>
+			<face fid="10"> 
+				<vertex vid="8"/> <vertex vid="5"/> <vertex vid="9"/> <vertex vid="12"/> 
+			</face>
+			<face fid="11"> 
+				<vertex vid="9"/> <vertex vid="10"/> <vertex vid="11"/> <vertex vid="12"/> 
+			</face>
+		</faces>
+		
+		<blocks>
+			<block bid="1">
+				<face fid="1"/> 
+				<face fid="2"/> 
+				<face fid="3"/> 
+				<face fid="4"/> 
+				<face fid="5"/> 
+				<face fid="6"/> 
+			</block>
+
+			<block bid="2">
+				<face fid="6" inverted="true"/> 
+				<face fid="7"/> 
+				<face fid="8"/> 
+				<face fid="9"/> 
+				<face fid="10"/> 
+				<face fid="11"/> 
+			</block>
+		</blocks>
+	</model>
+	<sizing>
+		<params>
+			<param> <name>ACS_STRETCH_MAX_RATIO</name> <value>1.5</value> </param>
+			<param> <name>ACS3D_DIAMETER_MAX_RATIO</name> <value>0.1</value> </param>
+			<param> <name>ACS2D_DIAMETER_MAX_RATIO</name> <value>0.1</value> </param>
+			<param> <name>ACS2D_INNER_BOUNDARY_RATIO</name> <value>0.2</value> </param>
+		</params>
+	</sizing>
+</meshdoc>

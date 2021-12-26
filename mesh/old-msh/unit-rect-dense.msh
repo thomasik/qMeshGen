@@ -1,0 +1,18 @@
+#Prostokat
+
+[POINTS
+#ID       X       Y
+1	-5	-5
+2	 5	-5
+3	 5	 5
+4	-5	 5
+]
+
+[FACES
+#ID   SURF_ID   PT_IDS
+1	0	1 2 3 4
+]
+
+[CONTROL_2D
+1 1 	[0,0]	[0.10,0.10,0]
+]

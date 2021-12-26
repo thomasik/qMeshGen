@@ -1,0 +1,42 @@
+#Walec
+
+# powierzchnie
+[SURFACES
+1	1	[0,0,0] [1,0,0] [0,1,0]
+3	2	X=-2cm+2cm*cos(2*PI*u) Y=10cm*v Z=2cm*sin(2*PI*u)
+]
+
+# krzywe (elipsa)
+[CURVES
+1	1	u=6cm+5.8cm*cos(2*PI*t) v=1.1cm+1cm*sin(2*PI*t)
+2       3   	OP=1 PT= [4cm,9cm] [4.5cm,8cm] [3cm,7cm] [1.5cm,8cm] [2cm,9cm]
+]
+
+[POINTS
+#ID      X       Y      Z
+#ID     ID_SURF  S      T
+#ID     ID_SURF ID_CURV S
+1	*1	0	0
+2	*1	6cm	0
+3	*1	*1	3/4
+4	*1	*1	1/4
+5	*1	6cm	10cm
+6	*1	0	10cm
+7	*3	1/2	1
+8	*3	1/2	0
+]
+
+[FACES
+#ID   SURF_ID   PT_IDS
+1	1	1 2 3 -1[3/4,1/4] 4 5 6
+2	3	1[0,0] 6[0,1] 7[1/2,1] 8[1/2,0]
+]
+
+[CONTROL_2D
+# wzdluz krzywej (id[t1-t2] rozmiary)
+1 3 	2[0,1]	[0.3mm,0.3mm,0] 2mm [1cm,1cm,0] 4mm
+]
+
+[BLOCKS
+1	1 -2 
+]

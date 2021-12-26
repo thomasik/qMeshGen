@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meshdoc xmlns="http://www.icsr.agh.edu.pl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<header>
+		<creator>Tomasz Jurczyk</creator>
+		<version>1.0</version>
+		<description>spiral with planar endings</description>
+	</header>
+	<model>
+		<surfaces>
+			<surface sid="3">
+				<analytic>
+					<fx>0.005*v+0.006*cos(u)</fx>
+					<fy>0.02+(0.05+0.01*sin(u))*cos(v)</fy>
+					<fz>0.01+(0.05+0.01*sin(u))*sin(v)</fz>
+				</analytic>
+			</surface>
+		</surfaces>
+		
+		<vertices>
+			<vertex vid="11"> <sid>3</sid> <u>2/3*PI</u>	<v>0</v> </vertex>
+			<vertex vid="12"> <sid>3</sid> <u>4/3*PI</u>	<v>0</v> </vertex>
+			<vertex vid="15"> <sid>3</sid> <u>2/3*PI</u>	<v>3*PI</v> </vertex>
+			<vertex vid="16"> <sid>3</sid> <u>4/3*PI</u>	<v>3*PI</v> </vertex>
+		</vertices>
+
+		<faces>
+			<face fid="2" sid="3">
+				<vertex vid="11"> <u>2/3*PI</u> <v>0</v> </vertex>
+				<vertex vid="15"> <u>2/3*PI</u> <v>3*PI</v> </vertex>
+				<vertex vid="16"> <u>4/3*PI</u> <v>3*PI</v> </vertex>
+				<vertex vid="12"> <u>4/3*PI</u> <v>0</v> </vertex>
+			</face>
+			
+		</faces>
+		
+		<blocks>
+			<block bid="1">
+				<face fid="2" />
+			</block>
+		</blocks>
+
+	</model>
+</meshdoc>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meshdoc xmlns="http://www.icsr.agh.edu.pl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<header>
+		<creator>Tomasz Jurczyk</creator>
+		<version>1.0</version>
+		<description>rectangle on plane, with sizing and boundary conditions</description>
+	</header>
+	<model>
+		<vertices>
+			<vertex vid="1"> <x>0</x> <y>0</y> </vertex>
+			<vertex vid="2"> <x>1</x> <y>0</y> </vertex>
+			<vertex vid="3"> <x>1</x> <y>1</y> </vertex>
+			<vertex vid="4"> <x>0</x> <y>1</y> </vertex>
+		</vertices>
+		
+		<edges>
+			<edge sid="all" vid0="1" vid1="2" label="boundary_condition_for_edge_1-2" />
+		</edges>
+
+		<faces>
+			<face fid="1" label="boundary_condition_for_face_1">
+				<vertex vid="1" />
+				<vertex vid="2" />
+				<vertex vid="3" />
+				<vertex vid="4" />
+			</face>
+		</faces>
+		
+	</model>
+
+	<sizing>
+		<sources>
+			<source2d fid="1" type="analytic">
+				<metric>
+					<lx>0.1-0.09*u</lx>
+					<ly>0.1-0.09*v</ly>
+					<angle>0</angle>
+				</metric>
+			</source2d>
+		</sources>
+	</sizing>
+	
+</meshdoc>

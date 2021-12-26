@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meshdoc xmlns="http://www.icsr.agh.edu.pl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<header>
+		<creator>Tomasz Jurczyk</creator>
+		<version>1.0</version>
+		<description>simple cylinder</description>
+	</header>
+	<model>
+		<surfaces>
+			<surface sid="2">
+				<plane>
+					<pt0> <x>1</x> <y>0</y> <z>0</z> </pt0>
+					<e0>  <x>0</x> <y>1</y> <z>0</z> </e0>
+					<e1>  <x>0</x> <y>0</y> <z>1</z> </e1>
+				</plane>
+			</surface>
+			<surface sid="3">
+				<plane>
+					<pt0> <x>0</x> <y>10</y> <z>0</z> </pt0>
+					<e0>  <x>0</x> <y>-1</y> <z>0</z> </e0>
+					<e1>  <x>0</x> <y>0</y>  <z>1</z> </e1>
+				</plane>
+			</surface>
+			<surface sid="1">
+				<analytic>
+					<fx>u</fx>
+					<fy>5+0.5*sin(PI*v)</fy>
+					<fz>0.5*cos(PI*v)</fz>
+				</analytic>
+			</surface>
+		</surfaces>
+		
+		<curves>
+			<curve cid="1">
+				<analytic>
+					<fu>5+0.5*sin(PI*t)</fu>
+					<fv>0.5*cos(PI*t)</fv>
+				</analytic>
+			</curve>
+		</curves>
+		
+		<vertices>
+			<vertex vid="1">  <x>0</x> <y>0</y>		<z>1</z> </vertex>
+			<vertex vid="2">  <x>1</x> <y>0</y>	 	<z>1</z> </vertex>
+			<vertex vid="3">  <x>1</x> <y>10</y>	<z>1</z> </vertex>
+			<vertex vid="4">  <x>0</x> <y>10</y>	<z>1</z> </vertex>
+			<vertex vid="5">  <x>0</x> <y>0</y>		<z>0</z> </vertex>
+			<vertex vid="6">  <x>1</x> <y>0</y>		<z>0</z> </vertex>
+			<vertex vid="7">  <x>1</x> <y>10</y>	<z>0</z> </vertex>
+			<vertex vid="8">  <x>0</x> <y>10</y>	<z>0</z> </vertex>
+			<vertex vid="9">  <x>1</x> <y>4.5</y>	<z>0</z> </vertex>
+			<vertex vid="10"> <x>1</x> <y>5.5</y>	<z>0</z> </vertex>
+			<vertex vid="11"> <x>0</x> <y>4.5</y>	<z>0</z> </vertex>
+			<vertex vid="12"> <x>0</x> <y>5.5</y>	<z>0</z> </vertex>
+		</vertices>
+
+		<edges>
+			<edge sid="2" vid0="9" vid1="10">
+				<cid>1</cid> <t0>-0.5</t0> <t1>0.5</t1>
+			</edge>
+			<edge sid="3" vid0="12" vid1="11">
+				<cid>1</cid> <t0>-0.5</t0> <t1>0.5</t1>
+			</edge>
+		</edges>
+
+		<faces>
+			<face fid="1">
+				<vertex vid="1"/> <vertex vid="2"/> 
+				<vertex vid="6"/> <vertex vid="5"/>
+			</face>
+			<face fid="2">
+				<vertex vid="3"/> <vertex vid="4"/>
+				<vertex vid="8"/> <vertex vid="7"/>
+			</face>
+			<face fid="3">
+				<vertex vid="1"/> <vertex vid="4"/>
+				<vertex vid="3"/> <vertex vid="2"/>
+			</face>
+			<face fid="4">
+				<vertex vid="5"/> <vertex vid="11"/> 
+				<vertex vid="9"/> <vertex vid="6"/>
+			</face>
+			<face fid="5">
+				<vertex vid="12"/> <vertex vid="8"/> 
+				<vertex vid="7"/> <vertex vid="10"/>
+			</face>
+			<face fid="6" sid="2">
+				<vertex vid="2"/> <vertex vid="6"/> 
+				<vertex vid="9"/> <vertex vid="10"/>
+				<vertex vid="7"/> <vertex vid="3"/>
+			</face>
+			<face fid="7" sid="3">
+				<vertex vid="4"/> <vertex vid="8"/> 
+				<vertex vid="12"/> <vertex vid="11"/>
+				<vertex vid="5"/> <vertex vid="1"/>
+			</face>
+			<face fid="8" sid="1">
+				<vertex vid="11"> <u>0</u>  <v>-0.5</v> </vertex>
+				<vertex vid="9">  <u>1</u>  <v>-0.5</v> </vertex>
+				<vertex vid="10"> <u>1</u>  <v>0.5</v>  </vertex>
+				<vertex vid="12"> <u>0</u>  <v>0.5</v>  </vertex>
+			</face>
+		</faces>
+		
+		<blocks>
+			<block bid="1">
+				<face fid="1" inverted="true" />
+				<face fid="2" inverted="true" />
+				<face fid="3" inverted="true" />
+				<face fid="4" />
+				<face fid="5" />			
+				<face fid="6" />
+				<face fid="7" />
+				<face fid="8" inverted="true" />
+			</block>
+		</blocks>
+	</model>
+</meshdoc>

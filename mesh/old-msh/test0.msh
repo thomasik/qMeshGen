@@ -1,0 +1,31 @@
+[POINTS
+#
+# ID	X	Y	Z
+#
+1	0cm	0cm	0cm
+2	5cm	0cm	0cm
+3	8cm	2cm	0cm
+4	5cm	4cm	0cm
+5	0cm	4cm	0cm
+6	2cm	2cm	3cm
+7	5cm	2cm	3cm
+]
+
+[FACES
+#
+# ID	SURF-ID	PT-IDS
+#
+1	0	1 6 5
+2	0	1 5 4 2
+3	0	4 5 6 7
+4	0	2 4 3
+5	0	2 3 7
+6	0	3 4 7
+]
+
+[BLOCKS
+#
+# ID	FACE_IDS
+#
+1	-1 -2 -3 -4 -5 -6
+]

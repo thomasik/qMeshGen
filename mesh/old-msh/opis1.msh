@@ -1,0 +1,22 @@
+#Prostokat
+[POINTS
+#ID       U       V
+1	 0	 0
+2	 1	 0
+3	 1	 150cm
+4	 0	 150cm
+]
+
+[FACES
+#ID   SURF_ID   PT_IDS
+1	0	1 2 3 4
+]
+
+[CONTROL_2D
+# general
+1 4 LX=0.1 LY=0.1 A=0
+# in point
+1 1 [0.6,0.3] [0.01,0.01,0] 0.05
+# along line
+1 2 [0.3,0.7] [0.7,0.8] [0.01,0.01,0] 0.02
+]

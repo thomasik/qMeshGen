@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meshdoc xmlns="http://www.icsr.agh.edu.pl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<header>
+		<creator>Tomasz Jurczyk</creator>
+		<version>1.0</version>
+		<description>example shape on plane</description>
+	</header>
+	<model>
+		<vertices>
+			<vertex vid="1"> <x>0</x> <y>0</y> </vertex>
+			<vertex vid="2"> <x>7</x> <y>0</y> </vertex>
+			<vertex vid="3"> <x>7</x> <y>5</y> </vertex>
+			<vertex vid="4"> <x>1</x> <y>5</y> </vertex>
+			<vertex vid="5"> <x>0</x> <y>3</y> </vertex>
+		</vertices>
+
+		<vertices> <!-- circle -->
+			<vertex vid="10"> <cid>1</cid> <t>0</t>   </vertex>
+			<vertex vid="11"> <cid>1</cid> <t>1/3</t> </vertex>
+			<vertex vid="12"> <cid>1</cid> <t>2/3</t> </vertex>
+		</vertices>	
+
+		<curves>
+			<curve cid="1">
+				<circle>
+					<middle> <u>5</u> <v>1.5</v> </middle>
+					<radius>0.5</radius>
+				</circle>
+			</curve>
+			<curve cid="2">
+				<bspline-curve>
+					<points>
+						<point> <u>1</u> <v>5</v> </point>
+						<point> <u>2</u> <v>3</v> </point>
+						<point> <u>1.5</u> <v>1.5</v> </point>
+						<point> <u>0</u> <v>3</v> </point>
+					</points>
+				</bspline-curve>
+			</curve>
+		</curves>
+		
+		<edges>
+			<edge vid0="4" vid1="5">
+				<cid>2</cid>	<t0>0</t0>	<t1>1</t1>
+			</edge>
+			<edge vid0="10" vid1="11">
+				<cid>1</cid>	<t0>0</t0>	<t1>1/3</t1>
+			</edge>
+			<edge vid0="11" vid1="12">
+				<cid>1</cid>	<t0>1/3</t0>	<t1>2/3</t1>
+			</edge>
+			<edge vid0="12" vid1="10">
+				<cid>1</cid>	<t0>2/3</t0>	<t1>1</t1>
+			</edge>
+		</edges>
+		
+		<faces>
+			<face fid="1">
+				<vertex vid="1" />
+				<vertex vid="2" />
+				<vertex vid="3" />
+				<vertex vid="4" />
+				<vertex vid="5" />
+				<contour filled="false">
+					<vertex vid="10" />	<vertex vid="11" />	<vertex vid="12" />
+				</contour>
+			</face>
+		</faces>
+		
+	</model>
+	<sizing>
+		<params>
+			<param> <name>acs_stretch_max_ratio</name> <value>2.0</value> </param>
+			<param> <name>acs_gradation_ratio</name> <value>4.0</value> </param>
+			<param> <name>acs_curvature_ratio</name> <value>0.1</value> </param>
+			<param> <name>acs2d_diameter_max_ratio</name> <value>0.1</value> </param>
+		</params>
+	</sizing>
+</meshdoc>

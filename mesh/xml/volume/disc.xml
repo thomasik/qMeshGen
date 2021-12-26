@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meshdoc xmlns="http://www.icsr.agh.edu.pl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<header>
+		<creator>Tomasz Jurczyk</creator>
+		<version>1.0</version>
+		<description>sphere</description>
+	</header>
+	<constants>
+		<const> <name>RX</name> <value>1</value> </const>
+		<const> <name>RY</name> <value>1</value> </const>
+		<const> <name>RZ</name> <value>0.1</value> </const>
+	</constants>
+	<model>
+		<surfaces>
+			<surface sid="1">
+				<analytic>
+					<fx>RX*cos(u)*cos(v)</fx>
+					<fy>RY*sin(u)*cos(v)</fy>
+					<fz>RZ*sin(v)</fz>
+				</analytic>
+			</surface>
+			<surface sid="2">
+				<analytic>
+					<fx>RX*u</fx>
+					<fy>RY*v</fy>
+					<fz>RZ*sqrt(1-u*u-v*v)</fz>
+				</analytic>
+			</surface>
+			<surface sid="3">
+				<analytic>
+					<fx>RX*u</fx>
+					<fy>RY*v</fy>
+					<fz>-RZ*sqrt(1-u*u-v*v)</fz>
+				</analytic>
+			</surface>
+		</surfaces>
+		
+		<curves>
+			<curve cid="1">
+				<analytic>
+					<fu>cos(t)/sqrt(2)</fu>
+					<fv>sin(t)/sqrt(2)</fv>
+				</analytic>
+			</curve>
+		</curves>
+		
+		<vertices>
+			<vertex vid="1"> <sid>1</sid> <u>0</u>			<v>-PI/4</v> </vertex>
+			<vertex vid="2"> <sid>1</sid> <u>2/3*PI</u>		<v>-PI/4</v> </vertex>
+			<vertex vid="3"> <sid>1</sid> <u>4/3*PI</u>		<v>-PI/4</v> </vertex>
+			<vertex vid="4"> <sid>1</sid> <u>0</u>			<v>PI/4</v> </vertex>
+			<vertex vid="5"> <sid>1</sid> <u>2/3*PI</u>		<v>PI/4</v> </vertex>
+			<vertex vid="6"> <sid>1</sid> <u>4/3*PI</u>		<v>PI/4</v> </vertex>
+		</vertices>
+
+		<edges>
+			<edge sid="2" vid0="4" vid1="5">
+				<cid>1</cid> <t0>0</t0> <t1>2/3*PI</t1>
+			</edge>
+			<edge sid="2" vid0="5" vid1="6">
+				<cid>1</cid> <t0>2/3*PI</t0> <t1>4/3*PI</t1>
+			</edge>
+			<edge sid="2" vid0="6" vid1="4">
+				<cid>1</cid> <t0>4/3*PI</t0> <t1>2*PI</t1>
+			</edge>
+			<edge sid="3" vid0="1" vid1="2">
+				<cid>1</cid> <t0>0</t0> <t1>2/3*PI</t1>
+			</edge>
+			<edge sid="3" vid0="2" vid1="3">
+				<cid>1</cid> <t0>2/3*PI</t0> <t1>4/3*PI</t1>
+			</edge>
+			<edge sid="3" vid0="3" vid1="1">
+				<cid>1</cid> <t0>4/3*PI</t0> <t1>2*PI</t1>
+			</edge>
+		</edges>						
+		
+		<faces>
+			<face fid="1" sid="1">
+				<vertex vid="1"> <u>0</u> 		<v>-PI/4</v> </vertex>
+				<vertex vid="2"> <u>2/3*PI</u> <v>-PI/4</v> </vertex>
+				<vertex vid="5"> <u>2/3*PI</u> <v>PI/4</v> </vertex>
+				<vertex vid="4"> <u>0</u> 		<v>PI/4</v> </vertex>
+			</face>
+			<face fid="2" sid="1">
+				<vertex vid="2"> <u>2/3*PI</u> <v>-PI/4</v> </vertex>
+				<vertex vid="3"> <u>4/3*PI</u> <v>-PI/4</v> </vertex>
+				<vertex vid="6"> <u>4/3*PI</u> <v>PI/4</v> </vertex>
+				<vertex vid="5"> <u>2/3*PI</u> <v>PI/4</v> </vertex>
+			</face>
+			<face fid="3" sid="1">
+				<vertex vid="3"> <u>4/3*PI</u> <v>-PI/4</v> </vertex>
+				<vertex vid="1"> <u>2*PI</u> 	<v>-PI/4</v> </vertex>
+				<vertex vid="4"> <u>2*PI</u> 	<v>PI/4</v> </vertex>
+				<vertex vid="6"> <u>4/3*PI</u> <v>PI/4</v> </vertex>
+			</face>
+			<face fid="4" sid="2">
+				<vertex vid="4"> <cid>1</cid>	<t>0</t> </vertex>
+				<vertex vid="5"> <cid>1</cid>	<t>2/3*PI</t> </vertex>
+				<vertex vid="6"> <cid>1</cid>	<t>4/3*PI</t> </vertex>
+			</face>
+			<face fid="5" sid="3">
+				<vertex vid="1"> <cid>1</cid>	<t>0</t> </vertex>
+				<vertex vid="2"> <cid>1</cid>	<t>2/3*PI</t> </vertex>
+				<vertex vid="3"> <cid>1</cid>	<t>4/3*PI</t> </vertex>
+			</face>
+			
+		</faces>
+		
+		<blocks>
+			<block bid="1">
+				<face fid="1" />
+				<face fid="2" />
+				<face fid="3" />
+				<face fid="4" />
+				<face fid="5" inverted="true"/>
+			</block>
+		</blocks>
+
+	</model>
+</meshdoc>

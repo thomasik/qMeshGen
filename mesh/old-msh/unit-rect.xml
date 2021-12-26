@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<meshdoc>
+	<header>
+		<name>MeshGenerator</name>
+		<version>1.0</version>
+		<description>Single rectangle</description>
+	</header>
+	<model>
+		<point PID="1" type="xy">-1 -1</point>
+		<point PID="2" type="xy"> 1 -1</point>
+		<point PID="3" type="xy"> 1  1</point>
+		<point PID="4" type="xy">-1  1</point>
+		
+		<face FID="1">
+			<edge startPID="1" endPID="2"/>
+			<edge startPID="2" endPID="3"/>
+			<edge startPID="3" endPID="4"/>
+			<edge startPID="4" endPID="1"/>
+		</face>
+
+		<control entity="face" ID="1" type="equation">
+			<lx> 0.1-0.09*s </lx>
+			<ly> 0.1-0.09*t </ly>
+			<angle> 0 </angle>
+		</control>
+
+		<condition entity="edge">
+			<pid> 1 2 </pid>
+		</condition>
+		
+	</model>
+</meshdoc>

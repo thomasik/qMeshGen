@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meshdoc xmlns="http://www.icsr.agh.edu.pl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<header>
+		<creator>Tomasz Jurczyk</creator>
+		<version>1.0</version>
+		<description>ellipsoid</description>
+	</header>
+	<constants>
+		<const> <name>RIX</name> <value>2cm</value> </const>
+		<const> <name>RIY</name> <value>1cm</value> </const>
+    <const> <name>RIZ</name> <value>3cm</value> </const>
+    <const> <name>ROX</name> <value>5cm</value> </const>
+    <const> <name>ROY</name> <value>7cm</value> </const>
+  </constants>
+	<model>
+		<surfaces>
+			<surface sid="1">
+				<analytic>
+          <fx>(ROX+RIX*cos(v))*cos(u)</fx>
+					<fy>(ROY+RIY*cos(v))*sin(u)</fy>
+					<fz>RIZ*sin(v)</fz>
+				</analytic>
+			</surface>
+		</surfaces>
+		
+		<vertices>
+			<vertex vid="10"> <sid>1</sid> <u>0</u>			    <v>0</v> </vertex>
+			<vertex vid="11"> <sid>1</sid> <u>2/3*PI</u>		<v>0</v> </vertex>
+			<vertex vid="12"> <sid>1</sid> <u>4/3*PI</u>		<v>0</v> </vertex>
+			<vertex vid="14"> <sid>1</sid> <u>0</u>			    <v>2/3*PI</v> </vertex>
+			<vertex vid="15"> <sid>1</sid> <u>2/3*PI</u>		<v>2/3*PI</v> </vertex>
+			<vertex vid="16"> <sid>1</sid> <u>4/3*PI</u>		<v>2/3*PI</v> </vertex>
+      <vertex vid="18"> <sid>1</sid> <u>0</u>         <v>4/3*PI</v> </vertex>
+      <vertex vid="19"> <sid>1</sid> <u>2/3*PI</u>    <v>4/3*PI</v> </vertex>
+      <vertex vid="20"> <sid>1</sid> <u>4/3*PI</u>    <v>4/3*PI</v> </vertex>
+    </vertices>
+
+		<faces>
+			<face fid="1" sid="1">
+				<vertex vid="10"> <u>0</u> 		  <v>0</v> </vertex>
+				<vertex vid="14"> <u>0</u>      <v>2/3*PI</v> </vertex>
+				<vertex vid="15"> <u>2/3*PI</u> <v>2/3*PI</v> </vertex>
+				<vertex vid="11"> <u>2/3*PI</u> <v>0</v> </vertex>
+			</face>
+			<face fid="2" sid="1">
+				<vertex vid="11"> <u>2/3*PI</u> <v>0</v> </vertex>
+				<vertex vid="15"> <u>2/3*PI</u> <v>2/3*PI</v> </vertex>
+				<vertex vid="16"> <u>4/3*PI</u> <v>2/3*PI</v> </vertex>
+				<vertex vid="12"> <u>4/3*PI</u> <v>0</v> </vertex>
+			</face>
+			<face fid="3" sid="1">
+				<vertex vid="12"> <u>4/3*PI</u> <v>0</v> </vertex>
+				<vertex vid="16"> <u>4/3*PI</u> <v>2/3*PI</v> </vertex>
+				<vertex vid="14"> <u>2*PI</u> 	<v>2/3*PI</v> </vertex>
+				<vertex vid="10"> <u>2*PI</u>   <v>0</v> </vertex>
+			</face>
+			<face fid="4" sid="1">
+				<vertex vid="14"> <u>0</u> 		  <v>2/3*PI</v> </vertex>
+				<vertex vid="18"> <u>0</u>      <v>4/3*PI</v> </vertex>
+				<vertex vid="19"> <u>2/3*PI</u> <v>4/3*PI</v> </vertex>
+				<vertex vid="15"> <u>2/3*PI</u> <v>2/3*PI</v> </vertex>
+			</face>
+			<face fid="5" sid="1">
+				<vertex vid="15"> <u>2/3*PI</u> <v>2/3*PI</v> </vertex>
+				<vertex vid="19"> <u>2/3*PI</u> <v>4/3*PI</v> </vertex>
+				<vertex vid="20"> <u>4/3*PI</u> <v>4/3*PI</v> </vertex>
+				<vertex vid="16"> <u>4/3*PI</u> <v>2/3*PI</v> </vertex>
+			</face>
+			<face fid="6" sid="1">
+				<vertex vid="16"> <u>4/3*PI</u> <v>2/3*PI</v> </vertex>
+				<vertex vid="20"> <u>4/3*PI</u> <v>4/3*PI</v> </vertex>
+				<vertex vid="18"> <u>2*PI</u> 	<v>4/3*PI</v> </vertex>
+				<vertex vid="14"> <u>2*PI</u>   <v>2/3*PI</v> </vertex>
+			</face>
+			<face fid="7" sid="1">
+				<vertex vid="18"> <u>0</u> 		  <v>4/3*PI</v> </vertex>
+				<vertex vid="10"> <u>0</u>      <v>2*PI</v> </vertex>
+				<vertex vid="11"> <u>2/3*PI</u> <v>2*PI</v> </vertex>
+				<vertex vid="19"> <u>2/3*PI</u> <v>4/3*PI</v> </vertex>
+			</face>
+			<face fid="8" sid="1">
+				<vertex vid="19"> <u>2/3*PI</u> <v>4/3*PI</v> </vertex>
+				<vertex vid="11"> <u>2/3*PI</u> <v>2*PI</v> </vertex>
+				<vertex vid="12"> <u>4/3*PI</u> <v>2*PI</v> </vertex>
+				<vertex vid="20"> <u>4/3*PI</u> <v>4/3*PI</v> </vertex>
+			</face>
+			<face fid="9" sid="1">
+				<vertex vid="20"> <u>4/3*PI</u> <v>4/3*PI</v> </vertex>
+				<vertex vid="12"> <u>4/3*PI</u> <v>2*PI</v> </vertex>
+				<vertex vid="10"> <u>2*PI</u> 	<v>2*PI</v> </vertex>
+				<vertex vid="18"> <u>2*PI</u>   <v>4/3*PI</v> </vertex>
+			</face>			
+		</faces>
+		
+		<blocks>
+			<block bid="1">
+				<face fid="1" />
+				<face fid="2" />
+				<face fid="3" />
+				<face fid="4" />
+				<face fid="5" />
+        <face fid="6" />
+        <face fid="7" />
+        <face fid="8" />
+        <face fid="9" />
+      </block>
+		</blocks>
+
+	</model>
+</meshdoc>

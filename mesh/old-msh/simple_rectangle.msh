@@ -1,0 +1,18 @@
+#Prostokat
+
+[POINTS
+#ID       X       Y     Z
+1	-30cm	-15cm	0
+2	 30cm	-15cm	0
+3	 30cm	 15cm	0
+4	-30cm	 15cm	0
+]
+
+[FACES
+#ID   SURF_ID   PT_IDS
+1	0	1 2 3 4
+]
+
+[BLOCKS
+1	1
+]
